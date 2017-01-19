@@ -1,0 +1,67 @@
+library(shiny)
+library(magrittr)
+
+packages <- read.csv("www/packages.csv", stringsAsFactors = FALSE)
+packages$license <- sub("( [+|] )?file LICEN[SC]E", "", packages$license, ignore.case = FALSE)
+
+shinyServer(function(input, output) {
+  
+  dt <- reactiveValues()
+  observe({
+    if (input$task) {
+      drop_columns <- NULL
+      if (length(input$view) == 1) drop_columns <- 1
+      if (!input$description) drop_columns <- c(drop_columns, 5)
+      if (!input$url) drop_columns <- c(drop_columns, 6)
+      if (length(input$view) > 1) {
+        temporary <- packages[packages$view %in% input$view, ]
+        if (any(duplicated(temporary$package))) {
+          # Some packages appear under multiple views, let's consolidate:
+          temporary <- temporary %>%
+            dplyr::group_by(package, title, license, description, url) %>%
+            dplyr::summarize(view = paste0(view, collapse = ", "),
+                             views = n()) %>%
+            dplyr::ungroup() %>%
+            dplyr::select(view, views, package, title, license, description, url)
+          drop_columns <- drop_columns + 1
+        }
+      } else {
+        temporary <- packages[packages$view == input$view, ]
+      }
+      if (is.null(drop_columns)) {
+        dt$packages <- temporary
+      } else {
+        dt$packages <- temporary[, -drop_columns]
+      }
+    } else {
+      drop_columns <- NULL
+      if (!input$description) drop_columns <- c(drop_columns, 6)
+      if (!input$url) drop_columns <- c(drop_columns, 7)
+      temporary <- packages %>%
+        dplyr::group_by(package, title, license, description, url) %>%
+        dplyr::summarize(view = paste0(view, collapse = ", "),
+                         views = n()) %>%
+        dplyr::ungroup() %>%
+        dplyr::select(view, views, package, title, license, description, url) %>%
+        dplyr::arrange(package)
+      if (is.null(drop_columns)) {
+        dt$packages <- temporary
+      } else {
+        dt$packages <- temporary[, -drop_columns]
+      }
+    }
+  })
+
+  output$packages <- DT::renderDataTable({
+    DT::datatable(
+      dt$packages,
+      options = list(
+        search = list(regex = TRUE, caseInsensitive = FALSE),
+        pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100)
+      ),
+      filter = list(position = 'top', clear = FALSE),
+      rownames = FALSE
+    )
+  })
+
+})
