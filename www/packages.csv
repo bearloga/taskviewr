@@ -1054,11 +1054,13 @@ designed to be easy to customize to suit different situations
 and for experimentation with stick-breaking models.  Since
 particles are repeatedly copied, it is not an especially
 efficient implementation.",http://faculty.chicagobooth.edu/matt.taddy
+Cluster,bmixture,Bayesian Estimation for Finite Mixture of Distributions,GPL (>= 3),"Provides statistical tools for Bayesian estimation for finite mixture of distributions, mainly mixture of Gamma, Normal and t-distributions.",https://www.tilburguniversity.edu/webwijs/show/a.mohammadi.htm
 Cluster,cba,Clustering for Business Analytics,GPL-2,"Implements clustering techniques such as Proximus and Rock, utility functions for efficient computation of cross distances and data manipulation.",NA
 Cluster,cclust,Convex Clustering Methods and Clustering Indexes,GPL-2,"Convex Clustering methods, including K-means algorithm,
 On-line Update algorithm (Hard Competitive Learning) and Neural Gas
 algorithm (Soft Competitive Learning), and calculation of several
 indexes for finding the number of clusters in a data set.",NA
+Cluster,CEC,Cross-Entropy Clustering,GPL-3,"Cross-Entropy Clustering (CEC) divides the data into Gaussian type clusters. It performs the automatic reduction of unnecessary clusters, while at the same time allows the simultaneous use of various type Gaussian mixture models.",https://github.com/azureblue/cec
 Cluster,CHsharp,Choi and Hall Style Data Sharpening,GPL-3,"Functions for use in perturbing data prior to use of nonparametric smoothers
 and clustering.",NA
 Cluster,clue,Cluster Ensembles,GPL-2,CLUster Ensembles.,NA
@@ -1482,6 +1484,7 @@ by Nelder and Mead for model optimization.",NA
 DifferentialEquations,sde,Simulation and Inference for Stochastic Differential Equations,GPL (>= 2),"Companion package to the book Simulation and Inference for
 Stochastic Differential Equations With R Examples, ISBN
 978-0-387-75838-1, Springer, NY.",NA
+DifferentialEquations,Sim.DiffProc,Simulation of Diffusion Processes,GPL (>= 2),"Provides the functions for simulating and modeling of stochastic differential equations (SDE's). Statistical analysis and simulation of the solution of SDE's enabled many searchers in different domains to use these equations to modeling practical problems, in financial and actuarial modeling and other areas of application. For example, modeling and simulate of dispersion in shallow water using the attractive center (Boukhetala K, 1996).",NA
 DifferentialEquations,simecol,Simulation of Ecological (and Other) Dynamic Systems,GPL (>= 2),"An object oriented framework to simulate
 ecological (and other) dynamic systems. It can be used for
 differential equations, individual-based (or agent-based) and other
@@ -1548,6 +1551,7 @@ Distributions,BivarP,Estimating the Parameters of Some Bivariate Distributions,G
 modeled as a Archimedean copula function. The input data may contain
 values from right censored. Used marginal distributions are two-parameter.
 Methods for density, distribution, survival, random sample generation.",NA
+Distributions,bmixture,Bayesian Estimation for Finite Mixture of Distributions,GPL (>= 3),"Provides statistical tools for Bayesian estimation for finite mixture of distributions, mainly mixture of Gamma, Normal and t-distributions.",https://www.tilburguniversity.edu/webwijs/show/a.mohammadi.htm
 Distributions,bridgedist,"An Implementation of the Bridge Distribution with Logit-Link as
 in Wang and Louis (2003)",GPL-2,"An implementation of the bridge distribution with logit-link in
 R. In Wang and Louis (2003) <DOI:10.1093/biomet/90.4.765>, such a univariate
@@ -1963,6 +1967,8 @@ Distributions,RDieHarder,R interface to the dieharder RNG test suite,GPL (>= 2),
 the dieharder suite of random number generators and tests that
 was developed by Robert G. Brown and David Bauer, extending
 earlier work by George Marsaglia and others.",http://code.google.com/p/rdieharder/
+Distributions,ReIns,"Functions from ""Reinsurance: Actuarial and Statistical Aspects""",GPL (>= 2),"Functions from the book ""Reinsurance: Actuarial and Statistical Aspects"" (Wiley, 2017)
+by Hansjoerg Albrecher, Jan Beirlant and Jef Teugels.",https://github.com/TReynkens/ReIns
 Distributions,reliaR,Package for some probability distributions.,GPL-2,A collection of utilities for some reliability<U+000a>models/probability distributions.,NA
 Distributions,retimes,Reaction Time Analysis,GPL-3,Reaction time analysis by maximum likelihood,http://www.humandata.it/
 Distributions,rlecuyer,R Interface to RNG with Multiple Streams,GPL (>= 2),"Provides an interface to the C implementation of the
@@ -3472,6 +3478,8 @@ ExtremeValue,QRM,"Provides R-Language Code to Examine Quantitative Risk Manageme
 Concepts",GPL (>= 2),"Accompanying package to the book
 Quantitative Risk Management: Concepts, Techniques and Tools by
 Alexander J. McNeil, Rüdiger Frey, and Paul Embrechts.",NA
+ExtremeValue,ReIns,"Functions from ""Reinsurance: Actuarial and Statistical Aspects""",GPL (>= 2),"Functions from the book ""Reinsurance: Actuarial and Statistical Aspects"" (Wiley, 2017)
+by Hansjoerg Albrecher, Jan Beirlant and Jef Teugels.",https://github.com/TReynkens/ReIns
 ExtremeValue,RTDE,Robust Tail Dependence Estimation,GPL (>= 2),Robust tail dependence estimation for bivariate models. This package is based on two papers by the authors:'Robust and bias-corrected estimation of the coefficient of tail dependence' and 'Robust and bias-corrected estimation of probabilities of extreme failure sets'. This work was supported by a research grant (VKR023480) from VILLUM FONDEN and an international project for scientific cooperation (PICS-6416).,NA
 ExtremeValue,SpatialExtremes,Modelling Spatial Extremes,GPL (>= 2),"Tools for the statistical modelling of spatial extremes using max-stable processes, copula or Bayesian hierarchical models.",http://spatialextremes.r-forge.r-project.org/
 ExtremeValue,texmex,Statistical Modelling of Extreme Values,GPL (>= 2),"Statistical extreme value modelling of threshold excesses,
@@ -3655,6 +3663,12 @@ web scraping and XBRL parsing capabilities that allows users to extract data fro
 in an automated and scalable manner. See <https://www.sec.gov/edgar/searchedgar/companysearch.html>
 for more information.",https://github.com/sewardlee337/finreportr
 Finance,FinTS,Companion to Tsay (2005) Analysis of Financial Time Series,GPL (>= 2),"R companion to Tsay (2005)<U+000a>Analysis of Financial Time Series, 2nd ed. (Wiley).<U+000a>Includes data sets, functions and script files<U+000a>required to work some of the examples.  Version 0.3-x<U+000a>includes R objects for all data files used in the text<U+000a>and script files to recreate most of the analyses in<U+000a>chapters 1-3 and 9 plus parts of chapters 4 and 11.",http://faculty.chicagobooth.edu/ruey.tsay/teaching/bs41202/sp2009
+Finance,fmdates,Financial Market Date Calculations,GPL-2,"Implements common date calculations relevant for specifying
+the economic nature of financial market contracts that are typically defined
+by International Swap Dealer Association (ISDA, <http://www2.isda.org>) legal
+documentation. This includes methods to check whether dates are business
+days in certain locales, functions to adjust and shift dates and time length
+(or day counter) calculations.",https://github.com/imanuelcostigan/fmdates
 Finance,fMultivar,Rmetrics - Analysing and Modeling Multivariate Financial Return<U+000a>Distributions,GPL (>= 2),"Environment for teaching<U+000a>""Financial Engineering and Computational Finance""",https://www.rmetrics.org
 Finance,fNonlinear,Nonlinear and Chaotic Time Series Modelling,GPL (>= 2),"Environment for teaching ""Financial Engineering and
 Computational Finance""",http://www.rmetrics.org
@@ -3766,6 +3780,7 @@ Markov switching.",NA
 Finance,MSGARCH,Markov-Switching GARCH Models,GPL (>= 2),"The MSGARCH package offers methods to fit (by Maximum Likelihood or Bayesian), simulate, and forecast various Markov-Switching GARCH processes.",NA
 Finance,mvtnorm,Multivariate Normal and t Distributions,GPL-2,"Computes multivariate normal and t probabilities, quantiles,
 random deviates and densities.",http://mvtnorm.R-forge.R-project.org
+Finance,NetworkRiskMeasures,Risk Measures for (Financial) Networks,GPL-3,"Implements some risk measures for (financial) networks, such as DebtRank, Impact Susceptibility, Impact Diffusion and Impact Fluidity.",NA
 Finance,nlme,Linear and Nonlinear Mixed Effects Models,GPL (>= 2) | file LICENCE,Fit and compare Gaussian linear and nonlinear mixed-effects models.,NA
 Finance,NMOF,Numerical Methods and Optimization in Finance,GPL-3,"Functions, examples and data from the book
 ""Numerical Methods and Optimization in Finance"" by M.
@@ -5131,6 +5146,7 @@ http://ligarto.org/rdiaz/Papers/rfVS/randomForestVarSel.html,
 https://github.com/rdiaz02/varSelRF"
 MachineLearning,vcrpart,"Tree-Based Varying Coefficient Regression for Generalized Linear
 and Ordinal Mixed Models",GPL (>= 2),"Recursive partitioning for varying coefficient generalized linear models and ordinal linear mixed models. Special features are coefficient-wise partitioning, non-varying coefficients and partitioning of time-varying variables in longitudinal regression.",NA
+MedicalImaging,adaptsmoFMRI,Adaptive Smoothing of FMRI Data,GPL-2,"This package contains R functions for estimating the blood<U+000a>oxygenation level dependent (BOLD) effect by using functional<U+000a>Magnetic Resonance Imaging (fMRI) data, based on adaptive Gauss<U+000a>Markov random fields, for real as well as simulated data. The<U+000a>implemented simulations make use of efficient Markov Chain<U+000a>Monte Carlo methods.",NA
 MedicalImaging,adimpro,Adaptive Smoothing of Digital Images,GPL (>= 2),"Implements tools for manipulation of digital
 images and the Propagation Separation approach
 by Polzehl and Spokoiny (2006) <DOI:10.1007/s00440-005-0464-1>
@@ -5138,6 +5154,12 @@ for smoothing digital images, see Polzehl and Tabelow (2007)
 <DOI:10.18637/jss.v019.i01>.",http://www.wias-berlin.de/software/imaging/
 MedicalImaging,AnalyzeFMRI,Functions for analysis of fMRI datasets stored in the ANALYZE or<U+000a>NIFTI format.,GPL (>= 2),"Functions for I/O, visualisation and analysis of<U+000a>functional Magnetic Resonance Imaging (fMRI) datasets stored in<U+000a>the ANALYZE or NIFTI format.",NA
 MedicalImaging,arf3DS4,"Activated Region Fitting, fMRI data analysis (3D).",GPL-2,Activated Region Fitting (ARF) is an analysis method for fMRI data.,http://arf.r-forge.r-project.org/
+MedicalImaging,bayesImageS,Bayesian Methods for Image Segmentation using a Potts Model,GPL (>= 2),"Various algorithms for segmentation of 2D and 3D images, such
+as computed tomography and satellite remote sensing. This package implements
+Bayesian image analysis using the hidden Potts model with external field
+prior. Latent labels are sampled using chequerboard updating or Swendsen-Wang.
+Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
+the exchange algorithm, and approximate Bayesian computation (ABC).",NA
 MedicalImaging,bayesm,Bayesian Inference for Marketing/Micro-Econometrics,GPL (>= 2),"Covers many important models used
 in marketing and micro-econometrics applications.
 The package includes:
@@ -7530,6 +7552,8 @@ Psychometrics,ade4,"Analysis of Ecological Data : Exploratory and Euclidean Meth
 in Environmental Sciences",GPL (>= 2),Multivariate data analysis and graphical display.,"http://pbil.univ-lyon1.fr/ADE-4, Mailing list:
 http://listes.univ-lyon1.fr/wws/info/adelist"
 Psychometrics,anacor,Simple and Canonical Correspondence Analysis,GPL-2,"Performs simple and canonical CA (covariates on rows/columns) on a two-way frequency table (with missings) by means of SVD. Different scaling methods (standard, centroid, Benzecri, Goodman) as well as various plots including confidence ellipsoids are provided.",http://r-forge.r-project.org/projects/psychor/
+Psychometrics,aspect,"A General Framework for Multivariate Analysis with Optimal
+Scaling",GPL-2,"Contains various functions for optimal scaling. One function performs optimal scaling by maximizing an aspect (i.e. a target function such as the sum of eigenvalues, sum of squared correlations, squared multiple correlations, etc.) of the corresponding correlation matrix. Another function performs implements the LINEALS approach for optimal scaling by minimization of an aspect based on pairwise correlations and correlation ratios. The resulting correlation matrix and category scores can be used for further multivariate methods such as structural equation models.",http://R-forge.R-project.org/projects/psychor/
 Psychometrics,BayesFM,Bayesian Inference for Factor Modeling,GPL-3,"Collection of procedures to perform Bayesian analysis on a variety
 of factor models. Currently, it includes: Bayesian Exploratory Factor
 Analysis (befa), an approach to dedicated factor analysis with stochastic
@@ -7537,16 +7561,20 @@ search on the structure of the factor loading matrix. The number of latent
 factors, as well as the allocation of the manifest variables to the factors,
 are not fixed a priori but determined during MCMC sampling.
 More approaches will be included in future releases of this package.",NA
+Psychometrics,BayesLCA,Bayesian Latent Class Analysis,GPL (>= 2),"Bayesian Latent Class Analysis using several different
+methods.",NA
 Psychometrics,betareg,Beta Regression,GPL-2 | GPL-3,"Beta regression for modeling beta-distributed dependent variables, e.g., rates and proportions.
 In addition to maximum likelihood regression (for both mean and precision of a beta-distributed
 response), bias-corrected and bias-reduced estimation as well as finite mixture models and
 recursive partitioning for beta regressions are provided.",NA
+Psychometrics,BigSEM,Constructing Large Systems of Structural Equations,GPL-2,"Construct large systems of structural equations using the two-stage penalized least squares (2SPLS) method proposed by Chen, Zhang and Zhang (2016).",NA
 Psychometrics,BiplotGUI,Interactive Biplots in R,GPL (>= 3),Provides a GUI with which users can construct and interact<U+000a>with biplots.,http://biplotgui.r-forge.r-project.org/
 Psychometrics,blavaan,Bayesian Latent Variable Analysis,GPL (>= 2),"Fit a variety of Bayesian latent variable models, including confirmatory
 factor analysis, structural equation models, and latent growth curve models.",NA
 Psychometrics,bpca,Biplot of Multivariate Data Based on Principal Components<U+000a>Analysis,GPL (>= 2),Implements biplot (2d and 3d) of multivariate data based<U+000a>on principal components analysis and diagnostic tools of the quality of the reduction.,NA
 Psychometrics,BradleyTerry2,Bradley-Terry Models,GPL (>= 2),"Specify and fit the Bradley-Terry model, including structured versions in which the parameters are related to explanatory variables through a linear predictor and versions with contest-specific effects, such as a home advantage.",http://bradleyterry2.r-forge.r-project.org
 Psychometrics,ca,"Simple, Multiple and Joint Correspondence Analysis",GPL,"Computation and visualization of simple, multiple and joint correspondence analysis.",http://www.carme-n.org/
+Psychometrics,cabootcrs,Bootstrap Confidence Regions for Correspondence Analysis.,GPL-2,Performs correspondence analysis on a two-way contingency<U+000a>table and produces bootstrap-based elliptical confidence<U+000a>regions around the projected coordinates for the category<U+000a>points. Includes routines to plot the results in a variety of<U+000a>styles. Also reports the standard numerical output for<U+000a>correspondence analysis.,NA
 Psychometrics,cacIRT,"Classification Accuracy and Consistency under Item Response
 Theory",GPL (>= 2),"Computes classification accuracy and consistency indices under Item Response Theory. Implements the total score IRT-based methods in Lee, Hanson & Brennen (2002) and Lee (2010), the IRT-based methods in Rudner (2001, 2005), and the total score nonparametric methods in Lathrop & Cheng (2014). For dichotomous and polytomous tests.",NA
 Psychometrics,catR,"Generation of IRT Response Patterns under Computerized Adaptive
@@ -7565,8 +7593,27 @@ the multiple choice DINA model, the general diagnostic
 model (GDM), the multidimensional linear compensatory
 item response model and the structured latent class
 model (SLCA).",NA
+Psychometrics,cds,Constrained Dual Scaling for Detecting Response Styles,GPL (>= 2),"This is an implementation of constrained dual scaling for
+detecting response styles in categorical data, including utility functions. The
+procedure involves adding additional columns to the data matrix representing the
+boundaries between the rating categories. The resulting matrix is then doubled
+and analyzed by dual scaling. One-dimensional solutions are sought which provide
+optimal scores for the rating categories. These optimal scores are constrained
+to follow monotone quadratic splines. Clusters are introduced within which the
+response styles can vary. The type of response style present in a cluster can
+be diagnosed from the optimal scores for said cluster, and this can be used to
+construct an imputed version of the data set which adjusts for response styles.",NA
+Psychometrics,cIRT,Choice Item Response Theory,GPL-3,"Jointly model the accuracy of cognitive responses and item choices within a bayesian hierarchical framework as described by Culpepper and Balamuta (2015) <doi:10.1007/s11336-015-9484-7>. In addition, the package contains the datasets used within the analysis of the paper.",NA
 Psychometrics,classify,Classification Accuracy and Consistency under IRT models.,GPL (>= 2),"IRT classification uses the probability that candidates of<U+000a>a given ability, will answer correctly questions of a specified<U+000a>difficulty to calculate the probability of their achieving<U+000a>every possible score in a test. Due to the IRT assumption of<U+000a>conditional independence (that is every answer given is assumed<U+000a>to depend only on the latent trait being measured) the<U+000a>probability of candidates achieving these potential scores can<U+000a>be expressed by multiplication of probabilities for item<U+000a>responses for a given ability. Once the true score and the<U+000a>probabilities of achieving all other scores have been<U+000a>determined for a candidate the probability of their score lying<U+000a>in the same category as that of their true score<U+000a>(classification accuracy), or the probability of consistent<U+000a>classification in a category over administrations<U+000a>(classification consistency), can be calculated.",NA
+Psychometrics,ClustVarLV,Clustering of Variables Around Latent Variables,GPL-2,"Functions for the clustering of variables around Latent Variables.
+Each cluster of variables, which may be defined as a local or directional
+cluster, is associated with a latent variable. External variables measured on
+the same observations or/and additional information on the variables can be
+taken into account. A ""noise"" cluster or sparse latent variables can also de
+defined.",NA
 Psychometrics,CMC,Cronbach-Mesbah Curve,GPL (>= 2),Calculation and plot of the stepwise Cronbach-Mesbah Curve,NA
+Psychometrics,cncaGUI,Canonical Non-Symmetrical Correspondence Analysis in R,GPL (>= 2),"A GUI with which users can construct and interact
+with Canonical Correspondence Analysis and Canonical Non-Symmetrical Correspondence Analysis and provides inferential results by using Bootstrap Methods.",NA
 Psychometrics,cocor,Comparing Correlations,GPL (>= 3),"Statistical tests for the comparison between two correlations
 based on either independent or dependent groups. Dependent correlations can
 either be overlapping or nonoverlapping. A web interface is available on the
@@ -7586,6 +7633,16 @@ rkward.kde.org to use this feature. The respective R package 'rkward' cannot be
 installed directly from a repository, as it is a part of RKWard.",http://comparingcronbachalphas.org
 Psychometrics,CopyDetect,"Computing Statistical Indices to Detect Answer Copying on
 Multiple-Choice Tests",GPL-3 | file LICENSE,"Contains several IRT and non-IRT based statistical indices proposed in the literature for detecting answer copying on multiple-choice examinations. Includes the indices that have been shown as effective and reliable based on the simulation studies. Provides results for the Omega index, Generalized Binomial Test, K index, K1 and K2 indices, and S1 and S2 indices.",http://sites.education.miami.edu/zopluoglu/
+Psychometrics,covLCA,Latent Class Models with Covariate Effects on Underlying and<U+000a>Measured Variables,GPL-2,"Estimation of latent class models with covariate effects<U+000a>on underlying and measured variables. The measured variables<U+000a>are dichotomous or polytomous, all with the same number of<U+000a>categories.",NA
+Psychometrics,ctsem,Continuous Time Structural Equation Modelling,GPL-3,"A multivariate continuous (and discrete) time dynamic modelling
+package for panel and time series data, using linear stochastic differential
+equations. Contains a faster frequentist set of functions using OpenMx for
+single subject and mixed-effects (random intercepts only) structural
+equation models, or a hierarchical Bayesian implementation using Stan that
+allows for random effects over all model parameters. Allows for modelling of
+multiple noisy measurements of multiple stochastic processes, time varying
+input / event covariates, and time invariant covariates used to predict the
+parameters.",https://github.com/cdriveraus/ctsem
 Psychometrics,CTT,Classical Test Theory Functions,GPL (>= 2),Contains common CTT functions,NA
 Psychometrics,DAKS,Data Analysis and Knowledge Spaces,GPL (>= 2),"Functions and an example dataset for the psychometric theory of
 knowledge spaces.  This package implements data analysis methods and
@@ -7605,6 +7662,8 @@ Non- Linear Regression Function",GPL-3,"Detection of differential item functioni
 scored items with non-linear regression procedure.",NA
 Psychometrics,difR,"Collection of Methods to Detect Dichotomous Differential Item
 Functioning (DIF)",GPL (>= 2),"Provides a collection of standard methods to detect differential item functioning among dichotomously scored items. Methods for uniform and non-uniform DIF, based on test-score or IRT methods, for comparing two or more than two groups of respondents, are available (Magis, Beland, Tuerlinckx and De Boeck,A General Framework and an R Package for the Detection of Dichotomous Differential Item Functioning, Behavior Research Methods, 42, 2010, 847-862 <doi:10.3758/BRM.42.3.847>).",NA
+Psychometrics,DistatisR,DiSTATIS Three Way Metric Multidimensional Scaling,GPL-2,Implement DiSTATIS and CovSTATIS (three-way multidimensional scaling). For the  analysis of  multiple distance/covariance matrices collected on the same set of observations,www.utdallas.edu/~herve
+Psychometrics,dlsem,Distributed-Lag Structural Equation Modelling,GPL-2,Inference functionalities for structural equation models with constrained lag shapes.,NA
 Psychometrics,dualScale,Dual Scaling Analysis of Multiple Choice Data,GPL-2,Functions to analyze multiple choice data using Dual Scaling,NA
 Psychometrics,e1071,"Misc Functions of the Department of Statistics, Probability
 Theory Group (Formerly: E1071), TU Wien",GPL-2,"Functions for latent class analysis, short time Fourier
@@ -7617,6 +7676,15 @@ Terry, 1952; Luce, 1959), elimination-by-aspects (EBA) models
 (Tversky, 1972), and preference tree (Pretree) models (Tversky &
 Sattath, 1979).",http://homepages.uni-tuebingen.de/florian.wickelmaier
 Psychometrics,ecodist,Dissimilarity-based functions for ecological analysis,GPL (>= 2),"Dissimilarity-based analysis functions including ordination and Mantel test functions, intended for use with spatial and community data.",NA
+Psychometrics,edstan,Stan Models for Item Response Theory,BSD_3_clause + file LICENSE,"Provides convenience functions and pre-programmed Stan models
+related to item response theory. Its purpose is to make fitting
+common item response theory models using Stan easy.",NA
+Psychometrics,elasticnet,Elastic-Net for Sparse Estimation and Sparse PCA,GPL (>= 2),This package provides functions for fitting the entire<U+000a>solution path of the Elastic-Net and also provides functions<U+000a>for estimating sparse Principal Components. The Lasso solution<U+000a>paths can be computed by the same function. First version:<U+000a>2005-10.,http://www.stat.umn.edu/~hzou
+Psychometrics,emIRT,EM Algorithms for Estimating Item Response Theory Models,GPL (>= 3),"Various Expectation-Maximization (EM) algorithms are implemented for item response theory
+(IRT) models. The current implementation includes IRT models for binary and ordinal
+responses, along with dynamic and hierarchical IRT models with binary responses. The
+latter two models are derived and implemented using variational EM.  Subsequent edits
+also include variational network and text scaling models.",NA
 Psychometrics,equate,Observed-Score Linking and Equating,GPL-3,"Contains methods for observed-score linking
 and equating under the single-group, equivalent-groups,
 and nonequivalent-groups with anchor test(s) designs.
@@ -7631,10 +7699,16 @@ are also provided.",https://github.com/talbano/equate
 Psychometrics,equateIRT,"Direct, Chain and Average Equating Coefficients with Standard
 Errors Using IRT Methods",GPL (>= 2),"Computation of direct, chain and average (bisector) equating coefficients with standard errors using Item Response Theory (IRT) methods for dichotomous items. Test scoring can be performed by true score equating and observed score equating methods.",NA
 Psychometrics,eRm,Extended Rasch Modeling,GPL-2,"Fits Rasch models (RM), linear logistic test models (LLTM), rating scale model (RSM), linear rating scale models (LRSM), partial credit models (PCM), and linear partial credit models (LPCM).  Missing values are allowed in the data matrix.  Additional features are the ML estimation of the person parameters, Andersen's LR-test, item-specific Wald test, Martin-Löf-Test, nonparametric Monte-Carlo Tests, itemfit and personfit statistics including infit and outfit measures, various ICC and related plots, automated stepwise item elimination, simulation module for various binary data matrices.",http://r-forge.r-project.org/projects/erm/
+Psychometrics,esaBcv,"Estimate Number of Latent Factors and Factor Matrix for Factor
+Analysis",GPL (>= 2),"These functions estimate the latent factors of a given matrix, no matter it is high-dimensional or not. It tries to first estimate the number of factors using bi-cross-validation and then estimate the latent factor matrix and the noise variances. For more information about the method, see Art B. Owen and Jingshu Wang 2015 archived article on factor model (http://arxiv.org/abs/1503.03515).",NA
 Psychometrics,EstCRM,Calibrating Parameters for the Samejima's Continuous IRT Model,GPL (>= 2),"Estimates item and person parameters for the Samejima's Continuous Response Model (CRM), computes item fit residual statistics, draws empirical 3D item category response curves, draws theoretical 3D item category response curves, and generates data under the CRM for simulation studies.",http://sites.education.miami.edu/zopluoglu/
 Psychometrics,ExPosition,Exploratory analysis with the singular value decomposition.,GPL-2,"ExPosition is for descriptive (i.e., fixed-effects) multivariate analysis with the singular value decomposition.",NA
 Psychometrics,FactoMineR,Multivariate Exploratory Data Analysis and Data Mining,GPL (>= 2),"Exploratory data analysis methods to summarize, visualize and describe datasets. The main principal component methods are available, those with the largest potential in terms of applications: principal component analysis (PCA) when variables are quantitative, correspondence analysis (CA) and multiple correspondence analysis (MCA) when variables are categorical, Multiple Factor Analysis when variables are structured in groups, etc. and hierarchical cluster analysis.",http://factominer.free.fr
 Psychometrics,FAiR,Factor Analysis in R,AGPL (>= 3) + file LICENSE,"This package estimates factor analysis models using a<U+000a>genetic algorithm, which permits a general mechanism for<U+000a>restricted optimization with arbitrary restrictions that are<U+000a>chosen at run time with the help of a GUI. Importantly,<U+000a>inequality restrictions can be imposed on functions of multiple<U+000a>parameters, which provides a new avenues for testing and<U+000a>generating theories with factor analysis models. This package<U+000a>also includes an entirely new estimator of the common factor<U+000a>analysis model called semi-exploratory factor analysis, which<U+000a>is a general alternative to exploratory and confirmatory factor<U+000a>analysis. Finally, this package integrates a lot of other<U+000a>packages that estimate sample covariance matrices and thus<U+000a>provides a lot of alternatives to the traditional sample<U+000a>covariance calculation. Note that you need to have the Gtk run<U+000a>time library installed on your system to use this package; see<U+000a>the URL below for detailed installation instructions. Most<U+000a>users would only need to understand the first twenty-four pages<U+000a>of the PDF manual.",http://wiki.r-project.org/rwiki/doku.php?id=packages:cran:fair
+Psychometrics,faoutlier,"Influential Case Detection Methods for Factor Analysis and
+Structural Equation Models",GPL (>= 2),"Tools for detecting and summarize influential cases that
+can affect exploratory and confirmatory factor analysis models as well as
+structural equation models more generally.",https://github.com/philchalmers/faoutlier
 Psychometrics,fastICA,FastICA Algorithms to perform ICA and Projection Pursuit,GPL-2 | GPL-3,Implementation of FastICA algorithm to perform Independent<U+000a>Component Analysis (ICA) and Projection Pursuit.,NA
 Psychometrics,fechner,Fechnerian Scaling of Discrete Object Sets,GPL (>= 2),"Functions and example datasets for Fechnerian scaling of discrete
 object sets.  User can compute Fechnerian distances among objects representing
@@ -7646,18 +7720,31 @@ FlexMix provides the E-step and all data handling, while the M-step can be
 supplied by the user to easily define new models. Existing drivers
 implement mixtures of standard linear models, generalized linear
 models and model-based clustering.",NA
+Psychometrics,fourPNO,Bayesian 4 Parameter Item Response Model,GPL (>= 2),Estimate Barton & Lord's four parameter IRT model with lower and upper asymptotes using Bayesian formulation described by Culpepper (2015).,NA
 Psychometrics,fwdmsa,Forward search for Mokken scale analysis,GPL (>= 2),"fwdmsa performs the Forward Search for Mokken scale
 analysis. It detects outliers, it produces several types of
 diagnostic plots.",http://www.tilburguniversity.edu/webwijs/show/?uid=w.p.zijlstra
 Psychometrics,GDINA,The Generalized DINA Model Framework,GPL-3,"A set of psychometric tools for cognitive diagnostic analyses for both dichotomous and polytomous responses. Various cognitive diagnosis models (CDMs) can be estimated, include the generalized deterministic inputs, noisy and gate (G-DINA) model by de la Torre (2011) <DOI:10.1007/s11336-011-9207-7>, the sequential G-DINA model by Ma and de la Torre (2016)<DOI:10.1111/bmsp.12070>, and many other models they subsume. Joint attribute distribution can be saturated, higher-order or structured. Q-matrix validation, item and model fit statistics, model comparison at test and item level and differential item functioning can also be conducted. A graphical user interface is also provided.",https://github.com/Wenchao-Ma/GDINA
 Psychometrics,GPArotation,GPA Factor Rotation,GPL (>= 2) | file LICENSE,Gradient Projection Algorithm Rotation for Factor Analysis. See ?GPArotation.Intro for more details.,http://www.stat.ucla.edu/research/gpa
+Psychometrics,gSEM,Semi-Supervised Generalized Structural Equation Modeling,GPL (>= 2),"Conducts a semi-gSEM statistical analysis (semi-supervised generalized structural equation modeling) on a data frame of coincident observations of multiple predictive or intermediate variables and a final continuous, outcome variable, via two functions sgSEMp1() and sgSEMp2(), representing fittings based on two statistical principles. Principle 1 determines all sensible univariate relationships in the spirit of the Markovian process. The relationship between each pair of variables, including predictors and the final outcome variable, is determined with the Markovian property that the value of the current predictor is sufficient in relating to the next level variable, i.e., the relationship is independent of the specific value of the preceding-level variables to the current predictor, given the current value. Principle 2 resembles the multiple regression principle in the way multiple predictors are considered simultaneously. Specifically, the relationship of the first-level predictors (such as Time and irradiance etc) to the outcome variable (such as, module degradation or yellowing)  is fit by a supervised additive model. Then each significant intermediate variable is taken as the new outcome variable and the other variables (except the final outcome variable) as the predictors in investigating the next-level multivariate relationship by a supervised additive model. This fitting process is continued until all sensible models are investigated.",NA
 Psychometrics,gtheory,Apply Generalizability Theory with R,GPL-3,"Estimates variance components, generalizability coefficients,
 universe scores, and standard errors when observed scores contain variation from
 one or more measurement facets (e.g., items and raters).",http://EvaluationDashboard.com
 Psychometrics,homals,Gifi Methods for Optimal Scaling,GPL,"Performs a homogeneity analysis (multiple correspondence analysis) and various extensions. Rank restrictions on the category quantifications can be imposed (nonlinear PCA). The categories are transformed by means of optimal scaling with options for nominal, ordinal, and numerical scale levels (for rank-1 restrictions). Variables can be grouped into sets, in order to emulate regression analysis and canonical correlation analysis.",http://r-forge.r-project.org/projects/psychor/
 Psychometrics,ICC,"Facilitating Estimation of the Intraclass Correlation
 Coefficient",GPL (>= 2),Assist in the estimation of the Intraclass Correlation Coefficient (ICC) from variance components of a one-way analysis of variance and also estimate the number of individuals or groups necessary to obtain an ICC estimate with a desired confidence interval width.,http://github.com/matthewwolak/ICC
+Psychometrics,immer,Item Response Models for Multiple Ratings,GPL (>= 2),"
+Implements some item response models for multiple
+ratings, including the hierarchical rater model,
+conditional maximum likelihood estimation of linear
+logistic partial credit model and a wrapper function
+to the commercial FACETS program.",NA
+Psychometrics,influence.SEM,Case Influence in Structural Equation Models,GPL (>= 2),"A set of tools for evaluating several measures of case influence for structural equation models. Functions are based on the approach of J Pek and RC MacCallum (Sensitivity analysis in structural equation models: cases and their influence, Multivariate Behavioral Research, 2011).",NA
 Psychometrics,irr,Various Coefficients of Interrater Reliability and Agreement,GPL (>= 2),"Coefficients of Interrater Reliability and Agreement for<U+000a>quantitative, ordinal and nominal data: ICC, Finn-Coefficient,<U+000a>Robinson'A, Kendall's W, Cohen's Kappa, ...",http://www.r-project.org
+Psychometrics,irtDemo,Item Response Theory Demo Collection,GPL (>= 2),"
+Includes a collection of shiny applications to demonstrate
+or to explore fundamental item response theory (IRT) concepts
+such as estimation, scoring, and multidimensional IRT models.",https://github.com/metinbulus/irtDemo
 Psychometrics,irtoys,A Collection of Functions Related to Item Response Theory (IRT),GPL (>= 2),"A collection of functions useful in learning and practicing IRT,
 which can be combined into larger programs. Provides basic CTT analysis,
 a simple common interface to the estimation of item
@@ -7667,6 +7754,13 @@ values), item and person fit statistics, scaling methods (MM, MS, Stocking-Lord,
 and the complete Hebaera method), and a rich array of parametric and
 non-parametric (kernel) plots. Estimates and plots Haberman's interaction model
 when all items are dichotomously scored.",NA
+Psychometrics,IRTpp,Estimating IRT Parameters using the IRT Methodology,MIT + file LICENSE,"An implementation of the IRT paradigm for the scoring of different
+instruments measuring latent traits (a.k.a Abilities) and estimating item
+parameters for a variety of models, this package is highly optimized using
+Rcpp and carefully written R for the rest of the package, it aims to expand IRT
+applications to those applications that require faster and more robust estimation
+procedures. See the IRTpp documentation and github site for more information and
+examples.",https://github.com/SICSResearch/IRTpp
 Psychometrics,irtProb,"Utilities and Probability Distributions Related to
 Multidimensional Person Item Response Models",GPL (>= 2),Multidimensional Person Item Response Theory probability distributions,NA
 Psychometrics,irtrees,Estimation of Tree-Based Item Response Models,GPL (>= 2),"Helper functions and example data sets accompanying De
@@ -7692,6 +7786,7 @@ proposed by Rosenbaum is useful
 for checking some properties of various
 sorts of latent scale, this program generates commands
 to obtain the graph using 'dot' from 'graphviz'.",NA
+Psychometrics,LatentREGpp,Item Response Theory Implemented in R and Cpp,MIT + file LICENSE,"Provides a C++ implementation of the Multidimensional Item Response Theory (MIRT) capable of performing parameter and traits estimations. It also provides a list of options to perform an optimal analysis and obtain useful information about the resulting model. This package is a work of SICS Research Group, Universidad Nacional de Colombia.",NA
 Psychometrics,lava,Latent Variable Models,GPL-3,Estimation and simulation of latent variable models.,https://github.com/kkholst/lava
 Psychometrics,lava.tobit,LVM with censored and binary outcomes,GPL-3,lava plugin allowing combinations of left and right<U+000a>censored and binary outcomes,NA
 Psychometrics,lavaan,Latent Variable Analysis,GPL (>= 2),"Fit a variety of latent variable models, including confirmatory
@@ -7703,15 +7798,38 @@ chi-square-derived fit measures for a complex sampling design.
 Incorporate clustering, stratification, sampling weights, and
 finite population corrections into a SEM analysis.
 Wrapper around packages lavaan and survey.",http://daob.nl/
+Psychometrics,lba,Latent Budget Analysis for Compositional Data,GPL (>= 2),"Latent budget analysis is a method for the analysis of a two-way
+contingency table with an exploratory variable and a response variable. It is
+specially designed for compositional data.",https://github.com/ivanalaman/lba
+Psychometrics,lcda,Latent Class Discriminant Analysis,GPL,Local Discrimination via Latent Class Models,NA
 Psychometrics,lme4,Linear Mixed-Effects Models using 'Eigen' and S4,GPL (>= 2),"Fit linear and generalized linear mixed-effects models.
 The models and their components are represented using S4 classes and
 methods.  The core computational algorithms are implemented using the
 'Eigen' C++ library for numerical linear algebra and 'RcppEigen' ""glue"".",https://github.com/lme4/lme4/ http://lme4.r-forge.r-project.org/
+Psychometrics,LNIRT,LogNormal Response Time Item Response Theory Models,GPL-2 | GPL-3,"Allows the simultaneous analysis of responses and response times in an Item Response Theory (IRT) modelling framework. Parameter estimation is done with a MCMC algorithm. LNIRT replaces the package CIRT, which was written by Rinke Klein Entink. For reference, see the paper by Fox, Klein Entink and Van der Linden (2007), ""Modeling of Responses and Response Times with the Package cirt"", Journal of Statistical Software, <doi:10.18637/jss.v020.i07>.",NA
 Psychometrics,lordif,"Logistic Ordinal Regression Differential Item Functioning using
 IRT",GPL (>= 2),"Analysis of Differential Item Functioning (DIF) for
 dichotomous and polytomous items using an iterative hybrid of
 ordinal logistic regression and item response theory (IRT).",NA
+Psychometrics,lsl,Latent Structure Learning,GPL (>= 2),Conduct structural equation modeling via penalized likelihood.,NA
+Psychometrics,ltbayes,"Simulation-Based Bayesian Inference for Latent Traits of Item
+Response Models",GPL (>= 2),"Functions for simulating realizations from the posterior distribution of
+a latent trait of an item response model. Distributions are conditional on one or
+a subset of response patterns (e.g., sum scores). Functions for computing likelihoods,
+Fisher and observed information, posterior modes, and profile likelihood confidence
+intervals are also included. These functions are designed to be easily amenable to
+user-specified models.",NA
 Psychometrics,ltm,Latent Trait Models under IRT,GPL (>= 2),"Analysis of multivariate dichotomous and polytomous data using latent trait models under the Item Response Theory approach. It includes the Rasch, the Two-Parameter Logistic, the Birnbaum's Three-Parameter, the Graded Response, and the Generalized Partial Credit Models.",http://rwiki.sciviews.org/doku.php?id=packages:cran:ltm
+Psychometrics,LVMMCOR,"A Latent Variable Model for Mixed Continuous and Ordinal
+Responses",GPL (>= 2),"A model for mixed ordinal and continuous responses is
+presented where the heteroscedasticity of the variance of the
+continuous response is also modeled. In this model ordinal
+response can be dependent on the continuous response. The aim
+is to use an approach similar to that of Heckman (1978) for the
+joint modelling of the ordinal and continuous responses. With
+this model, the dependence between responses can be taken into
+account by the correlation between errors in the models for
+continuous and ordinal responses",NA
 Psychometrics,MASS,Support Functions and Datasets for Venables and Ripley's MASS,GPL-2 | GPL-3,"Functions and datasets to support Venables and Ripley,
 ""Modern Applied Statistics with S"" (4th edition, 2002).",http://www.stats.ox.ac.uk/pub/MASS4/
 Psychometrics,MBESS,The MBESS R Package,GPL-2 | GPL-3,"Implements methods that useful in designing research and analyzing data, with
@@ -7728,6 +7846,8 @@ point MBESS contains methods applicable and used in a wide variety of fields and
 orphan acronym, in the sense that what was an acronym is now literally its name. MBESS has
 greatly benefited from others, see <http://nd.edu/~kkelley/site/MBESS.html> for a detailed
 list of those that have contributed and other details.",http://nd.edu/~kkelley/site/MBESS.html
+Psychometrics,MCAvariants,Multiple Correspondence Analysis Variants,GPL (> 2),"Provides two variants of multiple correspondence analysis (ca):
+multiple ca and ordered multiple ca via orthogonal polynomials of Emerson.",https://www.R-project.org
 Psychometrics,mcIRT,IRT models for multiple choice items (mcIRT),GPL-3,This package provides functions to estimate two popular IRT-models: The Nominal Response Model (Bock 1972) and the quite recently developed Nested Logit Model (Suh & Bolt 2010). These are two models to examine multiple-choice items and other multicategorial response formats.,https://github.com/manuelreif/mcIRT
 Psychometrics,MCMCglmm,MCMC Generalised Linear Mixed Models,GPL (>= 2),MCMC Generalised Linear Mixed Models.,NA
 Psychometrics,MCMCpack,Markov Chain Monte Carlo (MCMC) Package,GPL-3,"Contains functions to perform Bayesian
@@ -7818,6 +7938,17 @@ Psychometrics,nFactors,Parallel Analysis and Non Graphical Solutions to the Catt
 Psychometrics,nlme,Linear and Nonlinear Mixed Effects Models,GPL (>= 2) | file LICENCE,Fit and compare Gaussian linear and nonlinear mixed-effects models.,NA
 Psychometrics,nlsem,Fitting Structural Equation Mixture Models,GPL (>= 2),"Estimation of structural equation models with nonlinear effects
 and underlying nonnormal distributions.",NA
+Psychometrics,nsprcomp,Non-Negative and Sparse PCA,GPL (>= 2),"This package implements two methods for performing a constrained
+principal component analysis (PCA), where non-negativity and/or sparsity
+constraints are enforced on the principal axes (PAs). The function
+'nsprcomp' computes one principal component (PC) after the other. Each PA
+is optimized such that the corresponding PC has maximum additional variance
+not explained by the previous components. In contrast, the function
+'nscumcomp' jointly computes all PCs such that the cumulative variance is
+maximal. Both functions have the same interface as the 'prcomp' function
+from the 'stats' package (plus some extra parameters), and both return the
+result of the analysis as an object of class 'nsprcomp', which inherits
+from 'prcomp'.",http://sigg-iten.ch/research/
 Psychometrics,OpenMx,Extended Structural Equation Modelling,Apache License (== 2.0),"Facilitates treatment of statistical model specifications as things
 that can be generated and manipulated programmatically. Structural equation
 models may be specified with reticular action model matrices or paths, linear
@@ -7826,6 +7957,8 @@ functions include full information maximum likelihood, maximum likelihood, and
 weighted least squares. Example models include confirmatory factor, multiple
 group, mixture distribution, categorical threshold, modern test theory,
 differential equations, state space, and many others.","http://openmx.ssri.psu.edu, https://github.com/OpenMx/OpenMx"
+Psychometrics,optiscale,Optimal scaling,GPL-2,"Tools for performing an optimal scaling transformation on a data
+vector",NA
 Psychometrics,ordinal,Regression Models for Ordinal Data,GPL (>= 2),"Implementation of cumulative link (mixed) models also known
 as ordered regression models, proportional odds models, proportional
 hazards models for grouped survival times and ordered logit/probit/...
@@ -7843,6 +7976,19 @@ Psychometrics,pairwise,Rasch Model Parameters by Pairwise Algorithm,GPL-3,"Perfo
 polytomous item responses, using a pairwise comparison approach. Person
 parameters (WLE) are calculated according to Warm's weighted likelihood
 approach.",NA
+Psychometrics,paran,Horn's Test of Principal Components/Factors,GPL-2,"paran is an implementation of Horn's technique for
+numerically and graphically evaluating the components or
+factors retained in a principle components analysis (PCA) or
+common factor analysis (FA). Horn's method contrasts
+eigenvalues produced through a PCA or FA on a number of random
+data sets of uncorrelated variables with the same number of
+variables and observations as the experimental or observational
+data set to produce eigenvalues for components or factors that
+are adjusted for the sample error-induced inflation. Components
+with adjusted eigenvalues greater than one are retained. paran
+may also be used to conduct parallel analysis following
+Glorfeld's (1995) suggestions to reduce the likelihood of
+over-retention.",http://doyenne.com/Software/files/PA_for_PCA_vs_FA.pdf
 Psychometrics,pathmox,"Pathmox Approach of Segmentation Trees in Partial Least Squares
 Path Modeling",GPL-3,"pathmox, the cousin package of plspm, provides a very
 interesting solution for handling segmentation variables
@@ -7850,9 +7996,15 @@ in PLS Path Modeling: segmentation trees in PLS Path Modeling.",http://www.gasto
 Psychometrics,pcaPP,Robust PCA by Projection Pursuit,GPL (>= 3),Provides functions for robust PCA by projection pursuit.,NA
 Psychometrics,pcIRT,IRT Models for Polytomous and Continuous Item Responses,GPL-3,"Estimates the multidimensional polytomous Rasch model
 (Rasch, 1961) and the Continuous Rating Scale model (Mueller, 1987).",https://github.com/christinehohensinn/pcIRT
+Psychometrics,piecewiseSEM,Piecewise Structural Equation Modeling,GPL-3,Implements piecewise structural equation models.,NA
 Psychometrics,pks,Probabilistic Knowledge Structures,GPL (>= 2),"Fitting and testing probabilistic knowledge structures,
 especially the basic local independence model (BLIM, Doignon & Flamagne,
 1999), using the minimum discrepancy maximum likelihood (MDML) method.",http://homepages.uni-tuebingen.de/florian.wickelmaier
+Psychometrics,plotSEMM,"Graphing Nonlinear Relations Among Latent Variables from
+Structural Equation Mixture Models",GPL (>= 2),"Contains a graphical user interface to generate the diagnostic
+plots proposed by Bauer (2005) and Pek & Chalmers (2015) to investigate
+nonlinear bivariate relationships in latent regression models using structural
+equation mixture models (SEMMs).",https://github.com/philchalmers/plotSEMM
 Psychometrics,plRasch,"Log Linear by Linear Association models and Rasch family models
 by pseudolikelihood estimation",GPL (>= 2),Fit Log Linear by Linear Association models and Rasch family models by pseudolikelihood estimation,NA
 Psychometrics,pls,Partial Least Squares and Principal Component Regression,GPL-2,"Multivariate regression methods
@@ -7908,6 +8060,9 @@ Psychometrics,quickpsy,Fits Psychometric Functions for Multiple Groups,MIT + fil
 Weibull or any or any function defined by the user) for multiple groups.",http://dlinares.org/quickpsy.html
 Psychometrics,randomLCA,Random Effects Latent Class Analysis,GPL (>= 2),Fits standard and random effects latent class models. The single level random effects model is described in Qu et al <doi:10.2307/2533043> and the two level random effects model in Beath and Heller <doi:10.1177/1471082X0800900302>. Examples are given for their use in diagnostic testing.,NA
 Psychometrics,RaschSampler,Rasch Sampler,GPL-2,MCMC based sampling of binary matrices with fixed margins as used in exact Rasch model tests.,NA
+Psychometrics,regsem,Performs Regularization on Structural Equation Models,GPL (>= 2),"Uses both ridge and lasso penalties (and extensions) to penalize
+specific parameters in structural equation models. The package offers additional
+cost functions, cross validation, and other extensions beyond traditional SEM.",NA
 Psychometrics,REQS,R/EQS Interface,GPL,"This package contains the function run.eqs() which calls
 an EQS script file, executes the EQS estimation, and, finally,
 imports the results as R objects. These two steps can be
@@ -7919,14 +8074,34 @@ to Item Factor Analysis fitting, diagnostics, and analysis. It is
 envisioned as core support code suitable for more specialized IRT packages
 to build upon. Complete access to optimized C functions are made available
 with R_RegisterCCallable().",https://github.com/jpritikin/rpf
+Psychometrics,rsem,"Robust Structural Equation Modeling with Missing Data and
+Auxiliary Variables",GPL-2,A robust procedure is implemented to estimate means and covariance matrix of multiple variables with missing data using Huber weight and then to estimate a structural equation model.,http://rpackages.psychstat.org
 Psychometrics,sem,Structural Equation Models,GPL (>= 2),"Functions for fitting general linear structural
 equation models (with observed and latent variables) using the RAM approach,
 and for fitting structural equations in observed-variable models by two-stage least squares.","http://www.r-project.org, http://socserv.socsci.mcmaster.ca/jfox/"
+Psychometrics,semdiag,Structural equation modeling diagnostics,GPL-2,Outlier and leverage diagnostics for SEM.,NA
+Psychometrics,semGOF,Goodness-of-fit indexes for structural equation models,GPL (>= 2),"This is an add-on package which provides fourteen
+goodness-of-fit indexes for structural equation models using
+'sem' package.","http://www.r-project.org,
+http://sites.google.com/site/bertossielena"
+Psychometrics,SEMID,Identifiability of Linear Structural Equation Models,GPL (>= 2),"Provides routines to check identifiability or non-identifiability
+of linear structural equation models as described in Drton, Foygel &
+Sullivant (Ann. Statist., 2011) and Foygel, Draisma & Drton (Ann. Statist.,
+2012). The routines are based on the graphical representation of
+structural equation models by a path diagram/mixed graph.",http://www.r-project.org http://www.stat.washington.edu/~md5
 Psychometrics,SEMModComp,Model Comparisons for SEM,GPL (>= 3),"Conduct tests of difference in fit for mean and covariance
 structure models as in structural equation modeling (SEM)",http://www.public.asu.edu/~rlevy2/papers&software.html
 Psychometrics,semPlot,Path diagrams and visual analysis of various SEM packages'<U+000a>output,GPL-2,Path diagrams and visual analysis of various SEM packages' output,https://github.com/SachaEpskamp/semPlot
 Psychometrics,semPLS,Structural Equation Modeling Using Partial Least Squares,GPL-2,Fits structural equation models using partial least<U+000a>squares (PLS). The PLS approach is referred to as<U+000a>'soft-modeling' technique requiring no distributional<U+000a>assumptions on the observed data.,NA
 Psychometrics,semTools,Useful Tools for Structural Equation Modeling,GPL (>= 2),Provides useful tools for structural equation modeling packages.,https://github.com/simsem/semTools/wiki
+Psychometrics,semtree,Recursive Partitioning for Structural Equation Models,GPL-3,"SEM Trees and SEM Forests -- an extension of model-based decision
+trees and forests to Structural Equation Models (SEM). SEM trees hierarchically
+split empirical data into homogeneous groups sharing similar data patterns
+with respect to a SEM by recursively selecting optimal predictors of these
+differences. SEM forests are an extension of SEM trees. They are ensembles of
+SEM trees each built on a random sample of the original data. By aggregating over
+a forest, we obtain measures of variable importance that are more robust than
+measures from single trees.",NA
 Psychometrics,SensoMineR,Sensory data analysis with R,GPL (>= 2),an R package for analysing sensory data,http://sensominer.free.fr
 Psychometrics,ShinyItemAnalysis,Test and Item Analysis via Shiny,GPL-3,"Interactive shiny application for analysis of educational tests and
 their items.",NA
@@ -7943,6 +8118,7 @@ distributed data.",NA
 Psychometrics,smacof,Multidimensional Scaling,GPL-3,"Provides the following approaches for multidimensional scaling (MDS) based on stress minimization by means of majorization (smacof): basic MDS on symmetric dissimilarity matrices,
 MDS with external constraints on the configuration, individual difference scaling (idioscal, indscal, and friends), MDS with spherical restrictions, and unfolding. The MDS type can be ratio, interval, ordinal, and monotone splines.
 Various tools and extensions like jackknife MDS, permutation tests, gravity models, inverse MDS, unidimensional scaling, classical scaling, and Procrustes.",NA
+Psychometrics,smds,Symbolic Multidimensional Scaling,GPL (>= 2),Symbolic multidimensional scaling for interval-valued dissimilarities. The hypersphere model and the hyperbox model are available.,NA
 Psychometrics,SNSequate,"Standard and Nonstandard Statistical Models and Methods for Test
 Equating",GPL (>= 2),"Contains functions to perform various models and
 methods for test equating. It currently implements the traditional
@@ -7955,6 +8131,22 @@ functions. Functions to obtain both standard error of equating (SEE)
 and standard error of equating difference between two equating
 functions (SEED) are also implemented for the kernel method of
 equating.",http://www.mat.puc.cl/~jgonzale
+Psychometrics,soc.ca,Specific Correspondence Analysis for the Social Sciences,GPL-3,"Specific and class specific multiple correspondence analysis on
+survey-like data. Soc.ca is optimized to the needs of the social scientist and
+presents easily interpretable results in near publication ready quality.",https://github.com/Rsoc/soc.ca
+Psychometrics,SOD,SOD for multidimensional scaling.,GPL-2,"SOD (Self-Organising-Deltoids) provides multidimensional scaling by gradually reducing the dimensionality of an initial space and using the resulting stress in the configuration to re-arrange nodes. Stress is calculated from the errors in the inter-node distances, and the sum of the stresses at each node is combined to create N-dimensional force vectors that direct the movement of nodes as the dimensionality is iteratively reduced.",NA
+Psychometrics,SparseFactorAnalysis,Scaling Count and Binary Data with Sparse Factor Analysis,GPL (>= 2),"Multidimensional scaling provides a means of uncovering a latent structure underlying observed data, while estimating the number of latent dimensions.  This package presents a means for scaling binary and count data, for example the votes and word counts for legislators.  Future work will include an EM implementation and extend this work to ordinal and continuous data.",NA
+Psychometrics,sparseSEM,Sparse-aware Maximum Likelihood for Structural Equation Models,GPL,Sparse-aware maximum likelihood for structural equation models in inferring gene regulatory networks,NA
+Psychometrics,subscore,"Computing Subscores in Classical Test Theory and Item Response
+Theory",GPL (>= 2),"Functions for computing subscores for a test using different
+methods in both classical test theory (CTT) and item response theory (IRT). This
+package enables three sets of subscoring methods within the framework of CTT
+and IRT: Wainer's augmentation method, Haberman's three subscoring methods, and
+Yen's objective performance index (OPI). The package also includes the function
+to compute Proportional Reduction of Mean Squared Errors (PRMSEs) in Haberman's
+methods which are used to examine whether test subscores are of added value.",NA
+Psychometrics,superMDS,"Implements the supervised multidimensional scaling (superMDS)
+proposal of Witten and Tibshirani (2011)",GPL-2,"Witten and Tibshirani (2011) Supervised multidimensional scaling for visualization, classification, and bipartite ranking. Computational Statistics and Data Analysis 55(1): 789-801.",NA
 Psychometrics,systemfit,Estimating Systems of Simultaneous Equations,GPL (>= 2),"Fitting simultaneous
 systems of linear and nonlinear equations using Ordinary Least
 Squares (OLS), Weighted Least Squares (WLS), Seemingly Unrelated
@@ -7970,6 +8162,12 @@ and joint maximum likelihood estimation for models
 from the Rasch family.
 Latent regression models and plausible value imputation are
 also supported.",http://www.edmeasurementsurveys.com/TAM/Tutorials/
+Psychometrics,TestDataImputation,Missing Item Responses Imputation for Test and Assessment Data,GPL (>= 2),"Functions for imputing missing item responses for dichotomous and
+polytomous test and assessment data. This package enables missing imputation
+methods that are suitable for test and assessment data, including: listwise (LW)
+deletion, treating as incorrect (IN), person mean imputation (PM), item mean
+imputation (IM), two-way imputation (TW), logistic regression imputation (LR),
+and EM imputation.",NA
 Psychometrics,TestScorer,"GUI for Entering Test Items and Obtaining Raw and Transformed
 Scores",GPL-2,"GUI for entering test items and obtaining raw
 and transformed scores. The results are shown on the
@@ -8012,6 +8210,7 @@ Psychometrics,WrightMap,IRT Item-Person Map with 'ConQuest' Integration,BSD_2_cl
 Psychometrics,xgobi,"Interface to the XGobi and XGvis programs for graphical data
 analysis",file LICENSE,"Interface to the XGobi and XGvis programs for graphical
 data analysis.",NA
+Psychometrics,xxIRT,Practical Item Response Theory and Computer-Based Testing in R,GPL (>= 2),"An implementation of item response theory (IRT) and computer-based testing in R. It is designed for bridging the gap between theoretical advancements in psychometric research and their applications in practice. Currently, it consists of five modules: (1) common IRT functions, (2) estimation procedures, (3) automated test assembly framework, (4) computerized adaptive testing framework, (5) multistage testing framework. See detailed documentation at <https://github.com/xluo11/xxIRT/blob/master/README.md>.",https://github.com/xluo11/xxIRT
 ReproducibleResearch,animation,"A Gallery of Animations in Statistics and Utilities to Create
 Animations",GPL,"Provides functions for animations in statistics, covering topics in
 probability theory, mathematical statistics, multivariate statistics,
