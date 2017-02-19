@@ -4153,6 +4153,7 @@ for JAGS, WinBUGS and OpenBUGS.","https://groups.google.com/forum/#!forum/dclone
 http://datacloning.org"
 gR,deal,Learning Bayesian Networks with Mixed Variables,GPL (>= 2),Bayesian networks with continuous and/or discrete<U+000a>variables can be learned and compared from data.,NA
 gR,diagram,"Functions for visualising simple graphs (networks), plotting<U+000a>flow diagrams",GPL (>= 2),"Visualises simple graphs (networks) based on a transition matrix, utilities to plot flow diagrams,<U+000a>visualising webs, electrical networks, ...<U+000a>Support for the books ""A practical guide to ecological modelling -<U+000a>using R as a simulation platform""<U+000a>by Karline Soetaert and Peter M.J. Herman (2009). Springer.<U+000a>and the book ""Solving Differential Equations in R""<U+000a>by Karline Soetaert, Jeff Cash and Francesca Mazzia. Springer.<U+000a>Includes demo(flowchart), demo(plotmat), demo(plotweb)",NA
+gR,DiagrammeR,Create Graph Diagrams and Flowcharts Using R,MIT + file LICENSE,Create graph diagrams and flowcharts using R.,https://github.com/rich-iannone/DiagrammeR
 gR,dynamicGraph,dynamicGraph,GPL (>= 2),Interactive graphical tool for manipulating graphs,http://www.badsberg.eu
 gR,ergm,"Fit, Simulate and Diagnose Exponential-Family Models for
 Networks",GPL-3 + file LICENSE,An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.,http://statnet.org
@@ -4743,6 +4744,9 @@ is available in two included vignettes one of which corresponds to our paper
 in the Journal of Statistical Software (2016, v71i02). Either version 2 or 3
 of the 'Protocol Buffers' 'API' is supported.",https://github.com/eddelbuettel/rprotobuf
 HighPerformanceComputing,rredis,"""Redis"" Key/Value Database Client",Apache License (>= 2.0),"R client interface to the ""Redis"" key-value database.",NA
+HighPerformanceComputing,rslurm,Submit R Calculations to a 'SLURM' Cluster,GPL-3,"Functions that simplify the R interface the 'SLURM' cluster workload
+manager, and automate the process of dividing a parallel calculation across
+cluster nodes.",https://github.com/SESYNC-ci/rslurm
 HighPerformanceComputing,snow,Simple Network of Workstations,GPL,Support for simple parallel computing in R.,NA
 HighPerformanceComputing,snowfall,Easier cluster computing (based on snow).,GPL,"Usability wrapper around snow for easier development of
 parallel R programs. This package offers e.g. extended error
@@ -9437,6 +9441,10 @@ autoregressive (SAR) lag and error models, impact measures for lag
 models, weighted and unweighted SAR and CAR spatial regression models,
 semi-parametric and Moran eigenvector spatial filtering, GM SAR error
 models, and generalized spatial two stage least squares models.",https://r-forge.r-project.org/projects/spdep/
+Spatial,sperrorest,Spatial Error Estimation and Variable Importance,GPL-2,"This package implements spatial error estimation and
+permutation-based variable importance measures for predictive
+models using spatial cross-validation and spatial block
+bootstrap.",NA
 Spatial,spgrass6,Interface Between GRASS 6+ Geographical Information System and R,GPL (>= 2),"Interpreted interface between GRASS 6+ geographical
 information system and R, based on starting R from within the GRASS
 environment, or running free-standing R in a temporary GRASS location;
@@ -11195,6 +11203,11 @@ realtime data). There is also a (not yet well tested) mechanism to
 handle multilingual data documentation.
 Comprehensive examples of all the TS* packages is provided in the
 vignette Guide.pdf with the TSdata package.",http://tsdbi.r-forge.r-project.org/
+TimeSeries,tsdecomp,Decomposition of Time Series Data,GPL-2,"ARIMA-model-based decomposition of quarterly and
+monthly time series data.
+The methodology is developed and described, among others, in
+Burman (1980) <DOI:10.2307/2982132> and
+Hillmer and Tiao (1982) <DOI:10.2307/2287770>.",https://jalobe.com
 TimeSeries,tsdisagg2,Time Series Disaggregation,GPL (>= 2),"Disaggregates low frequency time series data to higher frequency series. Implements the following methods for temporal disaggregation: Boot, Feibes and Lisman (1967) <DOI:10.2307/2985238>, Chow and Lin (1971) <DOI:10.2307/1928739>, Fernandez (1981) <DOI:10.2307/1924371> and Litterman (1983) <DOI:10.2307/1391858>.",NA
 TimeSeries,TSdist,Distance Measures for Time Series Data,GPL (>= 2),"A set of commonly used distance measures and some additional functions which, although initially not designed for this purpose, can be used to measure the dissimilarity between time series. These measures can be used to perform clustering, classification or other data mining tasks which require the definition of a distance measure between time series.",NA
 TimeSeries,tsDyn,Nonlinear Time Series Models with Regime Switching,GPL (>= 2),"Implements nonlinear autoregressive (AR) time series models. For univariate series, a non-parametric approach is available through additive nonlinear AR. Parametric modeling and testing for regime switching dynamics is available when the transition is either direct (TAR: threshold AR) or smooth (STAR: smooth transition AR, LSTAR). For multivariate series, one can estimate a range of TVAR or threshold cointegration TVECM models with two or three regimes. Tests can be conducted for TVAR as well as for TVECM (Hansen and Seo 2002 and Seo 2006).",http://github.com/MatthieuStigler/tsDyn/wiki
