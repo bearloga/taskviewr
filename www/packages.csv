@@ -3533,6 +3533,7 @@ portfolio-based conjectures about financial instruments
 Finance,bayesGARCH,"Bayesian Estimation of the GARCH(1,1) Model with Student-t
 Innovations",GPL (>= 2),"Provides the bayesGARCH() function which performs the
 Bayesian estimation of the GARCH(1,1) model with Student's t innovations.",NA
+Finance,BCC1997,Calculation of Option Prices Based on a Universal Solution,GPL (>= 2),"Calculates the prices of European options based on the universal solution provided by Bakshi, Cao and Chen (1997) <doi:10.1111/j.1540-6261.1997.tb02749.x>. This solution considers stochastic volatility, stochastic interest and random jumps. Please cite their work if this package is used.",NA
 Finance,BenfordTests,Statistical Tests for Evaluating Conformity to Benford's Law,GPL-3,"Several specialized statistical tests and support functions
 for determining if numerical data could conform to Benford's law.","https://cran.r-project.org/package=BenfordTests,
 https://www.researchgate.net/profile/Dieter_Joenssen"
@@ -4980,6 +4981,7 @@ hidden layer, and for multinomial log-linear models.",http://www.stats.ox.ac.uk/
 MachineLearning,oblique.tree,Oblique Trees for Classification Data,GPL-3,Grows Oblique Trees to Classification Data.,NA
 MachineLearning,OneR,"One Rule Machine Learning Classification Algorithm with
 Enhancements",MIT + file LICENSE,Implements the One Rule (OneR) Machine Learning classification algorithm with enhancements for sophisticated handling of numeric data and missing values together with extensive diagnostic functions. It is useful as a baseline for machine learning models and the rules are often helpful heuristics.,https://github.com/vonjd/OneR
+MachineLearning,opusminer,OPUS Miner Algorithm for Filtered Top-k Association Discovery,GPL-3,"Provides a simple R interface to the OPUS Miner algorithm (implemented in C++) for finding the top-k productive, non-redundant itemsets from transaction data.  The OPUS Miner algorithm uses the OPUS search algorithm to efficiently discover the key associations in transaction data, in the form of self-sufficient itemsets, using either leverage or lift.  See <http://i.giwebb.com/index.php/research/association-discovery/> for more information in relation to the OPUS Miner algorithm.",NA
 MachineLearning,pamr,Pam: prediction analysis for microarrays,GPL-2,Some functions for sample classification in microarrays,NA
 MachineLearning,party,A Laboratory for Recursive Partytioning,GPL-2,"A computational toolbox for recursive partitioning.
 The core of the package is ctree(), an implementation of
@@ -9466,6 +9468,8 @@ analysis of probability surveys.  The functions are tailored for Generalized
 Random Tessellation Stratified survey designs.",NA
 Spatial,spTimer,Spatio-Temporal Bayesian Modelling Using R,GPL (>= 2),"Fits, spatially predicts and temporally forecasts large amounts of space-time data using  [1] Bayesian Gaussian Process (GP) Models, [2] Bayesian Auto-Regressive (AR) Models, and [3] Bayesian Gaussian Predictive Processes (GPP) based AR Models for spatio-temporal big-n problems.",NA
 Spatial,SSN,Spatial Modeling on Stream Networks,GPL-2,"Geostatistical modeling for data on stream networks, including models based on in-stream distance.  Models are created using moving average constructions. Spatial linear models, including covariates, can be fit with ML or REML.  Mapping and other graphical functions are included.",NA
+Spatial,starma,"Modelling Space Time AutoRegressive Moving Average (STARMA)
+Processes",GPL-2,"Statistical functions to identify, estimate and diagnose a Space-Time AutoRegressive Moving Average (STARMA) model.",NA
 Spatial,statebins,"U.S. State Cartogram Heatmaps in R; an Alternative to Choropleth
 Maps for USA States",MIT + file LICENSE,"Cartogram heatmaps are an alternative to choropleth maps for USA States
 and are based on work by the Washington Post graphics department in their report
@@ -11736,6 +11740,7 @@ WebTechnologies,RJSONIO,"Serialize R objects to JSON, JavaScript Object Notation
 WebTechnologies,rLTP,R Interface to LTP-Cloud Service,LGPL,"R interface to LTP-Cloud service for Natural Language Processing
 in Chinese. For more details please visit http://www.ltp-cloud.com/. Visit
 https://github.com/hetong007/rLTP for up-to-date version.",NA
+WebTechnologies,RMixpanel,API for Mixpanel,MIT + file LICENSE,"Provides an interface to many endpoints of Mixpanel's Data Export, Engage and JQL API. The R functions allow for event and profile data export as well as for segmentation, retention, funnel and addiction analysis. Results are always parsed into convenient R objects. Furthermore it is possible to load and update profiles.","https://github.com/ploner/RMixpanel, http://www.mixpanel.com"
 WebTechnologies,ROAuth,R Interface For OAuth,Artistic-2.0,Provides an interface to the OAuth 1.0 specification<U+000a>allowing users to authenticate via OAuth to the<U+000a>server of their choice.,NA
 WebTechnologies,Rook,Rook - a web server interface for R,GPL-2,"This package contains the Rook specification and<U+000a>convenience software for building and running Rook applications. To<U+000a>get started, be sure and read the 'Rook' help file first.",NA
 WebTechnologies,ROpenFIGI,R Interface to OpenFIGI,GPL (>= 3),"Provide a simple interface to Bloomberg's OpenFIGI API. Please
