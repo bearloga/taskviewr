@@ -56,10 +56,10 @@ shinyServer(function(input, output) {
     DT::datatable(
       dt$packages,
       options = list(
-        search = list(regex = TRUE, caseInsensitive = FALSE),
+        search = list(regex = TRUE, caseInsensitive = TRUE),
         pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100)
       ),
-      filter = list(position = 'top', clear = FALSE),
+      filter = list(position = "top", clear = FALSE),
       rownames = FALSE
     )
   })

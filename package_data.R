@@ -62,7 +62,9 @@ if (file.exists("www/packages.csv")) {
 } else {
   pkgs <- unique(views$package)
   message("Acquiring licensing and other details for ", length(pkgs), " package(s)...")
+  pb <- progress::progress_bar$new(total = length(pkgs))
   details <- bind_rows(lapply(pkgs, function(pkg) {
+    pb$tick()
     deets <- crandb::package(pkg)
     return(data.frame(title = deets$Title, license = foo(deets$License), description = deets$Description, url = foo(deets$URL), stringsAsFactors = FALSE))
   }), .id = "package")
@@ -74,7 +76,10 @@ if (file.exists("www/packages.csv")) {
 ## Output:
 if (need_to_write) {
   message("Writing a CSV of package details...")
-  write_csv(packages, "www/packages.csv")
+  packages %>%
+    dplyr::arrange(view, package) %>%
+    dplyr::distinct(view, package, .keep_all = TRUE) %>%
+    write_csv("www/packages.csv")
 }
 message("Done.")
 

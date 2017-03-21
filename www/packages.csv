@@ -64,7 +64,7 @@ as computed tomography and satellite remote sensing. This package implements
 Bayesian image analysis using the hidden Potts model with external field
 prior. Latent labels are sampled using chequerboard updating or Swendsen-Wang.
 Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
-the exchange algorithm, and approximate Bayesian computation (ABC).",NA
+the exchange algorithm, and approximate Bayesian computation (ABC).",https://bitbucket.org/Azeari/bayesimages
 Bayesian,bayesm,Bayesian Inference for Marketing/Micro-Econometrics,GPL (>= 2),"Covers many important models used
 in marketing and micro-econometrics applications.
 The package includes:
@@ -414,8 +414,6 @@ regions for gains/losses.",http://www.r-project.org
 Bayesian,rjags,Bayesian Graphical Models using MCMC,GPL (== 2),Interface to the JAGS MCMC library.,http://mcmc-jags.sourceforge.net
 Bayesian,RSGHB,"Functions for Hierarchical Bayesian Estimation: A Flexible
 Approach",GPL-3,"Functions for estimating models using a Hierarchical Bayesian (HB) framework. The flexibility comes in allowing the user to specify the likelihood function directly instead of assuming predetermined model structures. Types of models that can be estimated with this code include the family of discrete choice models (Multinomial Logit, Mixed Logit, Nested Logit, Error Components Logit and Latent Class) as well ordered response models like ordered probit and ordered logit. In addition, the package allows for flexibility in specifying parameters as either fixed (non-varying across individuals) or random with continuous distributions. Parameter distributions supported include normal, positive/negative log-normal, positive/negative censored normal, and the Johnson SB distribution. Kenneth Train's Matlab and Gauss code for doing Hierarchical Bayesian estimation has served as the basis for a few of the functions included in this package. These Matlab/Gauss functions have been rewritten to be optimized within R. Considerable code has been added to increase the flexibility and usability of the code base. Train's original Gauss and Matlab code can be found here: http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html See Train's chapter on HB in Discrete Choice with Simulation here: http://elsa.berkeley.edu/books/choice2.html; and his paper on using HB with non-normal distributions here: http://eml.berkeley.edu//~train/trainsonnier.pdf.",https://github.com/RSGInc/RSGHB
-Bayesian,RSGHB,"Functions for Hierarchical Bayesian Estimation: A Flexible
-Approach",GPL-3,"Functions for estimating models using a Hierarchical Bayesian (HB) framework. The flexibility comes in allowing the user to specify the likelihood function directly instead of assuming predetermined model structures. Types of models that can be estimated with this code include the family of discrete choice models (Multinomial Logit, Mixed Logit, Nested Logit, Error Components Logit and Latent Class) as well ordered response models like ordered probit and ordered logit. In addition, the package allows for flexibility in specifying parameters as either fixed (non-varying across individuals) or random with continuous distributions. Parameter distributions supported include normal, positive/negative log-normal, positive/negative censored normal, and the Johnson SB distribution. Kenneth Train's Matlab and Gauss code for doing Hierarchical Bayesian estimation has served as the basis for a few of the functions included in this package. These Matlab/Gauss functions have been rewritten to be optimized within R. Considerable code has been added to increase the flexibility and usability of the code base. Train's original Gauss and Matlab code can be found here: http://elsa.berkeley.edu/Software/abstracts/train1006mxlhb.html See Train's chapter on HB in Discrete Choice with Simulation here: http://elsa.berkeley.edu/books/choice2.html; and his paper on using HB with non-normal distributions here: http://eml.berkeley.edu//~train/trainsonnier.pdf.",https://github.com/RSGInc/RSGHB
 Bayesian,rstan,R Interface to Stan,GPL (>= 3),"User-facing R functions are provided to parse, compile, test,
 estimate, and analyze Stan models by accessing the header-only Stan library
 provided by the 'StanHeaders' package. The Stan project develops a
@@ -638,7 +636,7 @@ user.",https://github.com/bgreenwell/investr
 ChemPhys,Iso,Functions to Perform Isotonic Regression,GPL (>= 2),"Linear order and unimodal order (univariate)
 isotonic regression; bivariate isotonic regression
 with linear order on both variables.",http://www.stat.auckland.ac.nz/~rolf/
-ChemPhys,kohonen,Supervised and Unsupervised Self-Organising Maps,GPL (>= 2),"Functions to train supervised and self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.",NA
+ChemPhys,kohonen,Supervised and Unsupervised Self-Organising Maps,GPL (>= 2),"Functions to train self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.",NA
 ChemPhys,leaps,Regression Subset Selection,GPL (>= 2),"Regression subset selection, including exhaustive search.",NA
 ChemPhys,lspls,LS-PLS Models,GPL-2,"Implements the LS-PLS (least squares - partial least
 squares) method described in for instance Jørgensen, K.,
@@ -1106,7 +1104,7 @@ Cluster,dbscan,"Density Based Clustering of Applications with Noise (DBSCAN) and
 Related Algorithms",GPL (>= 2),"A fast reimplementation of several density-based algorithms of
 the DBSCAN family for spatial data. Includes the DBSCAN (density-based spatial
 clustering of applications with noise) and OPTICS (ordering points to identify
-the clustering structure) clustering algorithms and the LOF (local outlier
+the clustering structure) clustering algorithms HDBSCAN (hierarchical DBSCAN) and the LOF (local outlier
 factor) algorithm. The implementations uses the kd-tree data structure (from
 library ANN) for faster k-nearest neighbor search. An R interface to fast kNN
 and fixed-radius NN search is also provided.",NA
@@ -1210,6 +1208,13 @@ different subspaces with low dimensionality proposing a new parametrization of
 the Gaussian mixture model which combines the ideas of dimension reduction and
 constraints on the model.",NA
 Cluster,hybridHclust,Hybrid Hierarchical Clustering,GPL-2,Hybrid hierarchical clustering via mutual clusters.  A mutual cluster is a set of points closer to each other than to all other points.  Mutual clusters are used to enrich top-down hierarchical clustering.,NA
+Cluster,idendr0,Interactive Dendrograms,GPL-2,"Interactive dendrogram that enables the user to select and
+color clusters, to zoom and pan the dendrogram, and to visualize
+the clustered data not only in a built-in heat map, but also in
+'GGobi' interactive plots and user-supplied plots.
+This is a backport of Qt-based 'idendro'
+(<https://github.com/tsieger/idendro>) to base R graphics and
+Tcl/Tk GUI.",http://github.com/tsieger/idendr0
 Cluster,isopam,Isopam (Clustering),GPL-2,"Isopam clustering algorithm and utilities.
 Isopam optimizes clusters and optionally cluster numbers in
 a brute force style and aims at an optimum separation
@@ -1264,7 +1269,7 @@ models.",NA
 Cluster,mixsmsn,"Fitting Finite Mixture of Scale Mixture of Skew-Normal
 Distributions",GPL (>= 2.0),"Functions to fit finite mixture of scale mixture of
 skew-normal (FM-SMSN) distributions.",NA
-Cluster,mixtools,Tools for Analyzing Finite Mixture Models,GPL (>= 2),A collection of R functions for analyzing finite mixture models.  This package is based upon work supported by the National Science Foundation under Grant No. SES-0518772.,NA
+Cluster,mixtools,Tools for Analyzing Finite Mixture Models,GPL (>= 2),"Analyzes finite mixture models for various parametric and semiparametric settings.  This includes mixtures of parametric distributions (normal, multivariate normal, multinomial, gamma), various Reliability Mixture Models (RMMs), mixtures-of-regressions settings (linear regression, logistic regression, Poisson regression, linear regression with changepoints, predictor-dependent mixing proportions, random effects regressions, hierarchical mixtures-of-experts), and tools for selecting the number of components (bootstrapping the likelihood ratio test statistic and model selection criteria).  Bayesian estimation of mixtures-of-linear-regressions models is available as well as a novel data depth method for obtaining credible bands.  This package is based upon work supported by the National Science Foundation under Grant No. SES-0518772.",NA
 Cluster,mixture,Mixture Models for Clustering and Classification,GPL (>= 2),"An implementation of all 14 Gaussian parsimonious
 clustering models (GPCMs) for model-based clustering and
 model-based classification.",NA
@@ -1469,15 +1474,6 @@ Uses 'MATLAB' function names where appropriate to simplify porting.",NA
 DifferentialEquations,primer,Functions and data for A Primer of Ecology with R,GPL,"Functions are primarily functions for systems of ordinary
 differential equations, difference equations, and eigenanalysis
 and projection of demographic matrices; data are for examples.",NA
-DifferentialEquations,PSM,"Non-Linear Mixed-Effects modelling using Stochastic Differential
-Equations.",GPL (>= 2),"This package provides functions for estimation of linear
-and non-linear mixed-effects models using stochastic
-differential equations. Moreover it provides functions for
-finding smoothed estimates of model states and for simulation.
-The package allows for any multivariate non-linear time-variant
-model to be specified, and it also handles multidimensional
-input, co-variates, missing observations and specification of
-dosage regimen.",http://www.imm.dtu.dk/psm
 DifferentialEquations,ReacTran,"Reactive transport modelling in 1D, 2D and 3D",GPL (>= 3),"Routines for developing models that describe reaction and advective-diffusive transport in one, two or three dimensions.
 Includes transport routines in porous media, in estuaries, and in bodies with variable shape.",NA
 DifferentialEquations,rootSolve,"Nonlinear Root Finding, Equilibrium and Steady-State Analysis of
@@ -1910,7 +1906,7 @@ Mixture of Student t Distributions. Mixture of t distribution
 is obtained using Importance Sampling weighted Expectation
 Maximization algorithm.",http://people.few.eur.nl/basturk/
 Distributions,MixedTS,Mixed Tempered Stable Distribution,GPL (>= 2),We provide detailed functions for univariate Mixed Tempered Stable distribution.,NA
-Distributions,mixtools,Tools for Analyzing Finite Mixture Models,GPL (>= 2),A collection of R functions for analyzing finite mixture models.  This package is based upon work supported by the National Science Foundation under Grant No. SES-0518772.,NA
+Distributions,mixtools,Tools for Analyzing Finite Mixture Models,GPL (>= 2),"Analyzes finite mixture models for various parametric and semiparametric settings.  This includes mixtures of parametric distributions (normal, multivariate normal, multinomial, gamma), various Reliability Mixture Models (RMMs), mixtures-of-regressions settings (linear regression, logistic regression, Poisson regression, linear regression with changepoints, predictor-dependent mixing proportions, random effects regressions, hierarchical mixtures-of-experts), and tools for selecting the number of components (bootstrapping the likelihood ratio test statistic and model selection criteria).  Bayesian estimation of mixtures-of-linear-regressions models is available as well as a novel data depth method for obtaining credible bands.  This package is based upon work supported by the National Science Foundation under Grant No. SES-0518772.",NA
 Distributions,MM,The multiplicative multinomial distribution,GPL-2,"Description: Various utilities for the Multiplicative
 Multinomial distribution",NA
 Distributions,mnormpow,Multivariate Normal Distributions with Power Integrand,GPL (>= 2),"Computes integral of f(x)*x_i^k on a product of intervals,<U+000a>where f is the density of a gaussian law.<U+000a>This a is small alteration of the mnormt code from A. Genz and A. Azzalini.",NA
@@ -2060,10 +2056,11 @@ Distributions,s20x,"Functions for University of Auckland Course STATS 201/208 Da
 Analysis",GPL-2 | file LICENSE,A set of functions used in teaching STATS 201/208 Data Analysis at the University of Auckland. The functions are designed to make parts of R more accessible to a large undergraduate population who are mostly not statistics majors.,NA
 Distributions,sadists,Some Additional Distributions,LGPL-3,"Provides the density, distribution, quantile and generation
 functions of some obscure probability distributions, including the doubly non-
-central t, F, Beta, and Eta distributions; Lecoutre's lambda-prime and K-prime;
-the upsilon distribution; the (weighted) sum of non-central chi-squares to a
-power; the (weighted) sum of log non-central chi-squares; the product of non-
-central chi-squares to powers; the product of doubly non-central F variates.",https://github.com/shabbychef/sadists
+central t, F, Beta, and Eta distributions; the lambda-prime and K-prime; the
+upsilon distribution; the (weighted) sum of non-central chi-squares to a power;
+the (weighted) sum of log non-central chi-squares; the product of non-central
+chi-squares to powers; the product of doubly non-central F variables; the
+product of independent normals.",https://github.com/shabbychef/sadists
 Distributions,SCI,"Standardized Climate Indices Such as SPI, SRI or SPEI",GPL (>= 2),"Functions for generating Standardized Climate Indices (SCI).
 SCI is a transformation of (smoothed) climate (or environmental)
 time series that  removes seasonality and forces the data to
@@ -2386,9 +2383,15 @@ support and distributions beyond the exponential family.",NA
 Econometrics,mhurdle,Multiple Hurdle Tobit Models,GPL (>= 2),"Estimation of models with zero left-censored variables.
 Null values may be caused by a selection process, insufficient
 resources or infrequency of purchase.",http://www.r-project.org
-Econometrics,micEcon,Microeconomic Analysis and Modelling,GPL (>= 2),Tools for microeconomic analysis and microeconomic modelling,http://www.micEcon.org
-Econometrics,micEconAids,Demand Analysis with the Almost Ideal Demand System (AIDS),GPL (>= 2),"Demand analysis with the Almost Ideal Demand System (AIDS)
-suggested by Deaton and Muellbauer (1980)",http://www.micEcon.org
+Econometrics,micEcon,Microeconomic Analysis and Modelling,GPL (>= 2),"Various tools for microeconomic analysis and microeconomic modelling,
+e.g. estimating quadratic, Cobb-Douglas and Translog functions,
+calculating partial derivatives and elasticities of these functions,
+and calculating Hessian matrices, checking curvature
+and preparing restrictions for imposing monotonicity of Translog functions.",http://www.micEcon.org
+Econometrics,micEconAids,Demand Analysis with the Almost Ideal Demand System (AIDS),GPL (>= 2),"Functions and tools
+for analysing consumer demand
+with the Almost Ideal Demand System (AIDS)
+suggested by Deaton and Muellbauer (1980).",http://www.micEcon.org
 Econometrics,micEconCES,"Analysis with the Constant Elasticity of Substitution (CES)
 function",GPL (>= 2),"Tools for economic analysis and economic modelling
 with a Constant Elasticity of Substitution (CES) function",http://www.micEcon.org
@@ -2478,6 +2481,7 @@ two new tests on the idiosyncratic component that estimates the pooled
 autoregressive coefficient and sample moment, respectively. The PANIC
 model approximates the number of factors based on
 Bai and Ng (2002) <doi:10.1111/1468-0262.00273>.","stevebronder.com, https://github.com/Stevo15025/PANICr"
+Econometrics,pco,Panel Cointegration Tests,GPL-2,Computation of the Pedroni (1999) panel cointegration test statistics.  Reported are the empirical and the standardized values.,NA
 Econometrics,pcse,Panel-Corrected Standard Error Estimation in R,GPL (>= 3),"This package contains a function to estimate
 panel-corrected standard errors. Data may contain balanced or
 unbalanced panels.",NA
@@ -3199,7 +3203,7 @@ Molecularly Targeted Agent (MTA), according to the paper ""Phase
 I/II Dose-Finding Design for Molecularly Targeted Agent: Plateau
 Determination using Adaptive Randomization"" (in review).",NA
 ExperimentalDesign,dfpk,"A Bayesian Dose-Finding Design using Pharmacokinetics(PK) for
-Phase I Clinical Trials",GPL (>= 3),"Statistical methods involving PK measures are provided, in the dose allocation process during a Phase I clinical trials. These methods enter pharmacokinetics (PK) in the dose finding designs in different ways, including covariates models, dependent variable or hierarchical models. This package provides functions to generate data from several scenarios and functions to run simulations which their objectives are to determine the maximum tolerated dose (MTD) and to investigate the pharmacokinetics of a drug or a combination of drugs.",http://github.com/artemis-toumazi/dfpk
+Phase I Clinical Trials",GPL (>= 3) | file LICENSE,"Statistical methods involving PK measures are provided, in the dose allocation process during a Phase I clinical trials. These methods enter pharmacokinetics (PK) in the dose finding designs in different ways, including covariates models, dependent variable or hierarchical models. This package provides functions to generate data from several scenarios and functions to run simulations which their objectives are to determine the maximum tolerated dose (MTD) and to investigate the pharmacokinetics of a drug or a combination of drugs.",http://github.com/artemis-toumazi/dfpk
 ExperimentalDesign,DiceDesign,Designs of Computer Experiments,GPL-3,Space-Filling Designs and Uniformity Criteria.,http://dice.emse.fr/
 ExperimentalDesign,DiceEval,Construction and Evaluation of Metamodels,GPL-3,"Estimation, validation and prediction of models of different types : linear models, additive models, MARS,PolyMARS and Kriging.",http://dice.emse.fr/
 ExperimentalDesign,DiceKriging,Kriging Methods for Computer Experiments,GPL-2 | GPL-3,"Estimation, validation and prediction of kriging models.
@@ -3834,8 +3838,8 @@ built around the idea of portfolios of fundamental objects.  Therefore
 it is slow in its current incarnation, but allows you the flexibility of
 seeing exactly what is in your final results, since the objects are retained.",NA
 Finance,markovchain,Easy Handling Discrete Time Markov Chains,GPL-2,"Functions and S4 methods to create and manage discrete time Markov
-chains (DTMC) more easily. In addition functions to perform statistical (fitting
-and drawing random variates) and probabilistic (analysis of DTMC proprieties)
+chains more easily. In addition functions to perform statistical (fitting
+and drawing random variates) and probabilistic (analysis of their structural proprieties)
 analysis are provided.",http://github.com/spedygiorgio/markovchain/
 Finance,MarkowitzR,Statistical Significance of the Markowitz Portfolio,LGPL-3,"A collection of tools for analyzing significance of
 Markowitz portfolios.",https://github.com/shabbychef/MarkowitzR
@@ -3947,6 +3951,8 @@ Finance,riskSimul,"Risk Quantification for Stock Portfolios under the T-Copula
 Model",GPL-2 | GPL-3,Implements efficient simulation procedures to estimate tail loss probabilities and conditional excess for a stock portfolio. The log-returns are assumed to follow a t-copula model with generalized hyperbolic or t marginals.,NA
 Finance,rmgarch,Multivariate GARCH Models,GPL-3,"Feasible multivariate GARCH models including DCC, GO-GARCH and Copula-GARCH.","http://www.unstarched.net, https://bitbucket.org/alexiosg"
 Finance,RND,Risk Neutral Density Extraction Package,GPL (>= 2),Extract the implied risk neutral density from options using various methods.,NA
+Finance,rpgm,"Fast Simulation of Normal/Exponential Random Variables and
+Stochastic Differential Equations",GPL-3,"Fast simulation of some random variables than the usual native functions, including rnorm() and rexp(), using Ziggurat method, reference: MARSAGLIA, George, TSANG, Wai Wan, and al. (2000) <doi:10.18637/jss.v005.i08>, and fast simulation of stochastic differential equations.",https://pgm-solutions.com/packages
 Finance,RQuantLib,R Interface to the 'QuantLib' Library,GPL (>= 2),"The 'RQuantLib' package makes parts of 'QuantLib' accessible from R
 The 'QuantLib' project aims to provide a comprehensive software framework
 for quantitative finance. The goal is to provide a standard open source library
@@ -3962,6 +3968,7 @@ Stochastic Differential Equations With R Examples, ISBN
 Finance,SharpeR,Statistical Significance of the Sharpe Ratio,LGPL-3,"A collection of tools for analyzing significance of trading
 strategies, based on the Sharpe ratio and overfit of the same.",https://github.com/shabbychef/SharpeR
 Finance,sharpeRratio,Moment-Free Estimation of Sharpe Ratios,GPL (>= 2),"An efficient moment-free estimator of the Sharpe ratio, or signal-to-noise ratio, for heavy-tailed data (see <https://arxiv.org/abs/1505.01333>).",NA
+Finance,Sim.DiffProc,Simulation of Diffusion Processes,GPL (>= 2),"Provides the functions for simulating and modeling of stochastic differential equations (SDE's). Statistical analysis and simulation of the solution of SDE's enabled many searchers in different domains to use these equations to modeling practical problems, in financial and actuarial modeling and other areas of application. For example, modeling and simulate of dispersion in shallow water using the attractive center (Boukhetala K, 1996).",NA
 Finance,SmithWilsonYieldCurve,Smith-Wilson Yield Curve Construction,GPL-3,"Constructs a yield curve by the Smith-Wilson method from a
 table of LIBOR and SWAP rates",NA
 Finance,stochvol,"Efficient Bayesian Inference for Stochastic Volatility (SV)
@@ -4196,6 +4203,162 @@ Genetics,tdthap,TDT tests for extended haplotypes,Artistic-2.0,Transmission/dise
 Genetics,untb,ecological drift under the UNTB,GPL,"A collection of utilities for biodiversity data.<U+000a>Includes the simulation of ecological drift under Hubbell's Unified<U+000a>Neutral Theory of Biodiversity, and the calculation of various<U+000a>diagnostics such as Preston curves.  Now includes functionality<U+000a>provided by Francois Munoz and Andrea Manica.",http://www.r-project.org
 Genetics,wgaim,"Whole Genome Average Interval Mapping for QTL Detection using
 Mixed Models",GPL (>= 2),Integrates sophisticated mixed modelling methods with a whole genome approach to detecting significant QTL in linkage maps.,NA
+gR,abn,Modelling Multivariate Data with Additive Bayesian Networks,GPL (>= 2),"Bayesian network analysis is a form of probabilistic  graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between  random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from <http://www.r-inla.org>. It is recommended the testing version, which can be downloaded by running: source(""http://www.math.ntnu.no/inla/givemeINLA-testing.R""). A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the 'abn' website.",http://www.r-bayesian-networks.org
+gR,bayesmix,Bayesian Mixture Models with JAGS,GPL (>= 2),"The fitting of finite mixture models of univariate
+Gaussian distributions using JAGS within a Bayesian
+framework is provided.",http://ifas.jku.at/gruen/BayesMix
+gR,BDgraph,"Bayesian Structure Learning in Graphical Models using
+Birth-Death MCMC",GPL (>= 2),Provides statistical tools for Bayesian structure learning in undirected graphical models with both continuous and discrete variables.,https://www.tilburguniversity.edu/webwijs/show/a.mohammadi.htm
+gR,bnlearn,"Bayesian Network Structure Learning, Parameter Learning and
+Inference",GPL (>= 2),"Bayesian network structure learning, parameter learning and
+inference.
+This package implements constraint-based (GS, IAMB, Inter-IAMB, Fast-IAMB,
+MMPC, Hiton-PC), pairwise (ARACNE and Chow-Liu), score-based (Hill-Climbing
+and Tabu Search) and hybrid (MMHC and RSMAX2) structure learning algorithms
+for discrete, Gaussian and conditional Gaussian networks, along with many
+score functions and conditional independence tests.
+The Naive Bayes and the Tree-Augmented Naive Bayes (TAN) classifiers are
+also implemented.
+Some utility functions (model comparison and manipulation, random data
+generation, arc orientation testing, simple and advanced plots) are
+included, as well as support for parameter estimation (maximum likelihood
+and Bayesian) and inference, conditional probability queries and
+cross-validation. Development snapshots with the latest bugfixes are
+available from <http://www.bnlearn.com>.",http://www.bnlearn.com/
+gR,boa,Bayesian Output Analysis Program (BOA) for MCMC,GPL-2,"A menu-driven program and library of functions for carrying out
+convergence diagnostics and statistical and graphical analysis of Markov
+chain Monte Carlo sampling output.",http://www.jstatsoft.org/v21/i11
+gR,BRugs,Interface to the 'OpenBUGS' MCMC Software,GPL-2,"Fully-interactive R interface to the 'OpenBUGS' software for Bayesian analysis using MCMC sampling.  Runs natively and stably in 32-bit R under Windows.  Versions running on Linux and on 64-bit R under Windows are in ""beta"" status and less efficient.",http://www.openbugs.net/
+gR,catnet,Categorical Bayesian Network Inference,GPL (>= 2),Structure learning and parameter estimation of discrete Bayesian networks using likelihood-based criteria.  Exhaustive search for fixed node orders and stochastic search of optimal orders via simulated annealing algorithm are implemented.,NA
+gR,coda,Output Analysis and Diagnostics for MCMC,GPL (>= 2),"Provides functions for summarizing and plotting the
+output from Markov Chain Monte Carlo (MCMC) simulations, as
+well as diagnostic tests of convergence to the equilibrium
+distribution of the Markov chain.",NA
+gR,dclone,Data Cloning and MCMC Tools for Maximum Likelihood Methods,GPL-2,"Low level functions for implementing
+maximum likelihood estimating procedures for
+complex models using data cloning and Bayesian
+Markov chain Monte Carlo methods.
+Sequential and parallel MCMC support
+for JAGS, WinBUGS and OpenBUGS.","https://groups.google.com/forum/#!forum/dclone-users,
+http://datacloning.org"
+gR,deal,Learning Bayesian Networks with Mixed Variables,GPL (>= 2),Bayesian networks with continuous and/or discrete<U+000a>variables can be learned and compared from data.,NA
+gR,diagram,"Functions for visualising simple graphs (networks), plotting<U+000a>flow diagrams",GPL (>= 2),"Visualises simple graphs (networks) based on a transition matrix, utilities to plot flow diagrams,<U+000a>visualising webs, electrical networks, ...<U+000a>Support for the books ""A practical guide to ecological modelling -<U+000a>using R as a simulation platform""<U+000a>by Karline Soetaert and Peter M.J. Herman (2009). Springer.<U+000a>and the book ""Solving Differential Equations in R""<U+000a>by Karline Soetaert, Jeff Cash and Francesca Mazzia. Springer.<U+000a>Includes demo(flowchart), demo(plotmat), demo(plotweb)",NA
+gR,DiagrammeR,Create Graph Diagrams and Flowcharts Using R,MIT + file LICENSE,Create graph diagrams and flowcharts using R.,https://github.com/rich-iannone/DiagrammeR
+gR,dynamicGraph,dynamicGraph,GPL (>= 2),Interactive graphical tool for manipulating graphs,http://www.badsberg.eu
+gR,ergm,"Fit, Simulate and Diagnose Exponential-Family Models for
+Networks",GPL-3 + file LICENSE,An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.,http://statnet.org
+gR,FBFsearch,"Algorithm for Searching the Space of Gaussian Directed Acyclic
+Graph Models Through Moment Fractional Bayes Factors",GPL (>= 2),We propose an objective Bayesian algorithm for searching the space of Gaussian directed acyclic graph (DAG) models. The algorithm proposed makes use of moment fractional Bayes factors (MFBF) and thus it is suitable for learning sparse graph. The algorithm is implemented by using Armadillo: an open-source C++ linear algebra library.,NA
+gR,GeneNet,Modeling and Inferring Gene Networks,GPL (>= 3),"Analyzes gene expression
+(time series) data with focus on the inference of gene networks.
+In particular, GeneNet implements the methods of Schaefer and
+Strimmer (2005a,b,c) and Opgen-Rhein and Strimmer (2006, 2007)
+for learning large-scale gene association networks (including
+assignment of putative directions).",http://strimmerlab.org/software/genenet/
+gR,ggm,Functions for graphical Markov models,GPL (>= 2),Functions and datasets for maximum likelihood fitting of some classes of graphical Markov models.,NA
+gR,giRaph,The giRaph package for graph representation in R,GPL (>= 2),"Supply classes and methods to represent and manipulate
+graphs",http://r.kvfc.dk/giRaph
+gR,gRain,Graphical Independence Networks,GPL (>= 2),"Probability propagation in graphical independence networks, also
+known as Bayesian networks or probabilistic expert systems.",http://people.math.aau.dk/~sorenh/software/gR/
+gR,gRapHD,"Efficient selection of undirected graphical models for
+high-dimensional datasets",GPL (>= 3),"gRapHD is designed for efficient selection of high-dimensional undirected
+graphical models. The package provides tools for selecting trees, forests
+and decomposable models minimizing information criteria such as AIC or BIC,
+and for displaying the independence graphs of the models. It has also some
+useful tools for analysing graphical structures. It supports the use of
+discrete, continuous, or both types of variables.",NA
+gR,gRbase,A Package for Graphical Modelling in R,GPL (>= 2),"The 'gRbase' package provides general features
+which are used by other graphical modelling packages, in particular
+by the packages 'gRain', 'gRim' and 'gRc'.
+'gRbase' contains several data sets relevant for use in connection with
+graphical models. Almost all data sets used in the book Graphical
+Models with R (2012) are contained in 'gRbase'.
+'gRbase' implements several graph algorithms (based mainly on
+representing graphs as adjacency matrices - either in the form
+of a standard matrix or a sparse matrix). Some graph
+algorithms are:
+(i) maximum cardinality search (for marked and unmarked graphs).
+(ii) moralize.
+(iii) triangulate.
+(iv) junction tree.
+'gRbase' facilitates array operations,
+'gRbase' implements functions for testing for conditional independence.
+'gRbase' illustrates how hierarchical log-linear models may be
+implemented and describes concept of graphical meta
+data. These features, however, are not maintained anymore and
+remains in 'gRbase' only because there exists a paper describing
+these facilities: A Common Platform for Graphical Models in R:
+The 'gRbase' Package, Journal of Statistical Software, Vol 14,
+No 17, 2005.
+NOTICE Proper functionality of 'gRbase' requires that the packages graph,
+'Rgraphviz' and 'RBGL' are installed from 'bioconductor'; for
+installation instructions please refer to the web page given below.",http://people.math.aau.dk/~sorenh/software/gR/
+gR,gRc,"Inference in Graphical Gaussian Models with Edge and Vertex
+Symmetries",GPL,"Estimation, model selection and other aspects of
+statistical inference in Graphical Gaussian models with edge
+and vertex symmetries (Graphical Gaussian models with colours).",NA
+gR,gRim,Graphical Interaction Models,GPL (>= 2),"gRaphical Interaction Models:
+
+Models for for contingency tables (i.e. log-linear models)
+
+Graphical Gaussian models for multivariate normal data (i.e. covariance selection
+models)
+
+Mixed interaction models",http://people.math.aau.dk/~sorenh/software/gR/
+gR,huge,High-Dimensional Undirected Graph Estimation,GPL-2,"Provides a general framework for
+high-dimensional undirected graph estimation. It integrates
+data preprocessing, neighborhood screening, graph estimation,
+and model selection techniques into a pipeline. In
+preprocessing stage, the nonparanormal(npn) transformation is
+applied to help relax the normality assumption. In the graph
+estimation stage, the graph structure is estimated by
+Meinshausen-Buhlmann graph estimation or the graphical lasso,
+and both methods can be further accelerated by the lossy
+screening rule preselecting the neighborhood of each variable
+by correlation thresholding. We target on high-dimensional data
+analysis usually d >> n, and the computation is
+memory-optimized using the sparse matrix output. We also
+provide a computationally efficient approach, correlation
+thresholding graph estimation. Three
+regularization/thresholding parameter selection methods are
+included in this package: (1)stability approach for
+regularization selection (2) rotation information criterion (3)
+extended Bayesian information criterion which is only available
+for the graphical lasso.",NA
+gR,igraph,Network Analysis and Visualization,GPL (>= 2),"Routines for simple graphs and network analysis. It can
+handle large graphs very well and provides functions for generating random
+and regular graphs, graph visualization, centrality methods and much more.",http://igraph.org
+gR,mathgraph,Directed and undirected graphs,file LICENSE,"Simple tools for constructing and manipulating objects of<U+000a>class mathgraph from the book ""S Poetry"", available at<U+000a>http://www.burns-stat.com/pages/spoetry.html",NA
+gR,ndtv,Network Dynamic Temporal Visualizations,GPL-3 + file LICENSE,"Renders dynamic network data from 'networkDynamic' objects as movies, interactive animations, or other representations of changing relational structures and attributes.",https://github.com/statnet/ndtv
+gR,network,Classes for Relational Data,GPL (>= 2),"Tools to create and modify network objects.  The network class can represent a range of relational data types, and supports arbitrary vertex/edge/graph attributes.",http://statnet.org/
+gR,networkDynamic,Dynamic Extensions for Network Objects,GPL-3,"Simple interface routines to facilitate the handling of network objects with complex intertemporal data. This is a part of the ""statnet"" suite of packages for network analysis.",http://statnet.org
+gR,parcor,Regularized estimation of partial correlation matrices,GPL (>= 2),"The package estimates the matrix of partial correlations<U+000a>based on different regularized regression methods: lasso,<U+000a>adaptive lasso, PLS, and Ridge Regression. In addition, the<U+000a>package provides model selection for lasso, adaptive lasso and<U+000a>Ridge regression based on cross-validation.",NA
+gR,pcalg,Methods for Graphical Models and Causal Inference,GPL (>= 2),"Functions for causal structure
+learning and causal inference using graphical models. The main algorithms
+for causal structure learning are PC (for observational data without hidden
+variables), FCI and RFCI (for observational data with hidden variables),
+and GIES (for a mix of data from observational studies
+(i.e. observational data) and data from experiments
+involving interventions (i.e. interventional data) without hidden
+variables). For causal inference the IDA algorithm, the Generalized
+Backdoor Criterion (GBC) and the Generalized Adjustment Criterion (GAC)
+are implemented.",http://pcalg.r-forge.r-project.org/
+gR,QUIC,Regularized sparse inverse covariance matrix estimation,GPL-3,"Use Newton's method and coordinate descent to solve the<U+000a>regularized inverse covariance matrix estimation problem.<U+000a>Please refer to: Sparse Inverse Covariance Matrix Estimation<U+000a>Using Quadratic Approximation, Cho-Jui Hsieh, Matyas A. Sustik,<U+000a>Inderjit S. Dhillon, Pradeep Ravikumar, Advances in Neural<U+000a>Information Processing Systems 24, 2011, p. 2330--2338.","http://www.r-project.org,<U+000a>http://www.cs.utexas.edu/users/sustik/QUIC"
+gR,R2OpenBUGS,Running OpenBUGS from R,GPL-2,"Using this package,
+it is possible to call a BUGS model, summarize inferences and
+convergence in a table and graph, and save the simulations in arrays for easy access
+in R.",NA
+gR,R2WinBUGS,Running 'WinBUGS' and 'OpenBUGS' from 'R' / 'S-PLUS',GPL-2,"Invoke a 'BUGS' model in 'OpenBUGS' or 'WinBUGS', a class ""bugs"" for 'BUGS'
+results and functions to work with that class.
+Function write.model() allows a 'BUGS' model file to be written.
+The class and auxiliary functions could be used with other MCMC programs, including 'JAGS'.",NA
+gR,rbugs,Fusing R and OpenBugs and Beyond,GPL (>= 3.0),"Functions to prepare files needed for running BUGS in<U+000a>batch-mode, and running BUGS from R. Support for Linux and<U+000a>Windows systems with OpenBugs is emphasized.",NA
+gR,rjags,Bayesian Graphical Models using MCMC,GPL (== 2),Interface to the JAGS MCMC library.,http://mcmc-jags.sourceforge.net
+gR,SIN,"A SINful Approach to Selection of Gaussian Graphical Markov
+Models",GPL (>= 2),"This package provides routines to perform SIN model selection
+as described in Drton & Perlman (2004, 2008).  The selected models are
+represented in the format of the 'ggm' package, which allows in
+particular parameter estimation in the selected model.","http://www.r-project.org, http://www.stat.washington.edu/~md5"
 Graphics,ade4,"Analysis of Ecological Data : Exploratory and Euclidean Methods
 in Environmental Sciences",GPL (>= 2),Multivariate data analysis and graphical display.,"http://pbil.univ-lyon1.fr/ADE-4, Mailing list:
 http://listes.univ-lyon1.fr/wws/info/adelist"
@@ -4430,8 +4593,8 @@ Markov chain Monte Carlo methods.
 Sequential and parallel MCMC support
 for JAGS, WinBUGS and OpenBUGS.","https://groups.google.com/forum/#!forum/dclone-users,
 http://datacloning.org"
-HighPerformanceComputing,doFuture,"Foreach Parallel Adaptor using the Future API of the 'future'
-Package",LGPL (>= 2.1),"Provides a '%dopar%' adaptor such that any type of futures can
+HighPerformanceComputing,doFuture,"A Universal Foreach Parallel Adaptor using the Future API of the
+'future' Package",LGPL (>= 2.1),"Provides a '%dopar%' adaptor such that any type of futures can
 be used as backends for the 'foreach' framework.",https://github.com/HenrikBengtsson/doFuture
 HighPerformanceComputing,doMC,Foreach Parallel Adaptor for 'parallel',GPL-2,"Provides a parallel backend for the %dopar% function using
 the multicore functionality of the parallel package.",NA
@@ -4472,10 +4635,13 @@ processing on a remote compute cluster.
 Another strength of this package is that global variables and functions
 are automatically identified and exported as needed, making it
 straightforward to tweak existing code to make use of futures.",https://github.com/HenrikBengtsson/future
-HighPerformanceComputing,future.BatchJobs,A Future for BatchJobs,LGPL (>= 2.1),"Simple parallel and distributed processing using futures
-that utilizes the 'BatchJobs' framework,
-e.g. 'fit %<-% { lm(y ~ x) }'.
-This package implements the Future API of the 'future' package.",https://github.com/HenrikBengtsson/future.BatchJobs
+HighPerformanceComputing,future.BatchJobs,"A Future API for Parallel and Distributed Processing using
+BatchJobs",LGPL (>= 2.1),"Implements of the Future API on top of the 'BatchJobs' package.
+This allows you to process futures, as defined by the 'future' package,
+in parallel out of the box, not only on your local machine or ad-hoc
+cluster of machines, but also via high-performance compute ('HPC') job
+schedulers such as 'LFS', 'OpenLava', 'Slurm', 'SGE', and 'TORQUE' / 'PBS',
+e.g. 'y <- future_lapply(files, FUN = process)'.",https://github.com/HenrikBengtsson/future.BatchJobs
 HighPerformanceComputing,GAMBoost,Generalized linear and additive models by likelihood based<U+000a>boosting,GPL (>= 2),"This package provides routines for fitting generalized<U+000a>linear and and generalized additive models by likelihood based<U+000a>boosting, using penalized B-splines",NA
 HighPerformanceComputing,gcbd,'GPU'/CPU Benchmarking in Debian-Based Systems,GPL (>= 2),"'GPU'/CPU Benchmarking on Debian-package based systems
 This package benchmarks performance of a few standard linear algebra
@@ -4719,7 +4885,7 @@ MachineLearning,arules,Mining Association Rules and Frequent Itemsets,GPL-3,"Pro
 manipulating and analyzing transaction data and patterns (frequent
 itemsets and association rules). Also provides interfaces to
 C implementations of the association mining algorithms Apriori and Eclat
-by C. Borgelt.",http://lyle.smu.edu/IDA/arules
+by C. Borgelt.","http://mhahsler.github.io/arules/, http://lyle.smu.edu/IDA/arules"
 MachineLearning,BayesTree,Bayesian Additive Regression Trees,GPL (>= 2),"This is an implementation of BART:Bayesian Additive Regression Trees,
 by Chipman, George, McCulloch (2010).","http://www.r-project.org, http://www.rob-mcculloch.org"
 MachineLearning,biglasso,Extending Lasso Model Fitting to Big Data,GPL-3,"Extend lasso and elastic-net model fitting for ultrahigh-dimensional,
@@ -4828,11 +4994,29 @@ MachineLearning,gamboostLSS,Boosting Methods for 'GAMLSS',GPL-2,"Boosting models
 location, shape and scale ('GAMLSS') to potentially high dimensional
 data.","For source code, development versions and issue tracker see
 https://github.com/boost-R/gamboostLSS"
-MachineLearning,gbm,Generalized Boosted Regression Models,GPL (>= 2) | file LICENSE,"An implementation of extensions to Freund and<U+000a>Schapire's AdaBoost algorithm and Friedman's gradient boosting<U+000a>machine. Includes regression methods for least squares,<U+000a>absolute loss, t-distribution loss, quantile regression,<U+000a>logistic, multinomial logistic, Poisson, Cox proportional<U+000a>hazards partial likelihood, AdaBoost exponential loss,<U+000a>Huberized hinge loss, and Learning to Rank measures<U+000a>(LambdaMart).",http://code.google.com/p/gradientboostedmodels/
+MachineLearning,gbm,Generalized Boosted Regression Models,GPL (>= 2) | file LICENSE,"An implementation of extensions to Freund and
+Schapire's AdaBoost algorithm and Friedman's gradient boosting
+machine. Includes regression methods for least squares,
+absolute loss, t-distribution loss, quantile regression,
+logistic, multinomial logistic, Poisson, Cox proportional
+hazards partial likelihood, AdaBoost exponential loss,
+Huberized hinge loss, and Learning to Rank measures
+(LambdaMart).",http://code.google.com/p/gradientboostedmodels/
 MachineLearning,glmnet,Lasso and Elastic-Net Regularized Generalized Linear Models,GPL-2,"Extremely efficient procedures for fitting the entire lasso or elastic-net regularization path for linear regression, logistic and multinomial regression models, Poisson regression and the Cox model. Two recent additions are the multiple-response Gaussian, and the grouped multinomial. The algorithm uses cyclical coordinate descent in a path-wise fashion, as described in the paper linked to via the URL below.",http://www.jstatsoft.org/v33/i01/.
 MachineLearning,glmpath,L1 Regularization Path for Generalized Linear Models and Cox<U+000a>Proportional Hazards Model,GPL (>= 2),A path-following algorithm for L1 regularized generalized<U+000a>linear models and Cox proportional hazards model,NA
 MachineLearning,GMMBoost,Likelihood-based Boosting for Generalized mixed models,GPL-2,Likelihood-based Boosting for Generalized mixed models,NA
 MachineLearning,gmum.r,GMUM Machine Learning Group Package,MIT + file LICENSE,Direct R interface to Support Vector Machine libraries ('LIBSVM' and 'SVMLight') and efficient C++ implementations of Growing Neural Gas and models developed by 'GMUM' group (Cross Entropy Clustering and 2eSVM).,https://github.com/gmum/gmum.r
+MachineLearning,gradDescent,Gradient Descent for Regression Tasks,GPL (>= 2) | file LICENSE,"An implementation of various learning algorithms based on Gradient Descent for dealing with regression tasks.
+The variants of gradient descent algorithm are :
+Mini-Batch Gradient Descent (MBGD), which is an optimization to use training data partially to reduce the computation load.
+Stochastic Gradient Descent (SGD), which is an optimization to use a random data in learning to reduce the computation load drastically.
+Stochastic Average Gradient (SAG), which is a SGD-based algorithm to minimize stochastic step to average.
+Momentum Gradient Descent (MGD), which is an optimization to speed-up gradient descent learning.
+Accelerated Gradient Descent (AGD), which is an optimization to accelerate gradient descent learning.
+Adagrad, which is a gradient-descent-based algorithm that accumulate previous cost to do adaptive learning.
+Adadelta, which is a gradient-descent-based algorithm that use hessian approximation to do adaptive learning.
+RMSprop, which is a gradient-descent-based algorithm that combine Adagrad and Adadelta adaptive learning ability.
+Adam, which is a gradient-descent-based algorithm that mean and variance moment to do adaptive learning.",https://github.com/drizzersilverberg/gradDescentR
 MachineLearning,grplasso,Fitting user specified models with Group Lasso penalty,GPL,Fits user specified (GLM-) models with Group Lasso penalty,NA
 MachineLearning,grpreg,"Regularization Paths for Regression Models with Grouped
 Covariates",GPL-3,"Efficient algorithms for fitting the regularization path of
@@ -5101,7 +5285,7 @@ as computed tomography and satellite remote sensing. This package implements
 Bayesian image analysis using the hidden Potts model with external field
 prior. Latent labels are sampled using chequerboard updating or Swendsen-Wang.
 Algorithms for the smoothing parameter include pseudolikelihood, path sampling,
-the exchange algorithm, and approximate Bayesian computation (ABC).",NA
+the exchange algorithm, and approximate Bayesian computation (ABC).",https://bitbucket.org/Azeari/bayesimages
 MedicalImaging,bayesm,Bayesian Inference for Marketing/Micro-Econometrics,GPL (>= 2),"Covers many important models used
 in marketing and micro-econometrics applications.
 The package includes:
@@ -5277,6 +5461,12 @@ are provided for univariate and bivariate data.",NA
 MetaAnalysis,compute.es,Compute Effect Sizes,GPL-2,"This package contains several functions for calculating the most<U+000a>widely used effect sizes (ES), along with their variances, confidence<U+000a>intervals and p-values.  The output includes ES's of d (mean difference), g<U+000a>(unbiased estimate of d), r (correlation coefficient), z' (Fisher's z), and<U+000a>OR (odds ratio and log odds ratio). In addition, NNT (number needed to<U+000a>treat), U3, CLES (Common Language Effect Size) and Cliff's Delta are<U+000a>computed. This package uses recommended formulas as described in The<U+000a>Handbook of Research Synthesis and Meta-Analysis (Cooper, Hedges, &<U+000a>Valentine, 2009).",http://acdelre.weebly.com
 MetaAnalysis,CopulaREMADA,"Copula Mixed Effect Models for Bivariate and Trivariate
 Meta-Analysis of Diagnostic Test Accuracy Studies",GPL (>= 2),It has functions to implement the copula mixed models for bivariate and trivariate meta-analysis of diagnostic test accuracy studies.,NA
+MetaAnalysis,CPBayes,"Bayesian Meta Analysis for Studying Cross-Phenotype Genetic
+Associations",GPL-3,"A Bayesian meta-analysis method for studying cross-phenotype
+genetic associations. It uses summary-level data across multiple phenotypes to
+simultaneously measure the evidence of aggregate-level pleiotropic association and
+estimate an optimal subset of traits associated with the risk locus. CPBayes is based
+on a spike and slab prior and is implemented by Markov chain Monte Carlo technique Gibbs sampling.",https://github.com/ArunabhaCodes/CPBayes
 MetaAnalysis,CRTSize,Sample Size Estimation Functions for Cluster Randomized Trials,GPL (>= 2),"Sample size estimation in cluster (group) randomized trials.  Contains traditional power-based methods, empirical smoothing (Rotondi and Donner, 2009), and updated meta-analysis techniques (Rotondi and Donner, 2012).",NA
 MetaAnalysis,dosresmeta,Performing Multivariate Dose-Response Meta-Analysis,GPL-2,"It estimates a dose-response relation from either a single or
 multiple summarized data. The trend estimation takes into account the
@@ -5361,6 +5551,10 @@ gene detection",GPL-2,"MetaDE package implements 12 major meta-analysis methods
 for differential expression analysis.",NA
 MetaAnalysis,metafor,Meta-Analysis Package for R,GPL (>= 2),"A comprehensive collection of functions for conducting meta-analyses in R. The package includes functions to calculate various effect sizes or outcome measures, fit fixed-, random-, and mixed-effects models to such data, carry out moderator and meta-regression analyses, and create various types of meta-analytical plots (e.g., forest, funnel, radial, L'Abbe, Baujat, GOSH plots). For meta-analyses of binomial and person-time data, the package also provides functions that implement specialized methods, including the Mantel-Haenszel method, Peto's method, and a variety of suitable generalized linear (mixed-effects) models (i.e., mixed-effects logistic and Poisson regression models). Finally, the package provides functionality for fitting meta-analytic multivariate/multilevel models that account for non-independent sampling errors and/or true effects (e.g., due to the inclusion of multiple treatment studies, multiple endpoints, or other forms of clustering). Network meta-analyses and meta-analyses accounting for known correlation structures (e.g., due to phylogenetic relatedness) can also be conducted.","http://www.metafor-project.org https://github.com/wviechtb/metafor
 http://www.wvbauer.com"
+MetaAnalysis,metafuse,Fused Lasso Approach in Regression Coefficient Clustering,GPL-2,"Fused lasso method to cluster and estimate regression coefficients
+of the same covariate across different data sets when a large number of
+independent data sets are combined. Package supports Gaussian, binomial,
+Poisson and Cox PH models.",NA
 MetaAnalysis,metagear,"Comprehensive Research Synthesis Tools for Systematic Reviews
 and Meta- Analysis",GPL (>= 2),"Functionalities for facilitating systematic reviews, data
 extractions, and meta-analyses. It includes a GUI (graphical user interface)
@@ -5401,10 +5595,7 @@ MetaAnalysis,metaLik,Likelihood Inference in Meta-Analysis and Meta-Regression M
 meta-analysis and meta-regression models.",NA
 MetaAnalysis,metaMA,Meta-analysis for MicroArrays,GPL,"Combines either p-values or modified effect sizes from different
 studies to find differentially expressed genes",NA
-MetaAnalysis,metamisc,Diagnostic and prognostic meta analysis (metamisc),GPL-2,"This package provides functions for diagnostic and
-prognostic meta-analyses. It estimates univariate, bivariate
-and multivariate models, and allows the aggregation of
-previously published prediction models with new data.",http://r-forge.r-project.org/projects/metamisc/
+MetaAnalysis,metamisc,Diagnostic and Prognostic Meta-Analysis,GPL-2,"Meta-analysis of diagnostic and prognostic modeling studies. Summarize estimates of diagnostic test accuracy and prediction model performance. Validate, update and combine published prediction models.",http://r-forge.r-project.org/projects/metamisc/
 MetaAnalysis,metansue,"Meta-Analysis of Studies with Non Statistically-Significant
 Unreported Effects",GPL-3,"A novel meta-analytic method that allows an unbiased inclusion of studies with Non Statistically-Significant Unreported Effects (NSUEs). Briefly, the method first calculates the interval where the unreported effects (e.g. t-values) should be according to the threshold of statistical significance used in each study. Afterwards, maximizing likelihood techniques are used to impute the expected effect size of each study with NSUEs, accounting for between-study heterogeneity and potential covariates. Multiple imputations of the NSUEs are then randomly created based on the expected value, variance and statistical significance bounds. Finally, a restricted-maximum likelihood random-effects meta-analysis is separately conducted for each set of imputations, and estimations from these meta-analyses are pooled. Please read the reference in 'meta.nsue' for details of the procedure.",NA
 MetaAnalysis,metap,Meta-Analysis of Significance Values,GPL-2,"The canonical way to perform meta-analysis involves using effect sizes.
@@ -5477,6 +5668,11 @@ MetaAnalysis,MetaSKAT,Meta Analysis for SNP-Set (Sequence) Kernel Association Te
 MetaAnalysis,metatest,Fit and test metaregression models,GPL,"This package fits meta regression models and generates a<U+000a>number of statistics: next to t- and z-tests, the likelihood<U+000a>ratio, bartlett corrected likelihood ratio and permutation<U+000a>tests are performed on the model coefficients.",NA
 MetaAnalysis,Metatron,"Meta-analysis for Classification Data and Correction to
 Imperfect Reference",GPL (>= 2),"This package allows doing meta-analysis for primary studies with classification outcomes in order to evaluate systematically the accuracies of classifiers, namely, the diagnostic tests. It provides functions to fit the bivariate model of Reitsma et al.(2005). Moreover, if the reference employed in the classification process isn't a gold standard, its deficit can be detected and its influence to the underestimation of the diagnostic test's accuracy can be corrected, as described in Botella et al.(2013).",NA
+MetaAnalysis,metavcov,Variance-Covariance Matrix for Multivariate Meta-Analysis,GPL (>= 2),"Compute variance-covariance matrix for multivariate meta-analysis. Effect sizes include correlation (r), mean difference (MD), standardized mean difference (SMD), log odds ratio (logOR), log risk ratio (logRR), and risk difference (RD).",NA
+MetaAnalysis,metaviz,Rainforest Plots for Meta-Analysis,GPL-2,"Creates rainforest plots (proposed by Schild & Voracek, 2015 <doi:10.1002/jrsm.1125>), a variant and
+enhancement of the classic forest plot for meta-analysis. In the near future, the 'metaviz'
+package will be extended by further, established as well as novel, plotting options for
+visualizing meta-analytic data.",https://github.com/Mkossmeier/metaviz
 MetaAnalysis,mmeta,Multivariate Meta-Analysis,GPL (>= 2),This package implements a novel multivariate meta-analysis.,NA
 MetaAnalysis,MultiMeta,Meta-analysis of Multivariate Genome Wide Association Studies,GPL (>= 2),"Allows running a meta-analysis of multivariate Genome Wide
 Association Studies (GWAS) and easily visualizing results through custom
@@ -5501,6 +5697,8 @@ MetaAnalysis,netmeta,Network Meta-Analysis using Frequentist Methods,GPL (>= 2),
 - net heat plot and design-based decomposition of Cochran's Q according to Krahn et al. (2013) <DOI:10.1186/1471-2288-13-35>;
 - measures characterizing the flow of evidence between two treatments by König et al. (2013) <DOI:10.1002/sim.6001>;
 - ranking of treatments (frequentist analogue of SUCRA) according to Rücker & Schwarzer (2015) <DOI:10.1186/s12874-015-0060-8>;
+- partial order of treatment rankings ('poset') and Hasse diagram for 'poset' (Carlsen & Bruggemann, 2014) <DOI:10.1002/cem.2569>;
+- split direct and indirect evidence to check consistency (Dias et al., 2010) <DOI:10.1002/sim.3767>;
 - automated drawing of network graphs described in Rücker & Schwarzer (2016) <DOI:10.1002/jrsm.1143>.",https://github.com/guido-s/netmeta http://meta-analysis-with-r.org
 MetaAnalysis,pcnetmeta,Patient-Centered Network Meta-Analysis,GPL (>= 2),"Provides functions to perform arm-based network meta-analysis for datasets with binary, continuous, and count outcomes.",NA
 MetaAnalysis,psychometric,Applied Psychometric Theory,GPL (>= 2),"Contains functions useful for correlation theory,<U+000a>meta-analysis (validity-generalization), reliability, item<U+000a>analysis, inter-rater reliability, and classical utility",NA
@@ -5543,23 +5741,31 @@ MetaAnalysis,rmeta,Meta-analysis,GPL-2,"Functions for simple fixed and random ef
 MetaAnalysis,robumeta,Robust Variance Meta-Regression,GPL-2,"Functions for conducting robust variance estimation (RVE) meta-regression using both large and small sample RVE estimators under various weighting schemes. These methods are distribution free and provide valid point estimates, standard errors and hypothesis tests even when the degree and structure of dependence between effect sizes is unknown. Also included are functions for conducting sensitivity analyses under correlated effects weighting and producing RVE-based forest plots.",NA
 MetaAnalysis,SAMURAI,"Sensitivity Analysis of a Meta-analysis with Unpublished but
 Registered Analytical Investigations",GPL-2 | GPL-3,This package contains R functions to gauge the impact of unpublished studies upon the meta-analytic summary effect of a set of published studies. (Credits: The research leading to these results has received funding from the European Union's Seventh Framework Programme (FP7/2007-2013) under grant agreement no. 282574.),NA
-MetaAnalysis,SCMA,Single-Case Meta-Analysis,GPL (>= 2),An R package for single-case meta-analysis.,NA
+MetaAnalysis,SCMA,Single-Case Meta-Analysis,GPL (>= 2),"Perform meta-analysis of single-case experiments, including calculating various effect size measures (SMD, PND and PEM) and probability combining (additive and multiplicative method).",NA
 MetaAnalysis,selectMeta,Estimation of Weight Functions in Meta Analysis,GPL (>= 2),"Publication bias, the fact that studies identified for inclusion in a meta analysis do not represent all studies on the topic of interest, is commonly recognized as a threat to the validity of the results of a meta analysis. One way to explicitly model publication bias is via selection models or weighted probability distributions. In this package we provide implementations of several parametric and nonparametric weight functions. The novelty in Rufibach (2011) is the proposal of a non-increasing variant of the nonparametric weight function of Dear & Begg (1992). The new approach potentially offers more insight in the selection process than other methods, but is more flexible than parametric approaches. To maximize the log-likelihood function proposed by Dear & Begg (1992) under a monotonicity constraint we use a differential evolution algorithm proposed by Ardia et al (2010a, b) and implemented in Mullen et al (2009). In addition, we offer a method to compute a confidence interval for the overall effect size theta, adjusted for selection bias as well as a function that computes the simulation-based p-value to assess the null hypothesis of no selection as described in Rufibach (2011, Section 6).",http://www.kasparrufibach.ch
 MetaAnalysis,seqMeta,Meta-Analysis of Region-Based Tests of Rare DNA Variants,GPL (>= 2),"Computes necessary information to meta analyze region-based
 tests for rare genetic variants (e.g. SKAT, T1) in individual studies, and
 performs meta analysis.",https://github.com/DavisBrian/seqMeta
-MetaAnalysis,weightr,Estimating Weight-Function Models for Publication Bias in R,GPL-2 | GPL-3,"Set of functions for estimating the Vevea and Hedges (1995)
-weight-function model in R. By specifying arguments, users can
-also estimate the modified model described in Vevea and Woods (2005), which
-may be more practical with small datasets. Users can also specify moderators
-to estimate a linear model. The package functionality allows users to easily
-extract the results of these analyses as R objects for other uses. In addition,
-the package includes a function to launch both models as a Shiny application.
-Although the Shiny application is also available online, this function allows
-users to launch it locally if they choose.","http://faculty.ucmerced.edu/jvevea/,
+MetaAnalysis,surrosurv,"Evaluation of Failure Time Surrogate Endpoints in Individual
+Patient Data Meta-Analyses",GPL-2,"Provides functions for the evaluation of
+surrogate endpoints when both the surrogate and the true endpoint are failure
+time variables. The approaches implemented are: (1) the two-step approach
+(Burzykowski et al, 2001) <DOI:10.1111/1467-9876.00244> with a copula model (Clayton, Plackett, Hougaard) at
+the first step and either a linear regression of log-hazard ratios at the second
+step (either adjusted or not for measurement error); (2) mixed proportional
+hazard models estimated via mixed Poisson GLM.",NA
+MetaAnalysis,weightr,Estimating Weight-Function Models for Publication Bias,GPL-2 | GPL-3,"Estimates the Vevea and Hedges (1995) <doi:10.1007/BF02294384>
+weight-function model. By specifying arguments, users can
+also estimate the modified model described in Vevea and Woods (2005)
+<doi:10.1037/1082-989X.10.4.428>, which may be more practical with small datasets. Users
+can also specify moderators to estimate a linear model. The package functionality
+allows users to easily extract the results of these analyses as R objects for
+other uses. In addition, the package includes a function to launch both models as
+a Shiny application. Although the Shiny application is also available online,
+this function allows users to launch it locally if they choose.","http://faculty.ucmerced.edu/jvevea/,
 https://vevealab.shinyapps.io/WeightFunctionModel/,
-http://bayes-1.ucmerced.edu/jvevea/pdfs/Vevea%20&%20Hedges%201995.pdf,
-http://bayes-1.ucmerced.edu/jvevea/pdfs/vevea%20and%20woods.pdf"
+faculty.ucmerced.edu/jvevea/other/Vevea_and_Hedges_1995.pdf,
+faculty.ucmerced.edu/jvevea/other/Vevea_and_Woods_psy_meth.pdf"
 MetaAnalysis,xmeta,A Toolbox for Multivariate Meta-Analysis,GPL (>= 2),A toolbox for meta-analysis. This package includes a collection of functions for (1) implementing robust multivariate meta-analysis of continuous or binary outcomes; and (2) a bivariate Egger's test for detecting publication bias.,NA
 Multivariate,abind,Combine Multidimensional Arrays,LGPL (>= 2),"Combine multidimensional arrays into a single array.
 This is a generalization of 'cbind' and 'rbind'.  Works with
@@ -5793,8 +5999,8 @@ to make NN classification as accurate as possible. The code also
 handles continuous variables and prior probabilities, and does
 intelligent variable selection and estimation of both error rates
 and the right number of NN's.",NA
-Multivariate,kohonen,Supervised and Unsupervised Self-Organising Maps,GPL (>= 2),"Functions to train supervised and self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.",NA
-Multivariate,ks,Kernel Smoothing,GPL-2 | GPL-3,Kernel smoothers for univariate and multivariate data.,http://www.mvstat.net/tduong
+Multivariate,kohonen,Supervised and Unsupervised Self-Organising Maps,GPL (>= 2),"Functions to train self-organising maps (SOMs). Also interrogation of the maps and prediction using trained maps are supported. The name of the package refers to Teuvo Kohonen, the inventor of the SOM.",NA
+Multivariate,ks,Kernel Smoothing,GPL-2 | GPL-3,"Kernel smoothers for univariate and multivariate data, including density functions, density derivatives, cumulative distributions, modal clustering, discriminant analysis, and two-sample hypothesis testing.",http://www.mvstat.net/tduong
 Multivariate,lattice,Trellis Graphics for R,GPL (>= 2),"A powerful and elegant high-level data visualization
 system inspired by Trellis graphics, with an emphasis on
 multivariate data. Lattice is sufficient for typical graphics needs,
@@ -6458,7 +6664,7 @@ install 'Eigen' itself in order to use 'RcppEigen'.
 Since version 3.1.1, 'Eigen' is licensed under the Mozilla Public License
 (version 2); earlier version were licensed under the GNU LGPL version 3 or
 later. 'RcppEigen' (the 'Rcpp' bindings/bridge to 'Eigen') is licensed under
-the GNU GPL version 2 or later, as is the rest of 'Rcpp'.",http://eigen.tuxfamily.org
+the GNU GPL version 2 or later, as is the rest of 'Rcpp'.",http://dirk.eddelbuettel.com/code/rcpp.eigen.html
 NumericalMathematics,RcppOctave,Seamless Interface to Octave -- And Matlab,GPL (>= 2),"Direct interface to Octave. The primary goal is to facilitate the
 port of Matlab/Octave scripts to R. The package enables to call any Octave
 functions from R and as well as browsing their documentation, passing
@@ -6675,7 +6881,11 @@ continuous two-level data (normal model, pan, second-level variables).
 Passive imputation can be used to maintain consistency between variables.
 Various diagnostic plots are available to inspect the quality of the
 imputations.","http://www.stefvanbuuren.nl , http://www.multiple-imputation.com"
-OfficialStatistics,micEcon,Microeconomic Analysis and Modelling,GPL (>= 2),Tools for microeconomic analysis and microeconomic modelling,http://www.micEcon.org
+OfficialStatistics,micEcon,Microeconomic Analysis and Modelling,GPL (>= 2),"Various tools for microeconomic analysis and microeconomic modelling,
+e.g. estimating quadratic, Cobb-Douglas and Translog functions,
+calculating partial derivatives and elasticities of these functions,
+and calculating Hessian matrices, checking curvature
+and preparing restrictions for imposing monotonicity of Translog functions.",http://www.micEcon.org
 OfficialStatistics,MicSim,Performing Continuous-Time Microsimulation,GPL-2,This entry-level toolkit allows performing continuous-time microsimulation for a wide range of demographic applications. Individual life-courses are specified by a continuous-time multi-state model.,NA
 OfficialStatistics,MImix,Mixture summary method for multiple imputation,GPL-2,"Tools to combine results for multiply-imputed data using
 mixture approximations",NA
@@ -6686,7 +6896,7 @@ for updating a N-dimensional array with respect to given target marginal
 distributions (which, in turn can be multidimensional). The package also
 provides an application of the IPFP to simulate multivariate Bernoulli
 distributions.",https://github.com/jojo-/mipfp
-OfficialStatistics,missMDA,Handling Missing Values with Multivariate Data Analysis,GPL (>= 2),"Imputation of incomplete continuous or categorical datasets; Missing values are imputed with a principal component analysis (PCA), a multiple correspondence analysis (MCA) model or a multiple factor analysis (MFA) model; Perform multiple imputation with and in PCA.","http://www.agrocampus-ouest.fr/math/husson, http://juliejosse.com/"
+OfficialStatistics,missMDA,Handling Missing Values with Multivariate Data Analysis,GPL (>= 2),"Imputation of incomplete continuous or categorical datasets; Missing values are imputed with a principal component analysis (PCA), a multiple correspondence analysis (MCA) model or a multiple factor analysis (MFA) model; Perform multiple imputation with and in PCA or MCA.","http://www.agrocampus-ouest.fr/math/husson, http://juliejosse.com/"
 OfficialStatistics,mitools,Tools for multiple imputation of missing data,GPL-2,Tools to perform analyses and combine results from<U+000a>multiple-imputation datasets.,NA
 OfficialStatistics,mix,"Estimation/Multiple Imputation for Mixed Categorical and
 Continuous Data",Unlimited,"Estimation/multiple imputation programs for mixed categorical
@@ -7214,7 +7424,8 @@ Pharmacokinetics,PKPDmodels,Pharmacokinetic/pharmacodynamic models,GPL (>= 2),Pr
 Phylogenetics,adephylo,"Adephylo: Exploratory Analyses for the Phylogenetic Comparative
 Method",GPL (>= 2),"Multivariate tools to analyze comparative data, i.e. a phylogeny
 and some traits measured for each taxa.",NA
-Phylogenetics,adhoc,calculate ad hoc distance thresholds for DNA barcoding<U+000a>identification,GPL (>= 2),An ad hoc distance threshold can be calculated for each particular reference library of DNA barcodes. Specimen identification at this ad hoc distance threshold (using the best close match method) will produce identifications with an estimated relative error probability that can be fixed by the user (e.g. 5%),http://jemu.myspecies.info/computer-programs
+Phylogenetics,adhoc,"Calculate Ad Hoc Distance Thresholds for DNA Barcoding
+Identification",GPL (>= 2),"Two functions to calculate intra- and interspecific pairwise distances, evaluate DNA barcoding identification error and calculate an ad hoc distance threshold for each particular reference library of DNA barcodes. Specimen identification at this ad hoc distance threshold (using the best close match method) will produce identifications with an estimated relative error probability that can be fixed by the user (e.g. 5%).",http://jemu.myspecies.info/computer-programs
 Phylogenetics,ape,Analyses of Phylogenetics and Evolution,GPL (>= 2),"Functions for reading, writing, plotting, and manipulating phylogenetic trees, analyses of comparative data in a phylogenetic framework, ancestral character analyses, analyses of diversification and macroevolution, computing distances from DNA sequences, reading and writing nucleotide sequences as well as importing from BioConductor, and several tools such as Mantel's test, generalized skyline plots, graphical exploration of phylogenetic data (alex, trex, kronoviz), estimation of absolute evolutionary rates and clock-like trees using mean path lengths and penalized likelihood, dating trees with non-contemporaneous sequences, translating DNA into AA sequences, and assessing sequence alignments. Phylogeny estimation can be done with the NJ, BIONJ, ME, MVR, SDM, and triangle methods, and several methods handling incomplete distance matrices (NJ*, BIONJ*, MVR*, and the corresponding triangle method). Some functions call external applications (PhyML, Clustal, T-Coffee, Muscle) whose results are returned into R.",http://ape-package.ird.fr/
 Phylogenetics,apTreeshape,Analyses of Phylogenetic Treeshape,GPL (>= 2),"apTreeshape is mainly dedicated to simulation and analysis<U+000a>of phylogenetic tree topologies using statistical indices. It<U+000a>is a companion library of the 'ape' package. It provides<U+000a>additional functions for reading, plotting, manipulating<U+000a>phylogenetic trees. It also offers convenient web-access to<U+000a>public databases, and enables testing null models of<U+000a>macroevolution using corrected test statistics.  Trees of class<U+000a>""phylo"" (from 'ape' package) can be converted easily.",NA
 Phylogenetics,BAMMtools,"Analysis and Visualization of Macroevolutionary Dynamics on
@@ -7253,7 +7464,8 @@ https://github.com/talgalili/dendextend/,
 https://www.r-statistics.com/tag/dendextend/,
 https://bioinformatics.oxfordjournals.org/content/31/22/3718"
 Phylogenetics,DiscML,DiscML: An R package for estimating evolutionary rates of<U+000a>discrete characters using maximum likelihood,GPL (>= 2),"DiscML performs rate estimation using maximum likelihood with the<U+000a>options to correct for unobservable data, to implement a Gamma-distribution<U+000a>for rate variation, and to estimate the prior root probabilities from the<U+000a>empirical data.",NA
-Phylogenetics,distory,Distance Between Phylogenetic Histories,BSD,Geodesic distance between phylogenetic trees and<U+000a>associated functions.,NA
+Phylogenetics,distory,Distance Between Phylogenetic Histories,BSD,"Geodesic distance between phylogenetic trees and
+associated functions.",NA
 Phylogenetics,diversitree,Comparative 'Phylogenetic' Analyses of Diversification,GPL (>= 2),"Contains a number of comparative 'phylogenetic' methods,
 mostly focusing on analysing diversification and character
 evolution.  Contains implementations of 'BiSSE' (Binary State
@@ -7286,6 +7498,13 @@ branching times and simulation of species trees under a number
 of different time variable birth-death processes.  Analysis of
 gene tree species tree reconciliations and simulations of gene
 trees in species trees.",NA
+Phylogenetics,idendr0,Interactive Dendrograms,GPL-2,"Interactive dendrogram that enables the user to select and
+color clusters, to zoom and pan the dendrogram, and to visualize
+the clustered data not only in a built-in heat map, but also in
+'GGobi' interactive plots and user-supplied plots.
+This is a backport of Qt-based 'idendro'
+(<https://github.com/tsieger/idendro>) to base R graphics and
+Tcl/Tk GUI.",http://github.com/tsieger/idendr0
 Phylogenetics,ips,Interfaces to Phylogenetic Software in R,GPL (>= 2),"This package provides functions that wrap popular phylogenetic software for sequence alignment, masking of sequence alignments, and estimation of phylogenies and ancestral character states.",NA
 Phylogenetics,iteRates,Parametric rate comparison,GPL (>= 3),"Iterates through a phylogenetic tree to identify regions
 of rate variation using the parametric rate comparison test.",NA
@@ -7317,6 +7536,10 @@ http://www.wvbauer.com"
 Phylogenetics,MPSEM,Modeling Phylogenetic Signals using Eigenvector Maps,GPL (>= 2),Computational tools to represent phylogenetic signals using adapted eigenvector maps.,NA
 Phylogenetics,mvMORPH,"Multivariate Comparative Tools for Fitting Evolutionary Models
 to Morphometric Data",GPL (>= 2.0),"Fits multivariate (Brownian Motion, Early Burst, ACDC, Ornstein-Uhlenbeck and Shifts) models of continuous traits evolution on trees and time series.",https://github.com/JClavel/mvMORPH
+Phylogenetics,nLTT,Calculate the NLTT Statistic,GPL-2,"Provides functions to calculate the normalised Lineage-Through-
+Time (nLTT) statistic, given two phylogenetic trees. The nLTT statistic measures
+the difference between two Lineage-Through-Time curves, where each curve is
+normalised both in time and in number of lineages.",https://github.com/richelbilderbeek/nLTT
 Phylogenetics,ouch,"Ornstein-Uhlenbeck Models for Phylogenetic Comparative
 Hypotheses",GPL (>= 2),Fit and compare Ornstein-Uhlenbeck models for evolution along a phylogenetic tree.,http://kingaa.github.io/ouch/
 Phylogenetics,outbreaker,"Bayesian Reconstruction of Disease Outbreaks by Combining
@@ -7380,6 +7603,8 @@ Phylogenetics,phyext2,"An Extension (for Package 'SigTree') of Some of the Class
 Package 'phylobase'",GPL-3,"Based on (but not identical to) the no-longer-maintained package 'phyext', provides enhancements to 'phylobase' classes, specifically for use by package 'SigTree'; provides classes and methods which help users manipulate branch-annotated trees (as in 'SigTree'); also provides support for a few other extra features.",NA
 Phylogenetics,phylobase,Base Package for Phylogenetic Structures and Comparative Data,GPL (>= 2),"Provides a base S4 class for comparative methods, incorporating
 one or more trees and trait data.",https://github.com/fmichonneau/phylobase
+Phylogenetics,phylocanvas,"Interactive Phylogenetic Trees Using the 'Phylocanvas'
+JavaScript Library",MIT + file LICENSE,"Create and customize interactive phylogenetic trees using the 'phylocanvas' JavaScript library and the 'htmlwidgets' package. These trees can be used directly from the R console, from 'RStudio', in Shiny apps, and in R Markdown documents.  See <http://phylocanvas.org/>  for more information on the 'phylocanvas' library.","https://github.com/zachcp/phylocanvas, http://phylocanvas.org/"
 Phylogenetics,phyloclim,Integrating Phylogenetics and Climatic Niche Modeling,GPL (>= 2),This package implements some recently developed methods in phyloclimatic modeling.,NA
 Phylogenetics,PHYLOGR,Functions for Phylogenetically Based Statistical Analyses,GPL (>= 2),"Manipulation and analysis of phylogenetically simulated
 data sets and phylogenetically based analyses using GLS.",http://ligarto.org/rdiaz
@@ -7480,7 +7705,6 @@ program package (Felsenstein 2013). See http://www.phylip.com for more
 information about installing PHYLIP.",http://www.phytools.org/Rphylip
 Phylogenetics,SigTree,"Identify and Visualize Significantly Responsive Branches in a
 Phylogenetic Tree",GPL-3,"Provides tools to identify and visualize branches in a phylogenetic tree that are significantly responsive to some intervention, taking as primary inputs a phylogenetic tree (of class phylo) and a data frame (or matrix) of corresponding tip (OTU) labels and p-values.",NA
-Phylogenetics,spider,Species Identity and Evolution in R,GPL,A package for the analysis of species limits and DNA barcoding data,NA
 Phylogenetics,strap,Stratigraphic Tree Analysis for Palaeontology,GPL (>= 2),Functions for the stratigraphic analysis of phylogenetic trees.,NA
 Phylogenetics,surface,Fitting Hansen Models to Investigate Convergent Evolution,GPL (>= 2),"SURFACE is a data-driven phylogenetic comparative method for fitting stabilizing selection models to continuous trait data, building on the ouch package. The main functions fit a series of Hansen models using stepwise AIC, then identify cases of convergent evolution where multiple lineages have shifted to the same adaptive peak.",http://www.people.fas.harvard.edu/~ingram/web/surface.html
 Phylogenetics,SYNCSA,SYNCSA - Analysis of functional and phylogenetic patterns in<U+000a>metacommunities.,GPL-2,"Analysis of metacommunities based on functional traits and phylogeny of the community components. The functions that are offered here implement for the R environment methods that have been available in the SYNCSA application written in C++ (by Valerio Pillar, available at http://ecoqua.ecologia.ufrgs.br/ecoqua/SYNCSA.html).",NA
@@ -7767,7 +7991,7 @@ Psychometrics,lme4,Linear Mixed-Effects Models using 'Eigen' and S4,GPL (>= 2),"
 The models and their components are represented using S4 classes and
 methods.  The core computational algorithms are implemented using the
 'Eigen' C++ library for numerical linear algebra and 'RcppEigen' ""glue"".",https://github.com/lme4/lme4/ http://lme4.r-forge.r-project.org/
-Psychometrics,LNIRT,LogNormal Response Time Item Response Theory Models,GPL-2 | GPL-3,"Allows the simultaneous analysis of responses and response times in an Item Response Theory (IRT) modelling framework. Parameter estimation is done with a MCMC algorithm. LNIRT replaces the package CIRT, which was written by Rinke Klein Entink. For reference, see the paper by Fox, Klein Entink and Van der Linden (2007), ""Modeling of Responses and Response Times with the Package cirt"", Journal of Statistical Software, <doi:10.18637/jss.v020.i07>.",NA
+Psychometrics,LNIRT,LogNormal Response Time Item Response Theory Models,GPL-2 | GPL-3,"Allows the simultaneous analysis of responses and response times in an Item Response Theory (IRT) modelling framework. Supports covariates for item and person (random) parameters. Parameter estimation is done with a MCMC algorithm. LNIRT replaces the package CIRT, which was written by Rinke Klein Entink. For reference, see the paper by Fox, Klein Entink and Van der Linden (2007), ""Modeling of Responses and Response Times with the Package cirt"", Journal of Statistical Software, <doi:10.18637/jss.v020.i07>.",NA
 Psychometrics,lordif,"Logistic Ordinal Regression Differential Item Functioning using
 IRT",GPL (>= 2),"Analysis of Differential Item Functioning (DIF) for
 dichotomous and polytomous items using an iterative hybrid of
@@ -7854,7 +8078,7 @@ Finally, package contains tools useful for performing Monte Carlo simulations
 for studying the behavior of computerized adaptive test banks.","https://github.com/philchalmers/mirtCAT,
 https://github.com/philchalmers/mirtCAT/wiki,
 https://groups.google.com/forum/#!forum/mirt-package"
-Psychometrics,missMDA,Handling Missing Values with Multivariate Data Analysis,GPL (>= 2),"Imputation of incomplete continuous or categorical datasets; Missing values are imputed with a principal component analysis (PCA), a multiple correspondence analysis (MCA) model or a multiple factor analysis (MFA) model; Perform multiple imputation with and in PCA.","http://www.agrocampus-ouest.fr/math/husson, http://juliejosse.com/"
+Psychometrics,missMDA,Handling Missing Values with Multivariate Data Analysis,GPL (>= 2),"Imputation of incomplete continuous or categorical datasets; Missing values are imputed with a principal component analysis (PCA), a multiple correspondence analysis (MCA) model or a multiple factor analysis (MFA) model; Perform multiple imputation with and in PCA or MCA.","http://www.agrocampus-ouest.fr/math/husson, http://juliejosse.com/"
 Psychometrics,mixRasch,Mixture Rasch Models with JMLE,GPL (>= 2),"Estimates Rasch models and mixture Rasch models, including the dichotomous Rasch model, the rating scale model, and the partial credit model.",NA
 Psychometrics,MLCIRTwithin,"Latent Class Item Response Theory (LC-IRT) Models under
 Within-Item Multidimensionality",GPL (>= 2),Framework for the Item Response Theory analysis of dichotomous and ordinal polytomous outcomes under the assumption of within-item multidimensionality and discreteness of the latent traits. The fitting algorithms allow for missing responses and for different item parametrizations and are based on the Expectation-Maximization paradigm. Individual covariates affecting the class weights may be included in the new version together with possibility of constraints on all model parameters.,NA
@@ -8226,11 +8450,11 @@ JavaScript library 'DataTables' (typically via R Markdown or Shiny). The
 'DT' is an abbreviation of 'DataTables'.",http://rstudio.github.io/DT
 ReproducibleResearch,exams,Automatic Generation of Exams in R,GPL-2 | GPL-3,"Automatic generation of exams based on exercises in Markdown or LaTeX format,
 possibly including R code for dynamic generation of exercise elements.
-Exercise types include single- and multiple-choice questions, arithmetic problems,
-string questions, and combinations thereof (cloze). Output formats include
-PDF, HTML, Moodle XML, QTI 1.2 (for OLAT/OpenOLAT), QTI 2.1, Blackboard, ARSnova, and TCExam.
-In addition to fully customizable PDF exams, a standardized PDF format is provided that can be
-printed, scanned, and automatically evaluated.",http://exams.R-Forge.R-project.org/
+Exercise types include single-choice and multiple-choice questions, arithmetic problems,
+string questions, and combinations thereof (cloze). Output formats include standalone
+files (PDF, HTML, Docx, ODT, ...), Moodle XML, QTI 1.2 (for OLAT/OpenOLAT), QTI 2.1,
+Blackboard, ARSnova, and TCExam. In addition to fully customizable PDF exams, a
+standardized PDF format is provided that can be printed, scanned, and automatically evaluated.",http://exams.R-Forge.R-project.org/
 ReproducibleResearch,formatR,Format R Code Automatically,GPL,"Provides a function tidy_source() to format R source code. Spaces
 and indent will be added to the code automatically, and comments will be
 preserved under certain conditions, so that R code will be more
@@ -8833,8 +9057,8 @@ studies. Routines are provided to generate distances from generalised linear mod
 score matching), formulas giving variables on which to limit matched distances, stratified or
 exact matching directives, or calipers, alone or in combination.","https://www.r-project.org,
 https://github.com/markmfredrickson/optmatch"
-SocialSciences,PAFit,"Joint Inference of Preferential Attachment and Node Fitness in
-Temporal Complex Networks",GPL-3,"A framework for modelling and inferencing attachment mechanisms of temporal complex networks is implemented in this package. For estimating the preferential attachment (PA) function in isolation, we implement Jeong's method, the corrected Newman's method and the PAFit method. For jointly estimating the PA function and node fitnesses, we implement the PAFit method. The package also provides flexible methods to generate a wide range of temporal networks based on PA and fitness.",https://github.com/thongphamthe/PAFit
+SocialSciences,PAFit,"Modelling and Inferencing Attachment Mechanisms of Temporal
+Complex Networks",GPL-3,"A framework for modelling and inferencing attachment mechanisms of temporal complex networks is implemented in this package. For estimating the preferential attachment (PA) function in isolation, we implement Jeong's method, the corrected Newman's method and the PAFit method. For jointly estimating the PA function and node fitnesses, we implement the PAFit method. The package also provides flexible methods to generate a wide range of temporal networks based on PA and fitness.",https://github.com/thongphamthe/PAFit
 SocialSciences,pan,Multiple Imputation for Multivariate Panel or Clustered Data,GPL-3,Multiple imputation for multivariate panel or clustered data.,NA
 SocialSciences,perturb,Tools for evaluating collinearity,GPL (>= 2),"""perturb"" evaluates collinearity by adding random noise to<U+000a>selected variables. ""colldiag"" calculates condition numbers and<U+000a>variance decomposition proportions to test for collinearity and<U+000a>uncover its sources.",http://home.wanadoo.nl/john.hendrickx/statres/
 SocialSciences,PSAgraphics,Propensity Score Analysis Graphics,GPL (>= 2),"A collection of functions that primarily produce graphics<U+000a>to aid in a Propensity Score Analysis (PSA).  Functions<U+000a>include: cat.psa and box.psa to test balance within strata of<U+000a>categorical and quantitative covariates, circ.psa for a<U+000a>representation of the estimated effect size by stratum,<U+000a>loess.psa that provides a graphic and loess based effect size<U+000a>estimate, and various balance functions that provide measures<U+000a>of the balance achieved via a PSA in a categorical covariate.",NA
@@ -9323,8 +9547,9 @@ segregation. The methods implemented in this package include
 White's P index (1983), Morrill's D(adj) (1991), Wong's D(w)
 and D(s) (1993), and Reardon and O'Sullivan's set of spatial
 segregation measures (2004).",https://sites.google.com/site/hongseongyun/seg
-Spatial,sf,Simple Features for R,GPL-2 | MIT + file LICENSE,"Support for simple features, a standardized way to encode spatial data, with bindings
-to GDAL, GEOS and Proj.4.",https://github.com/edzer/sfr/
+Spatial,sf,Simple Features for R,GPL-2 | MIT + file LICENSE,"Support for simple features, a standardized way to encode spatial vector data. Binds
+to GDAL for reading and writing data, to GEOS for geometrical operations, and to Proj.4 for projection
+conversions and datum transformations.",https://github.com/edzer/sfr/
 Spatial,sgeostat,An Object-Oriented Framework for Geostatistical Modeling in S+,GPL (>= 2),"An Object-oriented Framework for Geostatistical Modeling in S+
 containing functions for variogram estimation, variogram fitting and kriging
 as well as some plot functions. Written entirely in S, therefore works only
@@ -9508,7 +9733,7 @@ SpatioTemporal,BayesianAnimalTracker,Bayesian Melding of GPS and DR Path for Ani
 SpatioTemporal,BBMM,Brownian bridge movement model,GNU General Public License,The model provides an empirical estimate of a movement<U+000a>path using discrete location data obtained at relatively short<U+000a>time intervals.,NA
 SpatioTemporal,bcpa,Behavioral change point analysis of animal movement,Unlimited,"The Behavioral Change Point Analysis (BCPA) is a method of<U+000a>identifying hidden shifts in the underlying parameters of a time series,<U+000a>developed specifically to be applied to animal movement data which is<U+000a>irregularly sampled.  The method is based on: E.<U+000a>Gurarie, R. Andrews and K. Laidre A novel method for identifying<U+000a>behavioural changes in animal movement data (2009) Ecology Letters 12:5<U+000a>395-408.",NA
 SpatioTemporal,CARBayesST,"Spatio-Temporal Generalised Linear Mixed Models for Areal Unit
-Data",GPL (>= 2),"Implements a class of spatio-temporal generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (McMC) simulation. The response variable can be binomial, Gaussian or Poisson. The spatio-temporal autocorrelation is modelled by  random effects,  which are assigned conditional autoregressive (CAR) style prior distributions. A number of different random effects structures are available, and full details are given in the vignette accompanying this package and the references in the help files. The creation of this package was supported by the Engineering and Physical Sciences Research Council (EPSRC) grant EP/J017442/1 and the Medical Research Council (MRC) grant MR/L022184/1.",NA
+Data",GPL (>= 2),"Implements a class of spatio-temporal generalised linear mixed models for areal unit data, with inference in a Bayesian setting using Markov chain Monte Carlo (MCMC) simulation. The response variable can be binomial, Gaussian or Poisson, but for some models only the binomial and Poisson data likelihoods are available. The spatio-temporal autocorrelation is modelled by  random effects,  which are assigned conditional autoregressive (CAR) style prior distributions. A number of different random effects structures are available, and full details are given in the vignette accompanying this package and the references in the help files. The creation of this package was supported by the Engineering and Physical Sciences Research Council (EPSRC) grant EP/J017442/1 and the Medical Research Council (MRC) grant MR/L022184/1.",http://github.com/duncanplee/CARBayesST
 SpatioTemporal,crawl,"Fit Continuous-Time Correlated Random Walk Models to Animal
 Movement Data",CC0,"The Correlated Random Walk Library of
 R functions was designed for fitting continuous-time
@@ -9728,7 +9953,12 @@ employed see the references within. The package draws heavily on the
 classes and methods developed in the 'adehabitat' packages.",http://jedalong.github.io/wildlifeDI
 SpatioTemporal,xts,eXtensible Time Series,GPL (>= 2),"Provide for uniform handling of R's different time-based data classes by extending zoo, maximizing native format information preservation and allowing for user level customization and extension, while simplifying cross-class interoperability.",http://r-forge.r-project.org/projects/xts/
 Survival,AdapEnetClass,A Class of Adaptive Elastic Net Methods for Censored Data,GPL-2,Provides new approaches to variable selection for AFT model.,NA
-Survival,addhazard,Fit Additive Hazards Models for Survival Analysis,GPL-2,"Contains tools to fit additive hazards model to random sampling, two-phase sampling and two-phase sampling with auxiliary information. This package provides regression parameter estimates and their model-based and robust standard errors.  It also offers tools to make prediction of individual specific hazards.",NA
+Survival,addhazard,Fit Additive Hazards Models for Survival Analysis,GPL-2,"Contains tools to fit the additive hazards model to data from a cohort,
+random sampling, two-phase Bernoulli sampling and two-phase finite population sampling,
+as well as calibration tool to incorporate phase I auxiliary information into the
+two-phase data model fitting.  This package provides regression parameter estimates and
+their model-based and robust standard errors. It also offers tools to make prediction of
+individual specific hazards.",NA
 Survival,AER,Applied Econometrics with R,GPL-2 | GPL-3,"Functions, data sets, examples, demos, and vignettes for the book
 Christian Kleiber and Achim Zeileis (2008),
 Applied Econometrics with R, Springer-Verlag, New York.
@@ -10002,7 +10232,14 @@ Distributions",GPL-2 | GPL-3,"This is an add-on package to GAMLSS. The purpose o
 package is to allow users to fit interval response variables in
 GAMLSS models. The main function gen.cens() generates a
 censored version of an existing GAMLSS family distribution.",http://www.gamlss.org/
-Survival,gbm,Generalized Boosted Regression Models,GPL (>= 2) | file LICENSE,"An implementation of extensions to Freund and<U+000a>Schapire's AdaBoost algorithm and Friedman's gradient boosting<U+000a>machine. Includes regression methods for least squares,<U+000a>absolute loss, t-distribution loss, quantile regression,<U+000a>logistic, multinomial logistic, Poisson, Cox proportional<U+000a>hazards partial likelihood, AdaBoost exponential loss,<U+000a>Huberized hinge loss, and Learning to Rank measures<U+000a>(LambdaMart).",http://code.google.com/p/gradientboostedmodels/
+Survival,gbm,Generalized Boosted Regression Models,GPL (>= 2) | file LICENSE,"An implementation of extensions to Freund and
+Schapire's AdaBoost algorithm and Friedman's gradient boosting
+machine. Includes regression methods for least squares,
+absolute loss, t-distribution loss, quantile regression,
+logistic, multinomial logistic, Poisson, Cox proportional
+hazards partial likelihood, AdaBoost exponential loss,
+Huberized hinge loss, and Learning to Rank measures
+(LambdaMart).",http://code.google.com/p/gradientboostedmodels/
 Survival,gcerisk,Generalized Competing Event Model,GPL (>= 2),"Generalized competing event model based on Cox PH model and Fine-Gray model.
 This function is designed to develop optimized risk-stratification methods for competing
 risks data, such as described in:
@@ -10181,7 +10418,7 @@ bivariate random effects probit models (Liability models). Also contains
 two-stage binomial modelling that can do pairwise odds-ratio dependence
 modelling based marginal logistic regression models. This is an alternative
 to the alternating logistic regression approach (ALR).",https://github.com/kkholst/mets
-Survival,mexhaz,Mixed Effect Excess Hazard Models,GPL (>= 2),Fit flexible (excess) hazard regression models with a random effect defined at the cluster level.,NA
+Survival,mexhaz,Mixed Effect Excess Hazard Models,GPL (>= 2),Fit flexible (excess) hazard regression models with the possibility of including non-proportional effects of covariables and of adding a random effect at the cluster level (corresponding to a shared frailty).,NA
 Survival,mfp,Multivariable Fractional Polynomials,GPL (>= 2),"Fractional polynomials are used to represent curvature in regression models. A key reference is Royston and Altman, 1994.",NA
 Survival,miCoPTCM,Promotion Time Cure Model with Mis-Measured Covariates,GPL-2,"Fits Semiparametric Promotion Time Cure Models, taking into account (using a
 corrected score approach or the SIMEX algorithm) or not the measurement error
@@ -10248,9 +10485,6 @@ Survival,OutlierDC,Outlier Detection using quantile regression for Censored Data
 Survival,p3state.msm,Analyzing survival data,GPL,Analyzing survival data from illness-death model,NA
 Survival,paf,Attributable Fraction Function for Censored Survival Data,GPL-2,"Calculate unadjusted/adjusted attributable fraction function of a set of covariates for a censored survival outcome from a Cox model using the method proposed by Chen, Lin and Zeng (Biometrika 97, 713-726., 2010).",NA
 Survival,pamr,Pam: prediction analysis for microarrays,GPL-2,Some functions for sample classification in microarrays,NA
-Survival,parfm,Parametric Frailty Models,GPL-2,"Fits Parametric Frailty Models by maximum marginal likelihood.
-Possible baseline hazards: Weibull, inverse Weibull, exponential, Gompertz, lognormal and loglogistic.
-Possible Frailty distributions: gamma, positive stable, inverse Gaussian and lognormal.",NA
 Survival,parfm,Parametric Frailty Models,GPL-2,"Fits Parametric Frailty Models by maximum marginal likelihood.
 Possible baseline hazards: Weibull, inverse Weibull, exponential, Gompertz, lognormal and loglogistic.
 Possible Frailty distributions: gamma, positive stable, inverse Gaussian and lognormal.",NA
@@ -10502,8 +10736,9 @@ Expression Data",GPL (>= 2),Microarray gene expression data can be analyzed indi
 Survival,SurvLong,"Analysis of Proportional Hazards Model with Sparse Longitudinal
 Covariates",GPL-2,Kernel weighting methods for estimation of proportional hazards models with intermittently observed longitudinal covariates.,NA
 Survival,survminer,Drawing Survival Curves using 'ggplot2',GPL-2,"Contains the function 'ggsurvplot()' for drawing easily beautiful
-and 'ready-to-publish' survival curves with the 'number at risk' table. Other
-functions are also available for visual examinations of 'cox' model assumptions.",http://www.sthda.com/english/rpkgs/survminer/
+and 'ready-to-publish' survival curves with the 'number at risk' table
+and 'censoring count plot'. Other functions are also available to plot
+adjusted curves for `Cox` model and to visually examine 'Cox' model assumptions.",http://www.sthda.com/english/rpkgs/survminer/
 Survival,survMisc,Miscellaneous Functions for Survival Data,GPL-2,"A collection of functions to help in the analysis of
 right-censored survival data. These extend the methods available in
 package:survival.",NA
@@ -11302,12 +11537,6 @@ Recognition (OCR) API. Easily OCR images, barcodes, forms, documents with
 machine readable zones, e.g. passports. Get the results in a variety of formats
 including plain text and XML. To learn more about the Abbyy OCR API, see http://
 ocrsdk.com/.",http://github.com/soodoku/abbyyR
-WebTechnologies,alm,R Client for the Lagotto Altmetrics Platform,MIT + file LICENSE,"An R interface to the open source article level metrics platform
-<https://github.com/articlemetrics/lagotto/> created by the Public Library
-of Science (PLOS). A number of publishers are using the open source app
-created by PLOS, so you can drop in a different base URL to the functions
-in this package to get to not only PLOS data, but data for Crossref,
-and more as the open source PLOS software is used.",https://github.com/ropensci/alm
 WebTechnologies,anametrix,Bidirectional Connector to Anametrix API,MIT + file LICENSE,Offers a set of functions to upload/download data and metadata on Anametrix API <http://anametrix.com/>.,NA
 WebTechnologies,ApacheLogProcessor,Process the Apache Web Server Log Files,LGPL-3 | file LICENSE,Provides capabilities to process Apache HTTPD Log files.The main functionalities are to extract data from access and error log files to data frames.,https://github.com/diogosmendonca/ApacheLogProcessor
 WebTechnologies,aRxiv,Interface to the arXiv API,MIT + file LICENSE,"An interface to the API for arXiv, a repository of
@@ -11640,8 +11869,6 @@ documentation (command: ?btc) for more information.",https://github.com/jangorec
 WebTechnologies,rbitcoinchartsapi,R Package for the BitCoinCharts.com API,LGPL-3,An R package for the BitCoinCharts.com API.,"http://www.r-project.org,
 http://www.coherentlogic.com/wordpress/?page_id=3580&source=cran"
 WebTechnologies,Rblpapi,R Interface to 'Bloomberg',file LICENSE,An R Interface to 'Bloomberg' is provided via the 'Blp API'.,NA
-WebTechnologies,RCryptsy,"Access to Cryptsy Crypto-Currency Exchange Public Information
-API via R",GPL-3,Basic access to market infomation from the public API for the Crypto-Currency exchange Cryptsy.,https://github.com/ropensci/RCryptsy
 WebTechnologies,RCurl,General Network (HTTP/FTP/...) Client Interface for R,BSD,"A wrapper for 'libcurl' <http://curl.haxx.se/libcurl/>
 Provides functions to allow one to compose general HTTP requests
 and provides convenient functions to fetch URIs, get & post
@@ -11878,7 +12105,7 @@ WebTechnologies,V8,Embedded JavaScript Engine for R,MIT + file LICENSE,"An R int
 V8 is written in C++ and implements ECMAScript as specified in ECMA-262,
 5th edition. In addition, this package implements typed arrays as
 specified in ECMA 6 used for high-performance computing and libraries
-compiled with 'emscripten'.","https://github.com/jeroenooms/v8,
+compiled with 'emscripten'.","https://github.com/jeroen/v8,
 https://developers.google.com/v8/intro"
 WebTechnologies,W3CMarkupValidator,R Interface to W3C Markup Validation Services,GPL-2,"
 R interface to a W3C Markup Validation service.
@@ -11929,159 +12156,3 @@ REST API.",https://github.com/yhat/yhatr
 WebTechnologies,yummlyr,R Bindings for Yummly API,GPL (>= 2),"
 Yummly.com is one of the world's largest and most powerful recipe search sites and this package aims to provide R bindings for publicly available Yummly.com Recipe API (https://developer.yummly.com/).",https://github.com/RomanTsegelskyi/yummlyr
 WebTechnologies,zendeskR,Zendesk API Wrapper,GPL-2,This package provides an R wrapper for the Zendesk API,NA
-gR,abn,Modelling Multivariate Data with Additive Bayesian Networks,GPL (>= 2),"Bayesian network analysis is a form of probabilistic  graphical models which derives from empirical data a directed acyclic graph, DAG, describing the dependency structure between  random variables. An additive Bayesian network model consists of a form of a DAG where each node comprises a generalized linear model, GLM. Additive Bayesian network models are equivalent to Bayesian multivariate regression using graphical modelling, they generalises the usual multivariable regression, GLM, to multiple dependent variables. 'abn' provides routines to help determine optimal Bayesian network models for a given data set, where these models are used to identify statistical dependencies in messy, complex data. The additive formulation of these models is equivalent to multivariate generalised linear modelling (including mixed models with iid random effects). The usual term to describe this model selection process is structure discovery. The core functionality is concerned with model selection - determining the most robust empirical model of data from interdependent variables. Laplace approximations are used to estimate goodness of fit metrics and model parameters, and wrappers are also included to the INLA package which can be obtained from <http://www.r-inla.org>. It is recommended the testing version, which can be downloaded by running: source(""http://www.math.ntnu.no/inla/givemeINLA-testing.R""). A comprehensive set of documented case studies, numerical accuracy/quality assurance exercises, and additional documentation are available from the 'abn' website.",http://www.r-bayesian-networks.org
-gR,bayesmix,Bayesian Mixture Models with JAGS,GPL (>= 2),"The fitting of finite mixture models of univariate
-Gaussian distributions using JAGS within a Bayesian
-framework is provided.",http://ifas.jku.at/gruen/BayesMix
-gR,BDgraph,"Bayesian Structure Learning in Graphical Models using
-Birth-Death MCMC",GPL (>= 2),Provides statistical tools for Bayesian structure learning in undirected graphical models with both continuous and discrete variables.,https://www.tilburguniversity.edu/webwijs/show/a.mohammadi.htm
-gR,bnlearn,"Bayesian Network Structure Learning, Parameter Learning and
-Inference",GPL (>= 2),"Bayesian network structure learning, parameter learning and
-inference.
-This package implements constraint-based (GS, IAMB, Inter-IAMB, Fast-IAMB,
-MMPC, Hiton-PC), pairwise (ARACNE and Chow-Liu), score-based (Hill-Climbing
-and Tabu Search) and hybrid (MMHC and RSMAX2) structure learning algorithms
-for discrete, Gaussian and conditional Gaussian networks, along with many
-score functions and conditional independence tests.
-The Naive Bayes and the Tree-Augmented Naive Bayes (TAN) classifiers are
-also implemented.
-Some utility functions (model comparison and manipulation, random data
-generation, arc orientation testing, simple and advanced plots) are
-included, as well as support for parameter estimation (maximum likelihood
-and Bayesian) and inference, conditional probability queries and
-cross-validation. Development snapshots with the latest bugfixes are
-available from <http://www.bnlearn.com>.",http://www.bnlearn.com/
-gR,boa,Bayesian Output Analysis Program (BOA) for MCMC,GPL-2,"A menu-driven program and library of functions for carrying out
-convergence diagnostics and statistical and graphical analysis of Markov
-chain Monte Carlo sampling output.",http://www.jstatsoft.org/v21/i11
-gR,BRugs,Interface to the 'OpenBUGS' MCMC Software,GPL-2,"Fully-interactive R interface to the 'OpenBUGS' software for Bayesian analysis using MCMC sampling.  Runs natively and stably in 32-bit R under Windows.  Versions running on Linux and on 64-bit R under Windows are in ""beta"" status and less efficient.",http://www.openbugs.net/
-gR,catnet,Categorical Bayesian Network Inference,GPL (>= 2),Structure learning and parameter estimation of discrete Bayesian networks using likelihood-based criteria.  Exhaustive search for fixed node orders and stochastic search of optimal orders via simulated annealing algorithm are implemented.,NA
-gR,coda,Output Analysis and Diagnostics for MCMC,GPL (>= 2),"Provides functions for summarizing and plotting the
-output from Markov Chain Monte Carlo (MCMC) simulations, as
-well as diagnostic tests of convergence to the equilibrium
-distribution of the Markov chain.",NA
-gR,dclone,Data Cloning and MCMC Tools for Maximum Likelihood Methods,GPL-2,"Low level functions for implementing
-maximum likelihood estimating procedures for
-complex models using data cloning and Bayesian
-Markov chain Monte Carlo methods.
-Sequential and parallel MCMC support
-for JAGS, WinBUGS and OpenBUGS.","https://groups.google.com/forum/#!forum/dclone-users,
-http://datacloning.org"
-gR,deal,Learning Bayesian Networks with Mixed Variables,GPL (>= 2),Bayesian networks with continuous and/or discrete<U+000a>variables can be learned and compared from data.,NA
-gR,diagram,"Functions for visualising simple graphs (networks), plotting<U+000a>flow diagrams",GPL (>= 2),"Visualises simple graphs (networks) based on a transition matrix, utilities to plot flow diagrams,<U+000a>visualising webs, electrical networks, ...<U+000a>Support for the books ""A practical guide to ecological modelling -<U+000a>using R as a simulation platform""<U+000a>by Karline Soetaert and Peter M.J. Herman (2009). Springer.<U+000a>and the book ""Solving Differential Equations in R""<U+000a>by Karline Soetaert, Jeff Cash and Francesca Mazzia. Springer.<U+000a>Includes demo(flowchart), demo(plotmat), demo(plotweb)",NA
-gR,DiagrammeR,Create Graph Diagrams and Flowcharts Using R,MIT + file LICENSE,Create graph diagrams and flowcharts using R.,https://github.com/rich-iannone/DiagrammeR
-gR,dynamicGraph,dynamicGraph,GPL (>= 2),Interactive graphical tool for manipulating graphs,http://www.badsberg.eu
-gR,ergm,"Fit, Simulate and Diagnose Exponential-Family Models for
-Networks",GPL-3 + file LICENSE,An integrated set of tools to analyze and simulate networks based on exponential-family random graph models (ERGMs). 'ergm' is a part of the Statnet suite of packages for network analysis.,http://statnet.org
-gR,FBFsearch,"Algorithm for Searching the Space of Gaussian Directed Acyclic
-Graph Models Through Moment Fractional Bayes Factors",GPL (>= 2),We propose an objective Bayesian algorithm for searching the space of Gaussian directed acyclic graph (DAG) models. The algorithm proposed makes use of moment fractional Bayes factors (MFBF) and thus it is suitable for learning sparse graph. The algorithm is implemented by using Armadillo: an open-source C++ linear algebra library.,NA
-gR,GeneNet,Modeling and Inferring Gene Networks,GPL (>= 3),"Analyzes gene expression
-(time series) data with focus on the inference of gene networks.
-In particular, GeneNet implements the methods of Schaefer and
-Strimmer (2005a,b,c) and Opgen-Rhein and Strimmer (2006, 2007)
-for learning large-scale gene association networks (including
-assignment of putative directions).",http://strimmerlab.org/software/genenet/
-gR,ggm,Functions for graphical Markov models,GPL (>= 2),Functions and datasets for maximum likelihood fitting of some classes of graphical Markov models.,NA
-gR,giRaph,The giRaph package for graph representation in R,GPL (>= 2),"Supply classes and methods to represent and manipulate
-graphs",http://r.kvfc.dk/giRaph
-gR,gRain,Graphical Independence Networks,GPL (>= 2),"Probability propagation in graphical independence networks, also
-known as Bayesian networks or probabilistic expert systems.",http://people.math.aau.dk/~sorenh/software/gR/
-gR,gRapHD,"Efficient selection of undirected graphical models for
-high-dimensional datasets",GPL (>= 3),"gRapHD is designed for efficient selection of high-dimensional undirected
-graphical models. The package provides tools for selecting trees, forests
-and decomposable models minimizing information criteria such as AIC or BIC,
-and for displaying the independence graphs of the models. It has also some
-useful tools for analysing graphical structures. It supports the use of
-discrete, continuous, or both types of variables.",NA
-gR,gRbase,A Package for Graphical Modelling in R,GPL (>= 2),"The 'gRbase' package provides general features
-which are used by other graphical modelling packages, in particular
-by the packages 'gRain', 'gRim' and 'gRc'.
-'gRbase' contains several data sets relevant for use in connection with
-graphical models. Almost all data sets used in the book Graphical
-Models with R (2012) are contained in 'gRbase'.
-'gRbase' implements several graph algorithms (based mainly on
-representing graphs as adjacency matrices - either in the form
-of a standard matrix or a sparse matrix). Some graph
-algorithms are:
-(i) maximum cardinality search (for marked and unmarked graphs).
-(ii) moralize.
-(iii) triangulate.
-(iv) junction tree.
-'gRbase' facilitates array operations,
-'gRbase' implements functions for testing for conditional independence.
-'gRbase' illustrates how hierarchical log-linear models may be
-implemented and describes concept of graphical meta
-data. These features, however, are not maintained anymore and
-remains in 'gRbase' only because there exists a paper describing
-these facilities: A Common Platform for Graphical Models in R:
-The 'gRbase' Package, Journal of Statistical Software, Vol 14,
-No 17, 2005.
-NOTICE Proper functionality of 'gRbase' requires that the packages graph,
-'Rgraphviz' and 'RBGL' are installed from 'bioconductor'; for
-installation instructions please refer to the web page given below.",http://people.math.aau.dk/~sorenh/software/gR/
-gR,gRc,"Inference in Graphical Gaussian Models with Edge and Vertex
-Symmetries",GPL,"Estimation, model selection and other aspects of
-statistical inference in Graphical Gaussian models with edge
-and vertex symmetries (Graphical Gaussian models with colours).",NA
-gR,gRim,Graphical Interaction Models,GPL (>= 2),"gRaphical Interaction Models:
-
-Models for for contingency tables (i.e. log-linear models)
-
-Graphical Gaussian models for multivariate normal data (i.e. covariance selection
-models)
-
-Mixed interaction models",http://people.math.aau.dk/~sorenh/software/gR/
-gR,huge,High-Dimensional Undirected Graph Estimation,GPL-2,"Provides a general framework for
-high-dimensional undirected graph estimation. It integrates
-data preprocessing, neighborhood screening, graph estimation,
-and model selection techniques into a pipeline. In
-preprocessing stage, the nonparanormal(npn) transformation is
-applied to help relax the normality assumption. In the graph
-estimation stage, the graph structure is estimated by
-Meinshausen-Buhlmann graph estimation or the graphical lasso,
-and both methods can be further accelerated by the lossy
-screening rule preselecting the neighborhood of each variable
-by correlation thresholding. We target on high-dimensional data
-analysis usually d >> n, and the computation is
-memory-optimized using the sparse matrix output. We also
-provide a computationally efficient approach, correlation
-thresholding graph estimation. Three
-regularization/thresholding parameter selection methods are
-included in this package: (1)stability approach for
-regularization selection (2) rotation information criterion (3)
-extended Bayesian information criterion which is only available
-for the graphical lasso.",NA
-gR,igraph,Network Analysis and Visualization,GPL (>= 2),"Routines for simple graphs and network analysis. It can
-handle large graphs very well and provides functions for generating random
-and regular graphs, graph visualization, centrality methods and much more.",http://igraph.org
-gR,mathgraph,Directed and undirected graphs,file LICENSE,"Simple tools for constructing and manipulating objects of<U+000a>class mathgraph from the book ""S Poetry"", available at<U+000a>http://www.burns-stat.com/pages/spoetry.html",NA
-gR,ndtv,Network Dynamic Temporal Visualizations,GPL-3 + file LICENSE,"Renders dynamic network data from 'networkDynamic' objects as movies, interactive animations, or other representations of changing relational structures and attributes.",https://github.com/statnet/ndtv
-gR,network,Classes for Relational Data,GPL (>= 2),"Tools to create and modify network objects.  The network class can represent a range of relational data types, and supports arbitrary vertex/edge/graph attributes.",http://statnet.org/
-gR,networkDynamic,Dynamic Extensions for Network Objects,GPL-3,"Simple interface routines to facilitate the handling of network objects with complex intertemporal data. This is a part of the ""statnet"" suite of packages for network analysis.",http://statnet.org
-gR,parcor,Regularized estimation of partial correlation matrices,GPL (>= 2),"The package estimates the matrix of partial correlations<U+000a>based on different regularized regression methods: lasso,<U+000a>adaptive lasso, PLS, and Ridge Regression. In addition, the<U+000a>package provides model selection for lasso, adaptive lasso and<U+000a>Ridge regression based on cross-validation.",NA
-gR,pcalg,Methods for Graphical Models and Causal Inference,GPL (>= 2),"Functions for causal structure
-learning and causal inference using graphical models. The main algorithms
-for causal structure learning are PC (for observational data without hidden
-variables), FCI and RFCI (for observational data with hidden variables),
-and GIES (for a mix of data from observational studies
-(i.e. observational data) and data from experiments
-involving interventions (i.e. interventional data) without hidden
-variables). For causal inference the IDA algorithm, the Generalized
-Backdoor Criterion (GBC) and the Generalized Adjustment Criterion (GAC)
-are implemented.",http://pcalg.r-forge.r-project.org/
-gR,QUIC,Regularized sparse inverse covariance matrix estimation,GPL-3,"Use Newton's method and coordinate descent to solve the<U+000a>regularized inverse covariance matrix estimation problem.<U+000a>Please refer to: Sparse Inverse Covariance Matrix Estimation<U+000a>Using Quadratic Approximation, Cho-Jui Hsieh, Matyas A. Sustik,<U+000a>Inderjit S. Dhillon, Pradeep Ravikumar, Advances in Neural<U+000a>Information Processing Systems 24, 2011, p. 2330--2338.","http://www.r-project.org,<U+000a>http://www.cs.utexas.edu/users/sustik/QUIC"
-gR,R2OpenBUGS,Running OpenBUGS from R,GPL-2,"Using this package,
-it is possible to call a BUGS model, summarize inferences and
-convergence in a table and graph, and save the simulations in arrays for easy access
-in R.",NA
-gR,R2WinBUGS,Running 'WinBUGS' and 'OpenBUGS' from 'R' / 'S-PLUS',GPL-2,"Invoke a 'BUGS' model in 'OpenBUGS' or 'WinBUGS', a class ""bugs"" for 'BUGS'
-results and functions to work with that class.
-Function write.model() allows a 'BUGS' model file to be written.
-The class and auxiliary functions could be used with other MCMC programs, including 'JAGS'.",NA
-gR,rbugs,Fusing R and OpenBugs and Beyond,GPL (>= 3.0),"Functions to prepare files needed for running BUGS in<U+000a>batch-mode, and running BUGS from R. Support for Linux and<U+000a>Windows systems with OpenBugs is emphasized.",NA
-gR,rjags,Bayesian Graphical Models using MCMC,GPL (== 2),Interface to the JAGS MCMC library.,http://mcmc-jags.sourceforge.net
-gR,SIN,"A SINful Approach to Selection of Gaussian Graphical Markov
-Models",GPL (>= 2),"This package provides routines to perform SIN model selection
-as described in Drton & Perlman (2004, 2008).  The selected models are
-represented in the format of the 'ggm' package, which allows in
-particular parameter estimation in the selected model.","http://www.r-project.org, http://www.stat.washington.edu/~md5"
