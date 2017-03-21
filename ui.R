@@ -13,7 +13,7 @@ shinyUI(fluidPage(
     column(
       conditionalPanel(
         "input.task",
-        selectInput("view", NULL,
+        selectizeInput("view", NULL,
                     choices = list(
                       "Bayesian Inference" = "Bayesian",
                       "Chemometrics and Computational Physics" = "ChemPhys",
@@ -50,7 +50,7 @@ shinyUI(fluidPage(
                       "Web Technologies and Services" = "WebTechnologies",
                       "gRaphical Models in R" = "gR"
                     ), multiple = TRUE, selected = c("MachineLearning", "Cluster"),
-                    selectize = TRUE, width = "100%")
+                    options = list(plugins = list('remove_button')), width = "100%")
         ),
       width = 6),
     column(checkboxInput("description", "Show description"), width = 2),
