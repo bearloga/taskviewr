@@ -1,12 +1,16 @@
 library(shiny)
 library(magrittr)
 
-packages <- read.csv("www/packages.csv", stringsAsFactors = FALSE)
+packages <- dplyr::distinct(
+  read.csv("www/packages.csv", stringsAsFactors = FALSE),
+  view, package,
+  .keep_all = TRUE
+)
 packages$license <- sub("( [+|] )?file LICEN[SC]E", "", packages$license, ignore.case = FALSE)
 
 shinyServer(function(input, output) {
   
-  dt <- reactiveValues()
+  dt <- reactiveVal()
   observe({
     if (input$task) {
       drop_columns <- NULL
@@ -29,9 +33,9 @@ shinyServer(function(input, output) {
         temporary <- packages[packages$view == input$view, ]
       }
       if (is.null(drop_columns)) {
-        dt$packages <- temporary
+        dt(temporary)
       } else {
-        dt$packages <- temporary[, -drop_columns]
+        dt(temporary[, -drop_columns])
       }
     } else {
       drop_columns <- NULL
@@ -45,16 +49,16 @@ shinyServer(function(input, output) {
         dplyr::select(view, views, package, title, license, description, url) %>%
         dplyr::arrange(package)
       if (is.null(drop_columns)) {
-        dt$packages <- temporary
+        dt(temporary)
       } else {
-        dt$packages <- temporary[, -drop_columns]
+        dt(temporary[, -drop_columns])
       }
     }
   })
 
   output$packages <- DT::renderDataTable({
     DT::datatable(
-      dt$packages,
+      dt(),
       options = list(
         search = list(regex = TRUE, caseInsensitive = TRUE),
         pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100)
