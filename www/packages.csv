@@ -261,6 +261,8 @@ formulas, with the package writings model files, arranging unbalanced data
 in ragged arrays, and creating starting values. The model is re-parameterized,
 and functions are provided for converting model outputs to the original
 parameterization.",NA
+Bayesian,gRain,Graphical Independence Networks,GPL (>= 2),"Probability propagation in graphical independence networks, also
+known as Bayesian networks or probabilistic expert systems.",http://people.math.aau.dk/~sorenh/software/gR/
 Bayesian,growcurves,"Bayesian Semi and Nonparametric Growth Curve Models that
 Additionally Include Multiple Membership Random Effects",GPL (>= 2),"Employs a non-parametric formulation for by-subject random effect
 parameters to borrow strength over a constrained number of repeated
@@ -389,6 +391,7 @@ for plotting forecasts and impulse responses, and generating draws
 from Wishart and singular multivariate normal densities.  Current
 version includes functionality to build and evaluate models with
 Markov switching.",NA
+Bayesian,NetworkChange,Bayesian Package for Network Changepoint Analysis,GPL-3,"Network changepoint analysis for undirected network data. The package implements a hidden Markov multilinear tenstor regression model (Park and Sohn, 2017, <http://jhp.snu.ac.kr/NetworkChange.pdf>). Functions for break number detection using the approximate marginal likelihood and WAIC are also provided.",NA
 Bayesian,nimble,"Flexible BUGS-Compatible System for Hierarchical Statistical
 Modeling and Algorithm Development",BSD_3_clause + file LICENSE,"Flexible application of algorithms to models specified in the BUGS
 language. Algorithms can be written in the NIMBLE language and made available to
@@ -1346,6 +1349,7 @@ spatial neighborhood information. Some distance measures,
 Clustering of presence-absence, abundance and multilocus genetical data
 for species delimitation, nearest neighbor
 based noise detection. Try package?prabclus for on overview.",http://www.homepages.ucl.ac.uk/~ucakche
+Cluster,prcr,Person-Centered Analysis,MIT + file LICENSE,"Provides an easy-to-use yet adaptable set of tools to conduct person-center analysis using a two-step clustering procedure. As described in Bergman and El-Khouri (1999) <DOI:10.1002/(SICI)1521-4036(199910)41:6%3C753::AID-BIMJ753%3E3.0.CO;2-K>, hierarchical clustering is performed to determine the initial partition for the subsequent k-means clustering procedure.",https://github.com/jrosen48/prcr
 Cluster,PReMiuM,"Dirichlet Process Bayesian Clustering, Profile Regression",GPL-2,"Bayesian clustering using a Dirichlet process mixture model. This model is an alternative to regression models, non-parametrically linking a response vector to covariate data through cluster membership. The package allows Bernoulli, Binomial, Poisson, Normal, survival and categorical response, as well as Normal and discrete covariates. It also allows for fixed effects in the response model, where a spatial CAR (conditional autoregressive) term can be also included. Additionally, predictions may be made for the response, and missing values for the covariates are handled. Several samplers and label switching moves are implemented along with diagnostic tools to assess convergence. A number of R functions for post-processing of the output are also provided. In addition to fitting mixtures, it may additionally be of interest to determine which covariates actively drive the mixture components. This is implemented in the package as variable selection.",http://www.silvialiverani.com/software/
 Cluster,profdpm,Profile Dirichlet Process Mixtures,GPL (>= 2),This package facilitates profile inference (inference at<U+000a>the posterior mode) for a class of product partition models<U+000a>(PPM). The Dirichlet process mixture is currently the only<U+000a>available member of this class. These methods search for the<U+000a>maximum posterior (MAP) estimate for the data partition in a<U+000a>PPM.,NA
 Cluster,protoclust,Hierarchical Clustering with Prototypes,GPL-2,"Performs minimax linkage hierarchical clustering.  Every cluster
@@ -1814,6 +1818,9 @@ Distributions,hyperdirichlet,A Generalization of the Dirichlet Distribution,GPL-
 Distributions,ihs,Inverse Hyperbolic Sine Distribution,GPL (>= 3),"Density, distribution function, quantile function and random generation for the inverse hyperbolic sine distribution. This package also provides a function that can fit data to the inverse hyperbolic sine distribution using maximum likelihood estimation.",NA
 Distributions,JohnsonDistribution,Johnson Distribution,GPL (>= 2),"Johnson curve distributions.  Implementation of AS100 and
 AS99.",http://www.stats.uwo.ca/faculty/aim
+Distributions,kernelboot,Smoothed Bootstrap and Random Generation from Kernel Densities,GPL-2,"Smoothed bootstrap and functions for random generation from
+univariate and multivariate kernel densities. It does not
+estimate kernel densities.",https://github.com/twolodzko/kernelboot
 Distributions,kolmim,An Improved Evaluation of Kolmogorov's Distribution,GPL-2,"Provides an alternative, more efficient evaluation of extreme
 probabilities of Kolmogorov's goodness-of-fit measure, Dn, when compared to
 the original implementation of Wang, Marsaglia, and Tsang. These
@@ -2014,7 +2021,15 @@ was developed by Robert G. Brown and David Bauer, extending
 earlier work by George Marsaglia and others.",http://code.google.com/p/rdieharder/
 Distributions,ReIns,"Functions from ""Reinsurance: Actuarial and Statistical Aspects""",GPL (>= 2),"Functions from the book ""Reinsurance: Actuarial and Statistical Aspects"" (Wiley, 2017, forthcoming) by Hansjoerg Albrecher, Jan Beirlant and Jef Teugels.",https://github.com/TReynkens/ReIns
 Distributions,reliaR,Package for some probability distributions.,GPL-2,A collection of utilities for some reliability<U+000a>models/probability distributions.,NA
+Distributions,Renext,Renewal Method for Extreme Values Extrapolation,GPL (>= 2),"Peaks Over Threshold (POT) or 'methode du renouvellement'. The distribution for the exceedances can be chosen, and heterogeneous data (including historical data or block data) can be used in a Maximum-Likelihood framework.",NA
 Distributions,retimes,Reaction Time Analysis,GPL-3,Reaction time analysis by maximum likelihood,http://www.humandata.it/
+Distributions,revdbayes,Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis,GPL (>= 2),"Provides functions for the Bayesian analysis of extreme value
+models.  The 'rust' package <https://cran.r-project.org/package=rust> is
+used to simulate a random sample from the required posterior distribution.
+The functionality of 'revdbayes' is similar to the 'evdbayes' package
+<https://cran.r-project.org/package=evdbayes>, which uses Markov Chain
+Monte Carlo ('MCMC') methods for posterior simulation.  See the 'revdbayes'
+website for more information, documentation and examples.",http://github.com/paulnorthrop/revdbayes
 Distributions,rlecuyer,R Interface to RNG with Multiple Streams,GPL (>= 2),"Provides an interface to the C implementation of the
 random number generator with multiple independent streams
 developed by L'Ecuyer et al (2002). The main purpose of this
@@ -3574,6 +3589,14 @@ Concepts",GPL (>= 2),"Accompanying package to the book
 Quantitative Risk Management: Concepts, Techniques and Tools by
 Alexander J. McNeil, Rüdiger Frey, and Paul Embrechts.",NA
 ExtremeValue,ReIns,"Functions from ""Reinsurance: Actuarial and Statistical Aspects""",GPL (>= 2),"Functions from the book ""Reinsurance: Actuarial and Statistical Aspects"" (Wiley, 2017, forthcoming) by Hansjoerg Albrecher, Jan Beirlant and Jef Teugels.",https://github.com/TReynkens/ReIns
+ExtremeValue,Renext,Renewal Method for Extreme Values Extrapolation,GPL (>= 2),"Peaks Over Threshold (POT) or 'methode du renouvellement'. The distribution for the exceedances can be chosen, and heterogeneous data (including historical data or block data) can be used in a Maximum-Likelihood framework.",NA
+ExtremeValue,revdbayes,Ratio-of-Uniforms Sampling for Bayesian Extreme Value Analysis,GPL (>= 2),"Provides functions for the Bayesian analysis of extreme value
+models.  The 'rust' package <https://cran.r-project.org/package=rust> is
+used to simulate a random sample from the required posterior distribution.
+The functionality of 'revdbayes' is similar to the 'evdbayes' package
+<https://cran.r-project.org/package=evdbayes>, which uses Markov Chain
+Monte Carlo ('MCMC') methods for posterior simulation.  See the 'revdbayes'
+website for more information, documentation and examples.",http://github.com/paulnorthrop/revdbayes
 ExtremeValue,RTDE,Robust Tail Dependence Estimation,GPL (>= 2),Robust tail dependence estimation for bivariate models. This package is based on two papers by the authors:'Robust and bias-corrected estimation of the coefficient of tail dependence' and 'Robust and bias-corrected estimation of probabilities of extreme failure sets'. This work was supported by a research grant (VKR023480) from VILLUM FONDEN and an international project for scientific cooperation (PICS-6416).,NA
 ExtremeValue,SpatialExtremes,Modelling Spatial Extremes,GPL (>= 2),"Tools for the statistical modelling of spatial extremes using max-stable processes, copula or Bayesian hierarchical models.",http://spatialextremes.r-forge.r-project.org/
 ExtremeValue,texmex,Statistical Modelling of Extreme Values,GPL (>= 2),"Statistical extreme value modelling of threshold excesses,
@@ -4102,6 +4125,7 @@ of numeric vectors/matrices and factors. zoo's key design goals
 are independence of a particular index/date/time class and
 consistency with ts and base R by providing methods to extend
 standard generics.",http://zoo.R-Forge.R-project.org/
+FunctionalData,classiFunc,Classification of Functional Data,GPL-3,Efficient implementation of k-nearest neighbor estimator and a kernel estimator for functional data classification.,https://github.com/maierhofert/classiFunc
 FunctionalData,dbstats,Distance-Based Statistics,GPL-2,"Prediction methods where explanatory information is coded as a matrix of distances between individuals. Distances can either be directly input as a distances matrix, a squared distances matrix, an inner-products matrix or computed from observed predictors.",NA
 FunctionalData,fda,Functional Data Analysis,GPL (>= 2),"These functions were developed to support functional data<U+000a>analysis as described in Ramsay, J. O. and Silverman, B. W.<U+000a>(2005) Functional Data Analysis. New York: Springer.  They were<U+000a>ported from earlier versions in Matlab and S-PLUS.  An<U+000a>introduction appears in Ramsay, J. O., Hooker, Giles, and<U+000a>Graves, Spencer (2009) Functional Data Analysis with R and<U+000a>Matlab (Springer). The package includes data sets and script<U+000a>files working many examples including all but one of the 76<U+000a>figures in this latter book.  Matlab versions of the code and<U+000a>sample analyses are no longer distributed through CRAN, as they<U+000a>were when the book was published.  For those, ftp from<U+000a>http://www.psych.mcgill.ca/misc/fda/downloads/FDAfuns/<U+000a>There you find a set of .zip files containing the functions and<U+000a>sample analyses, as well as two .txt files giving instructions for<U+000a>installation and some additional information.<U+000a>The changes from Version 2.4.1 are fixes of bugs in density.fd and<U+000a>removal of functions create.polynomial.basis, polynompen, and<U+000a>polynomial. These were deleted because the monomial basis<U+000a>does the same thing and because there were errors in the code.",http://www.functionaldata.org
 FunctionalData,fda.usc,Functional Data Analysis and Utilities for Statistical Computing,GPL-2,"Routines for exploratory and descriptive analysis of functional data such as depth measurements, atypical curves detection, regression models, supervised classification, unsupervised classification and functional analysis of variance.",http://www.jstatsoft.org/v51/i04/
@@ -5169,6 +5193,9 @@ weights for unbalanced data. The estimation of the models is
 particularly fast as compared to other libraries.",http://dnalytics.com/liblinear/
 MachineLearning,LogicForest,Logic Forest,GPL-2,Two classification ensemble methods based on logic regression models.  LogForest uses a bagging approach to construct an ensemble of logic regression models.  LBoost uses a combination of boosting and cross-validation to construct an ensemble of logic regression models.  Both methods are used for classification of binary responses based on binary predictors and for identification of important variables and variable interactions predictive of a binary outcome.,NA
 MachineLearning,LogicReg,Logic Regression,GPL (>= 2),Routines for fitting Logic Regression models.,NA
+MachineLearning,LTRCtrees,"Survival Trees to Fit Left-Truncated and Right-Censored and
+Interval-Censored Survival Data",GPL-3,"Recursive partition algorithms designed for fitting survival tree with left-truncated and right censored (LTRC) data, as well as interval-censored data.
+The LTRC trees can also be used to fit survival tree with time-varying covariates.",NA
 MachineLearning,maptree,"Mapping, pruning, and graphing tree models",Unlimited,"Functions with example data for graphing, pruning, and<U+000a>mapping models from hierarchical clustering, and classification<U+000a>and regression trees.",NA
 MachineLearning,mboost,Model-Based Boosting,GPL-2,"Functional gradient descent algorithm
 (boosting) for optimizing general risk functions utilizing
@@ -5184,6 +5211,7 @@ tuning with modern optimization techniques, for single- and multi-objective
 problems. Filter and wrapper methods for feature selection. Extension of
 basic learners with additional operations common in machine learning, also
 allowing for easy nested resampling. Most operations can be parallelized.",https://github.com/mlr-org/mlr
+MachineLearning,MXM,"Discovering Multiple, Statistically-Equivalent Signatures",GPL-2,"Feature selection methods for identifying minimal, statistically-equivalent and equally-predictive feature subsets. Bayesian network algorithms and related functions are also included. The package name 'MXM' stands for ""Mens eX Machina"", meaning ""Mind from the Machine"" in Latin.",http://mensxmachina.org
 MachineLearning,ncvreg,"Regularization Paths for SCAD and MCP Penalized Regression
 Models",GPL-3,"Efficient algorithms for fitting regularization paths for linear or
 logistic regression models penalized by MCP or SCAD, with optional additional
@@ -7014,6 +7042,8 @@ e.g. estimating quadratic, Cobb-Douglas and Translog functions,
 calculating partial derivatives and elasticities of these functions,
 and calculating Hessian matrices, checking curvature
 and preparing restrictions for imposing monotonicity of Translog functions.",http://www.micEcon.org
+OfficialStatistics,micEconIndex,Price and Quantity Indices,GPL (>= 2),"Tools for calculating Laspeyres, Paasche, and Fisher
+price and quantity indices.",http://www.micEcon.org
 OfficialStatistics,MicSim,Performing Continuous-Time Microsimulation,GPL-2,This entry-level toolkit allows performing continuous-time microsimulation for a wide range of demographic applications. Individual life-courses are specified by a continuous-time multi-state model.,NA
 OfficialStatistics,MImix,Mixture summary method for multiple imputation,GPL-2,"Tools to combine results for multiply-imputed data using
 mixture approximations",NA
@@ -7896,6 +7926,8 @@ from 'R.' 'TreeBASE' is a repository of user-submitted phylogenetic
 trees (of species, population, or genes) and the data used to create
 them.",https://github.com/ropensci/treebase
 Phylogenetics,TreePar,Estimating birth and death rates based on phylogenies,GPL-2,"(i) For a given species phylogeny on present day data which is calibrated to calendar-time, a method for estimating maximum likelihood speciation and extinction processes is provided. The method allows for non-constant rates. Rates may change (1) as a function of time, i.e. rate shifts at specified times or mass extinction events (likelihood implemented as LikShifts, optimization as bd.shifts.optim and visualized as bd.shifts.plot) or (2) as a function of the number of species, i.e. density-dependence (likelihood implemented as LikDD and optimization as bd.densdep.optim) or (3) extinction rate may be a function of species age (likelihood implemented as LikAge and optimization as bd.age.optim.matlab). Note that the methods take into account the whole phylogeny, in particular it accounts for the ""pull of the present"" effect. (1-3) can take into account incomplete species sampling, as long as each species has the same probability of being sampled. For a given phylogeny on higher taxa (i.e. all but one species per taxa are missing), where the number of species is known within each higher taxa, speciation and extinction rates can be estimated under model (1) (implemented within LikShifts and bd.shifts.optim with groups !=0). (ii) For a given phylogeny with sequentially sampled tips, e.g. a virus phylogeny, rates can be estimated under a model where rates vary across time using bdsky.stt.optim based on likelihood LikShiftsSTT (extending LikShifts and bd.shifts.optim). Furthermore, rates may vary as a function of host types using LikTypesSTT (multitype branching process extending functions in R package diversitree). This function can furthermore calculate the likelihood under an epidemiological model where infected individuals are first exposed and then infectious.",NA
+Phylogenetics,treeplyr,'dplyr' Functionality for Matched Tree and Data Objects,GPL-2 | GPL-3,"Matches phylogenetic trees and trait data, and
+allows simultaneous manipulation of the tree and data using 'dplyr'.",https://github.com/uyedaj/treeplyr
 Phylogenetics,TreeSim,Simulating Phylogenetic Trees,GPL-2,"Simulation methods for phylogenetic trees where (i) all tips are sampled at one time point or (ii) tips are sampled sequentially through time. (i) For sampling at one time point, simulations are performed under a constant rate birth-death process, conditioned on having a fixed number of final tips (sim.bd.taxa()), or a fixed age (sim.bd.age()), or a fixed age and number of tips (sim.bd.taxa.age()). When conditioning on the number of final tips, the method allows for shifts in rates and mass extinction events during the birth-death process (sim.rateshift.taxa()). The function sim.bd.age() (and sim.rateshift.taxa() without extinction) allow the speciation rate to change in a density-dependent way. The LTT plots of the simulations can be displayed using LTT.plot(), LTT.plot.gen() and LTT.average.root(). TreeSim further samples trees with n final tips from a set of trees generated by the common sampling algorithm stopping when a fixed number m>>n of tips is first reached (sim.gsa.taxa()). This latter method is appropriate for m-tip trees generated under a big class of models (details in the sim.gsa.taxa() man page). For incomplete phylogeny, the missing speciation events can be added through simulations (corsim()). (ii) sim.rateshifts.taxa() is generalized to sim.bdsky.stt() for serially sampled trees, where the trees are conditioned on either the number of sampled tips or the age. Furthermore, for a multitype-branching process with sequential sampling, trees on a fixed number of tips can be simulated using sim.bdtypes.stt.taxa(). This function further allows to simulate under epidemiological models with an exposed class. The function sim.genespeciestree() simulates coalescent gene trees within birth-death species trees, and sim.genetree() simulates coalescent gene trees.",NA
 Phylogenetics,vegan,Community Ecology Package,GPL-2,"Ordination methods, diversity analysis and other
 functions for community and vegetation ecologists.","https://cran.r-project.org, https://github.com/vegandevs/vegan"
@@ -7903,6 +7935,7 @@ Psychometrics,ade4,"Analysis of Ecological Data : Exploratory and Euclidean Meth
 in Environmental Sciences",GPL (>= 2),Multivariate data analysis and graphical display.,"http://pbil.univ-lyon1.fr/ADE-4, Mailing list:
 http://listes.univ-lyon1.fr/wws/info/adelist"
 Psychometrics,anacor,Simple and Canonical Correspondence Analysis,GPL-2,"Performs simple and canonical CA (covariates on rows/columns) on a two-way frequency table (with missings) by means of SVD. Different scaling methods (standard, centroid, Benzecri, Goodman) as well as various plots including confidence ellipsoids are provided.",http://r-forge.r-project.org/projects/psychor/
+Psychometrics,AnalyzeFMRI,Functions for analysis of fMRI datasets stored in the ANALYZE or<U+000a>NIFTI format.,GPL (>= 2),"Functions for I/O, visualisation and analysis of<U+000a>functional Magnetic Resonance Imaging (fMRI) datasets stored in<U+000a>the ANALYZE or NIFTI format.",NA
 Psychometrics,aspect,"A General Framework for Multivariate Analysis with Optimal
 Scaling",GPL-2,"Contains various functions for optimal scaling. One function performs optimal scaling by maximizing an aspect (i.e. a target function such as the sum of eigenvalues, sum of squared correlations, squared multiple correlations, etc.) of the corresponding correlation matrix. Another function performs implements the LINEALS approach for optimal scaling by minimization of an aspect based on pairwise correlations and correlation ratios. The resulting correlation matrix and category scores can be used for further multivariate methods such as structural equation models.",http://R-forge.R-project.org/projects/psychor/
 Psychometrics,BayesFM,Bayesian Inference for Factor Modeling,GPL-3,"Collection of procedures to perform Bayesian analysis on a variety
@@ -7924,6 +7957,10 @@ Psychometrics,blavaan,Bayesian Latent Variable Analysis,GPL (>= 2),"Fit a variet
 factor analysis, structural equation models, and latent growth curve models.",NA
 Psychometrics,bpca,Biplot of Multivariate Data Based on Principal Components<U+000a>Analysis,GPL (>= 2),Implements biplot (2d and 3d) of multivariate data based<U+000a>on principal components analysis and diagnostic tools of the quality of the reduction.,NA
 Psychometrics,BradleyTerry2,Bradley-Terry Models,GPL (>= 2),"Specify and fit the Bradley-Terry model, including structured versions in which the parameters are related to explanatory variables through a linear predictor and versions with contest-specific effects, such as a home advantage.",http://bradleyterry2.r-forge.r-project.org
+Psychometrics,BTLLasso,Modelling Heterogeneity in Paired Comparison Data,GPL (>= 2),"Performs 'BTLLasso' (Schauberger and Tutz, 2017: Subject-Specific Modelling of Paired Comparison Data - a Lasso-Type Penalty Approach), a method to include different types of variables in paired
+comparison models and, therefore, to allow for heterogeneity between subjects. Variables can be subject-specific, object-specific and subject-object-specific and
+can have an influence on the attractiveness/strength of the objects. Suitable L1 penalty terms are used
+to cluster certain effects and to reduce the complexity of the models.",NA
 Psychometrics,ca,"Simple, Multiple and Joint Correspondence Analysis",GPL,"Computation and visualization of simple, multiple and joint correspondence analysis.",http://www.carme-n.org/
 Psychometrics,cabootcrs,Bootstrap Confidence Regions for Correspondence Analysis.,GPL-2,Performs correspondence analysis on a two-way contingency<U+000a>table and produces bootstrap-based elliptical confidence<U+000a>regions around the projected coordinates for the category<U+000a>points. Includes routines to plot the results in a variety of<U+000a>styles. Also reports the standard numerical output for<U+000a>correspondence analysis.,NA
 Psychometrics,cacIRT,"Classification Accuracy and Consistency under Item Response
@@ -8033,6 +8070,7 @@ Psychometrics,ecodist,Dissimilarity-based functions for ecological analysis,GPL 
 Psychometrics,edstan,Stan Models for Item Response Theory,BSD_3_clause + file LICENSE,"Provides convenience functions and pre-programmed Stan models
 related to item response theory. Its purpose is to make fitting
 common item response theory models using Stan easy.",NA
+Psychometrics,eegkit,Toolkit for Electroencephalography Data,GPL (>= 2),"Analysis and visualization tools for electroencephalography (EEG) data. Includes functions for plotting (a) EEG caps, (b) single- and multi-channel EEG time courses, and (c) EEG spatial maps. Also includes smoothing and Independent Component Analysis functions for EEG data analysis, and a function for simulating event-related potential EEG data.",NA
 Psychometrics,elasticnet,Elastic-Net for Sparse Estimation and Sparse PCA,GPL (>= 2),This package provides functions for fitting the entire<U+000a>solution path of the Elastic-Net and also provides functions<U+000a>for estimating sparse Principal Components. The Lasso solution<U+000a>paths can be computed by the same function. First version:<U+000a>2005-10.,http://www.stat.umn.edu/~hzou
 Psychometrics,emIRT,EM Algorithms for Estimating Item Response Theory Models,GPL (>= 3),"Various Expectation-Maximization (EM) algorithms are implemented for item response theory
 (IRT) models. The current implementation includes IRT models for binary and ordinal
@@ -8086,6 +8124,7 @@ Psychometrics,gtheory,Apply Generalizability Theory with R,GPL-3,"Estimates vari
 universe scores, and standard errors when observed scores contain variation from
 one or more measurement facets (e.g., items and raters).",http://EvaluationDashboard.com
 Psychometrics,homals,Gifi Methods for Optimal Scaling,GPL,"Performs a homogeneity analysis (multiple correspondence analysis) and various extensions. Rank restrictions on the category quantifications can be imposed (nonlinear PCA). The categories are transformed by means of optimal scaling with options for nominal, ordinal, and numerical scale levels (for rank-1 restrictions). Variables can be grouped into sets, in order to emulate regression analysis and canonical correlation analysis.",http://r-forge.r-project.org/projects/psychor/
+Psychometrics,ica,Independent Component Analysis,GPL (>= 2),"Independent Component Analysis (ICA) using various algorithms: FastICA, Information-Maximization (Infomax), and Joint Approximate Diagonalization of Eigenmatrices (JADE).",NA
 Psychometrics,ICC,"Facilitating Estimation of the Intraclass Correlation
 Coefficient",GPL (>= 2),Assist in the estimation of the Intraclass Correlation Coefficient (ICC) from variance components of a one-way analysis of variance and also estimate the number of individuals or groups necessary to obtain an ICC estimate with a desired confidence interval width.,http://github.com/matthewwolak/ICC
 Psychometrics,immer,Item Response Models for Multiple Ratings,GPL (>= 2),"
@@ -8291,6 +8330,10 @@ networks with routines that combine algebraic systems like the partially ordered
 the semiring structure together with the relational bundles occurring in different types of
 multivariate network data sets. It also provides an algebraic approach for two-mode networks
 through Galois derivations between families of the pairs of subsets in the two domains.",http://github.com/mplex/multiplex/
+Psychometrics,multiway,Component Models for Multi-Way Data,GPL (>= 2),"Fits multi-way component models via alternating least squares algorithms with optional constraints: orthogonal, non-negative, unimodal, monotonic, periodic, smooth, or structure. Fit models include Individual Differences Scaling, Parallel Factor Analysis (1 and 2), Simultaneous Component Analysis, and Tucker Factor Analysis.",NA
+Psychometrics,munfold,Metric Unfolding,GPL-2,"Multidimensional unfolding using Schoenemann's algorithm for metric
+and Procrustes rotation of unfolding results.","
+http://www.elff.eu/software/munfold/,http://github.com/melff/munfold/"
 Psychometrics,nFactors,Parallel Analysis and Non Graphical Solutions to the Cattell<U+000a>Scree Test,GPL (>= 2),"Indices, heuristics and strategies to help determine the number of factors/components to retain:<U+000a>1. Acceleration factor (af with or without Parallel Analysis);<U+000a>2. Optimal Coordinates (noc with or without Parallel Analysis);<U+000a>3. Parallel analysis (components, factors and bootstrap);<U+000a>4. lambda > mean(lambda) (Kaiser, CFA and related);<U+000a>5. Cattell-Nelson-Gorsuch (CNG);<U+000a>6. Zoski and Jurs multiple regression (b, t and p);<U+000a>7. Zoski and Jurs standard error of the regression coeffcient (sescree);<U+000a>8. Nelson R2;<U+000a>9. Bartlett khi-2;<U+000a>10. Anderson khi-2;<U+000a>11. Lawley khi-2 and<U+000a>12. Bentler-Yuan khi-2.",NA
 Psychometrics,nlme,Linear and Nonlinear Mixed Effects Models,GPL (>= 2) | file LICENCE,Fit and compare Gaussian linear and nonlinear mixed-effects models.,NA
 Psychometrics,nlsem,Fitting Structural Equation Mixture Models,GPL (>= 2),"Estimation of structural equation models with nonlinear effects
@@ -8530,6 +8573,7 @@ and transformed scores. The results are shown on the
 console and can be saved to a tabular text file for further
 statistical analysis. The user can define his own tests and
 scoring procedures through a GUI.",NA
+Psychometrics,ThreeWay,Three-Way Component Analysis,GPL (>= 2),"Component analysis for three-way data arrays by means of Candecomp/Parafac, Tucker3, Tucker2 and Tucker1 models.",NA
 Psychometrics,TripleR,"Social Relation Model (SRM) Analyses for Single or Multiple
 Groups",GPL (>= 2),"Social Relation Model (SRM) analyses for single or multiple
 round-robin groups are performed. These analyses are either based on one
@@ -9415,6 +9459,16 @@ source code can be viewed by expanding the package source code ""tarball""
 and looking in the R subdirectory. Please cite fields along with its
 DOI in your publications!",http://www.image.ucar.edu/fields
 Spatial,FieldSim,Random Fields (and Bridges) Simulations,GPL (>= 3),Tools for random fields and bridges simulations.,http://cran.r-project.org/web/packages/FieldSim/
+Spatial,FRK,Fixed Rank Kriging,GPL (>= 2),"Fixed Rank Kriging is a tool for spatial/spatio-temporal modelling
+and prediction with large datasets. The approach, discussed in Cressie and
+Johannesson (2008) <DOI:10.1111/j.1467-9868.2007.00633.x>, decomposes the field,
+and hence the covariance function, using a fixed set of n basis functions,
+where n is typically much smaller than the number of data points (or polygons) m.
+The method naturally allows for non-stationary, anisotropic covariance functions
+and the use of observations with varying support (with known error variance). The
+projected field is a key building block of the Spatial Random Effects (SRE) model,
+on which this package is based. The package FRK provides helper functions to model,
+fit, and predict using an SRE with relative ease.",NA
 Spatial,gdalUtils,"Wrappers for the Geospatial Data Abstraction Library (GDAL)
 Utilities",GPL (>= 2),"Wrappers for the Geospatial Data Abstraction Library (GDAL)
 Utilities.",NA
@@ -9821,8 +9875,14 @@ Spatial,sphet,"Estimation of spatial autoregressive models with and without
 heteroskedastic innovations",GPL-2,"Generalized Method of Moment estimation of Cliff-Ord-type
 spatial autoregressive models with and without heteroskedastic
 innovations",NA
+Spatial,spind,Spatial Methods and Indices,GPL-3,"Functions for spatial methods based on generalized estimating equations (GEE) and
+wavelet-revised methods (WRM), functions for scaling by wavelet multiresolution regression (WMRR),
+conducting multi-model inference, and stepwise model selection. Further, contains functions
+for spatially corrected model accuracy measures.",https://github.com/levisc8/spind
 Spatial,splancs,Spatial and Space-Time Point Pattern Analysis,GPL (>= 2),"The Splancs package was written as an enhancement to S-Plus for display and analysis of spatial point pattern data; it has been ported to R and is in ""maintenance mode"".",http://www.maths.lancs.ac.uk/~rowlings/Splancs/
 Spatial,splm,Econometric Models for Spatial Panel Data,GPL-2,ML and GM estimation and diagnostic testing of econometric models for spatial panel data.,NA
+Spatial,spmoran,Moran's Eigenvector-Based Spatial Regression Models,GPL (>= 2),"Functions for estimating fixed and random effects
+eigenvector spatial filtering models.",NA
 Spatial,spselect,Selecting Spatial Scale of Covariates in Regression Models,GPL (>= 2),"Fits spatial scale (SS) forward stepwise regression, SS incremental forward stagewise regression, SS least angle regression (LARS), and SS lasso models.  All area-level covariates are considered at all available scales to enter a model, but the SS algorithms are constrained to select each area-level covariate at a single spatial scale.",NA
 Spatial,spsurvey,Spatial Survey Design and Analysis,GPL (>= 2),"This group of functions implements algorithms for design and
 analysis of probability surveys.  The functions are tailored for Generalized
@@ -11220,6 +11280,7 @@ generators.  By using a set of generators, non-repeatable time
 series can be produced.  This technique is the basis of the
 fractal time series process in this package.",NA
 TimeSeries,fts,R interface to tslib (a time series library in c++),GPL-3,fast operations for time series objects,NA
+TimeSeries,funtimes,Functions for Time Series Analysis,GPL (>= 2),"Includes non-parametric estimators and tests for time series analysis. The functions are to test for presence of possibly non-monotonic trends and for synchronism of trends in multiple time series, using modern bootstrap techniques and robust non-parametric difference-based estimators.",NA
 TimeSeries,GAS,Generalized Autoregressive Score Models,GPL-3,"Simulate, estimate and forecast using univariate and multivariate GAS models.",https://github.com/LeopoldoCatania/GAS
 TimeSeries,gdpc,Generalized Dynamic Principal Components,GPL (>= 2),"Functions to compute the Generalized Dynamic Principal Components
 introduced in Peña and Yohai (2016) <DOI:10.1080/01621459.2015.1072542>.",NA
@@ -11583,6 +11644,11 @@ TimeSeries,tiger,TIme series of Grouped ERrors,GPL-2,Temporally resolved groups 
 TimeSeries,timeDate,Rmetrics - Chronological and Calendar Objects,GPL (>= 2),"Environment for teaching
 ""Financial Engineering and Computational Finance"".
 Managing chronological and calendar objects.",https://www.rmetrics.org
+TimeSeries,timekit,A Collection of Tools for Working with Time Series in R,GPL (>= 3),"
+Get the time series index, signature, and summary from time series objects and
+time-based tibbles. Create future time series based on properties of
+existing time series index.
+Coerce between time-based tibbles ('tbl') and 'xts', 'zoo', and 'ts'.",https://github.com/business-science/timekit
 TimeSeries,TimeProjection,Time Projections,GPL-3,"Extract useful time components of a date object, such as
 day of week, weekend, holiday, day of month, etc, and put it in
 a data frame.  This can be used to create many predictor
@@ -11685,6 +11751,8 @@ TimeSeries,WeightedPortTest,Weighted Portmanteau Tests for Time Series Goodness-
 described in ""New Weighted Portmanteau Statistics for Time
 Series Goodness-of-Fit Testing' accepted for publication by the
 Journal of the American Statistical Association.",NA
+TimeSeries,wktmo,Converting Weekly Data to Monthly Data,GPL-2,"Converts weekly data to monthly data.
+Users can use three types of week formats: ISO week, epidemiology week (epi week) and calendar date.",NA
 TimeSeries,wmtsa,Wavelet Methods for Time Series Analysis,GPL-2,"Software to book Wavelet Methods for Time Series Analysis,
 Donald B. Percival and Andrew T. Walden, Cambridge University
 Press, 2000.",NA
