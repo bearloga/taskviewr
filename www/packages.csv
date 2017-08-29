@@ -2265,6 +2265,7 @@ into 16 value-added components. Secondly, the Leontief decomposition (default)
 derives the value added origin of exports by country and industry, which is also
 based on Wang, Wei, and Zhu (Wang, Z., S.-J. Wei, and K. Zhu. 2013. ""Quantifying
 International Production Sharing at the Bilateral and Sector Levels."").","http://qua.st/decompr, https://github.com/bquast/decompr"
+Econometrics,dlsem,Distributed-Lag Linear Structural Equation Modelling,GPL-2,"Inference functionalities for distributed-lag linear structural equation models. Endpoint-constrained quadratic, quadratic decreasing and gamma lag shapes are available.",NA
 Econometrics,dynlm,Dynamic Linear Regression,GPL-2 | GPL-3,Dynamic linear models and time series regression.,NA
 Econometrics,Ecdat,Data Sets for Econometrics,GPL (>= 2),Data sets for econometrics.,https://www.r-project.org
 Econometrics,effects,"Effect Displays for Linear, Generalized Linear, and Other Models",GPL (>= 2),"
@@ -2473,6 +2474,13 @@ methods are available (summary, anova, drop-methods, step,
 confint, predict etc.) in addition to profile methods and slice
 methods for visualizing the likelihood function and checking
 convergence.",NA
+Econometrics,OrthoPanels,"Dynamic Panel Models with Orthogonal Reparameterization of Fixed
+Effects",GPL (>= 3),"Implements the orthogonal reparameterization
+approach recommended by Lancaster (2002) to estimate dynamic panel
+models with fixed effects (and optionally: panel specific
+intercepts). The approach uses a likelihood-based estimator and
+produces estimates that are asymptotically unbiased as N goes to
+infinity, with a T as low as 2.",NA
 Econometrics,pampe,"Implementation of the Panel Data Approach Method for Program
 Evaluation",GPL-2,"Implements the Panel Data Approach Method for program evaluation as developed in Hsiao, Ching and Ki Wan (2012). pampe estimates the effect of an intervention by comparing the evolution of the outcome for a unit affected by an intervention or treatment to the evolution of the unit had it not been affected by the intervention.",NA
 Econometrics,panelAR,"Estimation of Linear AR(1) Panel Data Models with
@@ -2672,6 +2680,20 @@ Econometrics,wbstats,"Programmatic Access to Data and Statistics from the World 
 API",MIT + file LICENSE,"Tools for searching and downloading data and statistics from
 the World Bank Data API (<http://data.worldbank.org/developers/api-overview>)
 and the World Bank Data Catalog API (<http://data.worldbank.org/developers/data-catalog-api>).",https://github.com/GIST-ORNL/wbstats
+Econometrics,wooldridge,"105 Data Sets from ""Introductory Econometrics: A Modern
+Approach"" by Jeffrey M. Wooldridge",GPL-3,"Economics students new to both econometrics and R may find the
+simultaneous introduction to both challenging. In particular, the process of
+loading and preparing data before building one's first model can present
+challenges. The `wooldridge` data package aims to lighten the task by loading
+any data set from the text into the current working environment with a single command.
+The package contains documentation for each set and all data has been
+compressed to 62.73% of its original size. Just install the package, load it,
+and use the `data()` function to call the data set you need to work with.
+In addition, a wooldridge-vignette illustrates solutions to examples from
+each chapter of the text, offering a relevant introduction to econometric
+modelling with R. The vignette also includes an Appendix to helpful resources
+about using R for econometrics. Note: Data sets are from the 5th edition
+(Wooldridge 2013, ISBN-13:978-1-111-53104-1), and are compatible with others.",https://CRAN.R-project.org/package=wooldridge
 Econometrics,xts,eXtensible Time Series,GPL (>= 2),"Provide for uniform handling of R's different time-based data classes by extending zoo, maximizing native format information preservation and allowing for user level customization and extension, while simplifying cross-class interoperability.",http://r-forge.r-project.org/projects/xts/
 Econometrics,Zelig,Everyone's Statistical Software,GPL (>= 3),"A framework that brings together an abundance of common
 statistical models found across packages into a unified interface, and
@@ -4714,6 +4736,8 @@ of workers, the task scheduling strategy, or the chosen
 parallel environment and associated foreach backend.",https://renozao.github.io/doRNG
 HighPerformanceComputing,doSNOW,Foreach Parallel Adaptor for the 'snow' Package,GPL-2,"Provides a parallel backend for the %dopar% function using
 Luke Tierney's snow package.",NA
+HighPerformanceComputing,drake,Data Frames in R for Make,GPL-3,"A solution for reproducible code and
+high-performance computing.",https://github.com/wlandau-lilly/drake
 HighPerformanceComputing,ff,memory-efficient storage of large data on disk and fast access<U+000a>functions,GPL-2 | file LICENSE,"The ff package provides data structures that are stored on<U+000a>disk but behave (almost) as if they were in RAM by transparently<U+000a>mapping only a section (pagesize) in main memory - the effective<U+000a>virtual memory consumption per ff object. ff supports R's standard<U+000a>atomic data types 'double', 'logical', 'raw' and 'integer' and<U+000a>non-standard atomic types boolean (1 bit), quad (2 bit unsigned),<U+000a>nibble (4 bit unsigned), byte (1 byte signed with NAs), ubyte (1 byte<U+000a>unsigned), short (2 byte signed with NAs), ushort (2 byte unsigned),<U+000a>single (4 byte float with NAs). For example 'quad' allows efficient<U+000a>storage of genomic data as an 'A','T','G','C' factor. The unsigned<U+000a>types support 'circular' arithmetic. There is also support for<U+000a>close-to-atomic types 'factor', 'ordered', 'POSIXct', 'Date' and<U+000a>custom close-to-atomic types.<U+000a>ff not only has native C-support for vectors, matrices and arrays<U+000a>with flexible dimorder (major column-order, major row-order and<U+000a>generalizations for arrays). There is also a ffdf class not unlike<U+000a>data.frames and import/export filters for csv files.<U+000a>ff objects store raw data in binary flat files in native encoding,<U+000a>and complement this with metadata stored in R as physical and virtual<U+000a>attributes. ff objects have well-defined hybrid copying semantics,<U+000a>which gives rise to certain performance improvements through<U+000a>virtualization. ff objects can be stored and reopened across R<U+000a>sessions. ff files can be shared by multiple ff R objects<U+000a>(using different data en/de-coding schemes) in the same process<U+000a>or from multiple R processes to exploit parallelism. A wide choice of<U+000a>finalizer options allows to work with 'permanent' files as well as<U+000a>creating/removing 'temporary' ff files completely transparent to the<U+000a>user. On certain OS/Filesystem combinations, creating the ff files<U+000a>works without notable delay thanks to using sparse file allocation.<U+000a>Several access optimization techniques such as Hybrid Index<U+000a>Preprocessing and Virtualization are implemented to achieve good<U+000a>performance even with large datasets, for example virtual matrix<U+000a>transpose without touching a single byte on disk. Further, to reduce<U+000a>disk I/O, 'logicals' and non-standard data types get stored native and<U+000a>compact on binary flat files i.e. logicals take up exactly 2 bits to<U+000a>represent TRUE, FALSE and NA.<U+000a>Beyond basic access functions, the ff package also provides<U+000a>compatibility functions that facilitate writing code for ff and ram<U+000a>objects and support for batch processing on ff objects (e.g. as.ram,<U+000a>as.ff, ffapply). ff interfaces closely with functionality from package<U+000a>'bit': chunked looping, fast bit operations and coercions between<U+000a>different objects that can store subscript information ('bit',<U+000a>'bitwhich', ff 'boolean', ri range index, hi hybrid index). This allows<U+000a>to work interactively with selections of large datasets and quickly<U+000a>modify selection criteria.<U+000a>Further high-performance enhancements can be made available upon request.",http://ff.r-forge.r-project.org/
 HighPerformanceComputing,ffbase,Basic Statistical Functions for Package 'ff',GPL-3,"Extends the out of memory vectors of 'ff' with
 statistical functions and other utilities to ease their usage.",http://github.com/edwindj/ffbase
@@ -5064,6 +5088,9 @@ MachineLearning,earth,Multivariate Adaptive Regression Splines,GPL-3,"Build regr
 papers ""Fast MARS"" and ""Multivariate Adaptive Regression
 Splines"". (The term ""MARS"" is trademarked and thus not used in
 the name of the package.)",http://www.milbo.users.sonic.net/earth
+MachineLearning,effects,"Effect Displays for Linear, Generalized Linear, and Other Models",GPL (>= 2),"
+Graphical and tabular effect displays, e.g., of interactions, for
+various statistical models with linear predictors.","http://www.r-project.org, http://socserv.socsci.mcmaster.ca/jfox/"
 MachineLearning,elasticnet,Elastic-Net for Sparse Estimation and Sparse PCA,GPL (>= 2),This package provides functions for fitting the entire<U+000a>solution path of the Elastic-Net and also provides functions<U+000a>for estimating sparse Principal Components. The Lasso solution<U+000a>paths can be computed by the same function. First version:<U+000a>2005-10.,http://www.stat.umn.edu/~hzou
 MachineLearning,ElemStatLearn,"Data Sets, Functions and Examples from the Book: ""The Elements
 of Statistical Learning, Data Mining, Inference, and
@@ -5127,6 +5154,9 @@ logistic, multinomial logistic, Poisson, Cox proportional
 hazards partial likelihood, AdaBoost exponential loss,
 Huberized hinge loss, and Learning to Rank measures
 (LambdaMart).",http://code.google.com/p/gradientboostedmodels/
+MachineLearning,ggRandomForests,Visually Exploring Random Forests,GPL (>= 3),"Graphic elements for exploring Random Forests using the 'randomForest' or
+'randomForestSRC' package for survival, regression and classification forests and
+'ggplot2' package plotting.",https://github.com/ehrlinger/ggRandomForests
 MachineLearning,glmnet,Lasso and Elastic-Net Regularized Generalized Linear Models,GPL-2,"Extremely efficient procedures for fitting the entire lasso or elastic-net regularization path for linear regression, logistic and multinomial regression models, Poisson regression and the Cox model. Two recent additions are the multiple-response Gaussian, and the grouped multinomial. The algorithm uses cyclical coordinate descent in a path-wise fashion, as described in the paper linked to via the URL below.",http://www.jstatsoft.org/v33/i01/.
 MachineLearning,glmpath,L1 Regularization Path for Generalized Linear Models and Cox<U+000a>Proportional Hazards Model,GPL (>= 2),A path-following algorithm for L1 regularized generalized<U+000a>linear models and Cox proportional hazards model,NA
 MachineLearning,GMMBoost,Likelihood-based Boosting for Generalized mixed models,GPL-2,Likelihood-based Boosting for Generalized mixed models,NA
@@ -5165,6 +5195,7 @@ robust Lasso regressions with non-Gaussian errors and for instrumental variable
 (IV) and treatment effect estimation in a high-dimensional setting. Moreover,
 the methods enable valid post-selection inference and rely on a theoretically
 grounded, data-driven choice of the penalty.",NA
+MachineLearning,ICEbox,Individual Conditional Expectation Plot Toolbox,GPL-2 | GPL-3,"Implements Individual Conditional Expectation (ICE) plots, a tool for visualizing the model estimated by any supervised learning algorithm. ICE plots refine Friedman's partial dependence plot by graphing the functional relationship between the predicted response and a covariate of interest for individual observations. Specifically, ICE plots highlight the variation in the fitted values across the range of a covariate of interest, suggesting where and to what extent they may exist.",NA
 MachineLearning,ipred,Improved Predictors,GPL (>= 2),"Improved predictive models by indirect classification and
 bagging for classification, regression and survival problems
 as well as resampling based estimators of prediction error.",NA
@@ -5248,6 +5279,8 @@ functionality for print()/plot()/predict() methods. Furthermore, new and improve
 reimplementations of conditional inference trees (ctree()) and model-based
 recursive partitioning (mob()) from the 'party' package are provided based
 on the new infrastructure.",http://partykit.R-Forge.R-project.org/partykit
+MachineLearning,pdp,Partial Dependence Plots,GPL (>= 2),"A general framework for constructing partial dependence (i.e.,
+marginal effect) plots from various types machine learning models in R.",https://github.com/bgreenwell/pdp
 MachineLearning,penalized,"L1 (Lasso and Fused Lasso) and L2 (Ridge) Penalized Estimation
 in GLMs and in the Cox Model",GPL (>= 2),"Fitting possibly high dimensional penalized
 regression models. The penalty structure can be any combination
@@ -5259,6 +5292,9 @@ Cross-validation routines allow optimization of the tuning
 parameters.",NA
 MachineLearning,penalizedLDA,Penalized Classification using Fisher's Linear Discriminant,GPL (>= 2),"Implements the penalized LDA proposal of ""Witten and Tibshirani (2011), Penalized classification using Fisher's linear discriminant, to appear in Journal of the Royal Statistical Society, Series B"".",NA
 MachineLearning,penalizedSVM,Feature Selection SVM using penalty functions,GPL (>= 2),"This package provides feature selection SVM using penalty<U+000a>functions. The smoothly clipped absolute deviation (SCAD),<U+000a>'L1-norm', 'Elastic Net' ('L1-norm' and 'L2-norm') and 'Elastic<U+000a>SCAD' (SCAD and 'L2-norm') penalties are availible. The tuning<U+000a>parameters can be founf using either a fixed grid or a interval<U+000a>search.",NA
+MachineLearning,plotmo,Plot a Model's Response and Residuals,GPL-3,"Plot model surfaces for a wide variety of models
+using partial dependence plots and other techniques.
+Also plot model residuals and other information on the model.",http://www.milbo.users.sonic.net
 MachineLearning,quantregForest,Quantile Regression Forests,GPL,"Quantile Regression Forests is a tree-based ensemble
 method for estimation of conditional quantiles. It is
 particularly well suited for high-dimensional data. Predictor
@@ -5612,6 +5648,17 @@ pharmacokinetics or meta-analysis. The NPMLE and VEM algorithms
 (flexible support size) and EM algorithms (fixed support size)
 are provided for univariate and bivariate data.",NA
 MetaAnalysis,compute.es,Compute Effect Sizes,GPL-2,"This package contains several functions for calculating the most<U+000a>widely used effect sizes (ES), along with their variances, confidence<U+000a>intervals and p-values.  The output includes ES's of d (mean difference), g<U+000a>(unbiased estimate of d), r (correlation coefficient), z' (Fisher's z), and<U+000a>OR (odds ratio and log odds ratio). In addition, NNT (number needed to<U+000a>treat), U3, CLES (Common Language Effect Size) and Cliff's Delta are<U+000a>computed. This package uses recommended formulas as described in The<U+000a>Handbook of Research Synthesis and Meta-Analysis (Cooper, Hedges, &<U+000a>Valentine, 2009).",http://acdelre.weebly.com
+MetaAnalysis,ConfoundedMeta,Sensitivity Analyses for Unmeasured Confounding in Meta-Analyses,GPL-2,"Conducts sensitivity analyses for unmeasured confounding in
+random-effects meta-analysis per Mathur & VanderWeele (in preparation).
+Given output from a random-effects meta-analysis with a relative risk
+outcome, computes point estimates and inference for: (1) the proportion
+of studies with true causal effect sizes more extreme than a specified threshold
+of scientific significance; and (2) the minimum bias factor and confounding
+strength required to reduce to less than a specified threshold the proportion
+of studies with true effect sizes of scientifically significant size.
+Creates plots and tables for visualizing these metrics across a range of bias values.
+Provides tools to easily scrape study-level data from a published forest plot or
+summary table to obtain the needed estimates when these are not reported.",NA
 MetaAnalysis,CopulaREMADA,"Copula Mixed Effect Models for Bivariate and Trivariate
 Meta-Analysis of Diagnostic Test Accuracy Studies",GPL (>= 2),It has functions to implement the copula mixed models for bivariate and trivariate meta-analysis of diagnostic test accuracy studies.,NA
 MetaAnalysis,CPBayes,"Bayesian Meta Analysis for Studying Cross-Phenotype Genetic
@@ -5631,6 +5678,10 @@ MetaAnalysis,EasyStrata,Evaluation of stratified genome-wide association meta-an
 MetaAnalysis,ecoreg,Ecological Regression using Aggregate and Individual Data,GPL (>= 2),"Estimating individual-level covariate-outcome associations
 using aggregate data (""ecological inference"") or a combination of
 aggregate and individual-level data (""hierarchical related regression"").",NA
+MetaAnalysis,effsize,Efficient Effect Size Computation,GPL-2,"A collection of functions to compute the standardized
+effect sizes for experiments (Cohen d, Hedges g, Cliff delta, Vargha-Delaney A).
+The computation algorithms have been optimized to allow efficient computation even
+with very large data sets.",http://github.com/mtorchiano/effsize/
 MetaAnalysis,epiR,Tools for the Analysis of Epidemiological Data,GPL (>= 2),"Tools for the analysis of epidemiological data. Contains functions for directly and indirectly adjusting measures of disease frequency, quantifying measures of association on the basis of single or multiple strata of count data presented in a contingency table, and computing confidence intervals around incidence risk and incidence rate estimates. Miscellaneous functions for use in meta-analysis, diagnostic test interpretation, and sample size calculations.",http://fvas.unimelb.edu.au/veam
 MetaAnalysis,esc,Effect Size Computation for Meta Analysis,GPL-3,"Implementation of the web-based 'Practical Meta-Analysis Effect Size
 Calculator' from David B. Wilson (<http://www.campbellcollaboration.org/escalc/html/EffectSizeCalculator-Home.php>)
@@ -5640,6 +5691,8 @@ odds ratio or log odds effect size.",https://github.com/strengejacke/esc
 MetaAnalysis,etma,Epistasis Test in Meta-Analysis,GPL (>= 3),"Traditional meta-regression based method has been developed for using meta-analysis data, but it faced the challenge of inconsistent estimates. This package purpose a new statistical method to detect epistasis using incomplete information summary, and have proven it not only successfully let consistency of evidence, but also increase the power compared with traditional method (Detailed tutorial is shown in website).",NA
 MetaAnalysis,exactmeta,Exact fixed effect meta analysis,GPL-2,Perform exact fixed effect meta analysis for rare events data without the need of artificial continuity correction.,NA
 MetaAnalysis,extfunnel,Additional Funnel Plot Augmentations,GPL-2,This is a package containing the function extfunnel()<U+000a>which produces a funnel plot including additional augmentations<U+000a>such as statistical significance contours and heterogeneity<U+000a>contours.,NA
+MetaAnalysis,forestmodel,Forest Plots from Regression Models,GPL-2,"Produces forest plots using 'ggplot2' from models produced by functions
+such as stats::lm(), stats::glm() and survival::coxph().",NA
 MetaAnalysis,forestplot,Advanced Forest Plot Using 'grid' Graphics,GPL-2,"A forest plot that allows for
 multiple confidence intervals per row,
 custom fonts for each text element,
@@ -5659,6 +5712,22 @@ covariates.",http://people.ds.cam.ac.uk/jhz22/
 MetaAnalysis,gemtc,Network Meta-Analysis Using Bayesian Methods,GPL-3,"Network meta-analyses (mixed treatment comparisons) in the Bayesian
 framework using JAGS. Includes methods to assess heterogeneity and
 inconsistency, and a number of standard visualizations.",http://github.com/gertvv/gemtc
+MetaAnalysis,getmstatistic,Quantifying Systematic Heterogeneity in Meta-Analysis,MIT + file LICENSE,"Quantifying systematic heterogeneity in meta-analysis using R.
+The M statistic aggregates heterogeneity information across multiple
+variants to, identify systematic heterogeneity patterns and their direction
+of effect in meta-analysis. It's primary use is to identify outlier studies,
+which either show ""null"" effects or consistently show stronger or weaker
+genetic effects than average across, the panel of variants examined in a
+GWAS meta-analysis. In contrast to conventional heterogeneity metrics
+(Q-statistic, I-squared and tau-squared) which measure random heterogeneity
+at individual variants, M measures systematic (non-random)
+heterogeneity across multiple independently associated variants. Systematic
+heterogeneity can arise in a meta-analysis due to differences in the study
+characteristics of participating studies. Some of the differences may
+include: ancestry, allele frequencies, phenotype definition, age-of-disease
+onset, family-history, gender, linkage disequilibrium and quality control
+thresholds. See <https://magosil86.github.io/getmstatistic/> for statistical
+statistical theory, documentation and examples.",https://magosil86.github.io/getmstatistic/
 MetaAnalysis,gmeta,Meta-Analysis via a Unified Framework of Confidence Distribution,GPL (>= 2),"An implementation of an all-in-one function for a wide range of meta-analysis problems. It contains a single function gmeta() that unifies all standard meta-analysis methods and also several newly developed ones under a framework of combining confidence distributions (CDs). Specifically, the package can perform classical p-value combination methods (such as methods of Fisher, Stouffer, Tippett, etc.), fit meta-analysis fixed-effect and random-effects models, and synthesizes 2x2 tables. Furthermore, it can perform robust meta-analysis, which provides protection against model-misspecifications, and limits the impact of any unknown outlying studies. In addition, the package implements two exact meta-analysis methods from synthesizing 2x2 tables with rare events (e.g., zero total event). A plot function to visualize individual and combined CDs through extended forest plots is also available.",NA
 MetaAnalysis,hetmeta,Heterogeneity Measures in Meta-Analysis,GPL-2,"Assess the presence of statistical heterogeneity and quantify its impact in the context of meta-analysis. It includes test for heterogeneity as well as other statistical measures (R_b, I^2, R_I).",NA
 MetaAnalysis,HSROC,"Meta-Analysis of Diagnostic Test Accuracy when Reference Test is
@@ -5859,6 +5928,8 @@ MetaAnalysis,netmeta,Network Meta-Analysis using Frequentist Methods,GPL (>= 2),
 - partial order of treatment rankings ('poset') and Hasse diagram for 'poset' (Carlsen & Bruggemann, 2014) <DOI:10.1002/cem.2569>;
 - split direct and indirect evidence to check consistency (Dias et al., 2010) <DOI:10.1002/sim.3767>;
 - automated drawing of network graphs described in Rücker & Schwarzer (2016) <DOI:10.1002/jrsm.1143>.",https://github.com/guido-s/netmeta http://meta-analysis-with-r.org
+MetaAnalysis,nmaINLA,"Network Meta-Analysis using Integrated Nested Laplace
+Approximations",GPL (>= 2),Performs network meta-analysis using integrated nested Laplace approximations ('INLA'). Includes methods to assess the heterogeneity and inconsistency in the network. Contains more than ten different network meta-analysis data. 'INLA' package can be obtained from <http://www.r-inla.org>. We recommend the testing version.,http://github.com/gunhanb/nmaINLA
 MetaAnalysis,pcnetmeta,Patient-Centered Network Meta-Analysis,GPL (>= 2),"Provides functions to perform arm-based network meta-analysis for datasets with binary, continuous, and count outcomes.",NA
 MetaAnalysis,psychometric,Applied Psychometric Theory,GPL (>= 2),"Contains functions useful for correlation theory,<U+000a>meta-analysis (validity-generalization), reliability, item<U+000a>analysis, inter-rater reliability, and classical utility",NA
 MetaAnalysis,PubBias,"Performs simulation study to look for publication bias, using a
@@ -5892,6 +5963,24 @@ chi-square test P-value for the difference below 0.05 is suggestive of
 publication bias, however, a less stringent level of 0.1 is often used in
 studies of publication bias as the number of published studies is usually
 small.",NA
+MetaAnalysis,RandMeta,"Efficient Numerical Algorithm for Exact Inference in Meta
+Analysis",GPL-2,"A novel numerical algorithm that provides functionality for estimating the exact 95% confidence interval of the location parameter in the random effects model, and is much faster than the naive method. Works best when the number of studies is between 6-20.",NA
+MetaAnalysis,ratesci,"Confidence Intervals for Comparisons of Binomial or Poisson
+Rates",GPL-3,"Computes confidence intervals for the rate (or risk)
+difference (""RD"") or rate ratio (or relative risk, ""RR"") for
+binomial proportions or Poisson rates, or for odds ratio
+(""OR"", binomial only). Also confidence intervals for a single
+binomial or Poisson rate, and intervals for matched pairs.
+Includes asymptotic score methods including skewness corrections,
+which have been developed in Laud (2017, in press)
+from Miettinen & Nurminen (1985) <doi:10.1002/sim.4780040211> and
+Gart & Nam (1988) <doi:10.2307/2531848>. Also includes MOVER methods
+(Method Of Variance Estimates Recovery), derived from the
+Newcombe method but using equal-tailed Jeffreys intervals,
+and generalised for incorporating prior information.
+Also methods for stratified calculations (e.g. meta-analysis),
+either assuming fixed effects or incorporating stratum
+heterogeneity.",NA
 MetaAnalysis,RcmdrPlugin.EZR,R Commander Plug-in for the EZR (Easy R) Package,GPL (>= 2),"EZR (Easy R) adds a variety of statistical functions, including survival analyses, ROC analyses, metaanalyses, sample size calculation, and so on, to the R commander. EZR enables point-and-click easy access to statistical functions, especially for medical statistics. EZR is platform-independent and runs on Windows, Mac OS X, and UNIX. Its complete manual is available only in Japanese (Chugai Igakusha, ISBN: 978-4-498-10901-8 or Nankodo, ISBN: 978-4-524-26158-1), but an report that introduced the investigation of EZR was published in Bone Marrow Transplantation (Nature Publishing Group) as an Open article. This report can be used as a simple manual. It can be freely downloaded from the journal website as shown below.","
 http://www.nature.com/bmt/journal/vaop/ncurrent/pdf/bmt2012244a.pdf
 http://www.jichi.ac.jp/saitama-sct/SaitamaHP.files/statmedEN.html"
@@ -6656,9 +6745,18 @@ NumericalMathematics,elliptic,Elliptic Functions,GPL-2,"
 A suite of elliptic and related functions including Weierstrass and
 Jacobi forms.  Also includes various tools for manipulating and
 visualizing complex functions.",NA
+NumericalMathematics,expint,Exponential Integral and Incomplete Gamma Function,GPL (>= 2),"The exponential integrals E_1(x), E_2(x), E_n(x) and
+Ei(x), and the incomplete gamma function G(a, x) defined for
+negative values of its first argument. The package also gives easy
+access to the underlying C routines through an API; see the package
+vignette for details. A test package included in sub-directory
+example_API provides an implementation. C routines derived from the
+GNU Scientific Library <https://www.gnu.org/software/gsl/>.",NA
 NumericalMathematics,expm,"Matrix Exponential, Log, 'etc'",GPL (>= 2),"Computation of the matrix exponential, logarithm, sqrt,
 and related quantities.",http://R-Forge.R-project.org/projects/expm/
 NumericalMathematics,fastGHQuad,Fast Rcpp implementation of Gauss-Hermite quadrature,MIT + file LICENSE,"Fast, numerically-stable Gauss-Hermite quadrature",https://github.com/awblocker/fastGHQuad
+NumericalMathematics,feather,R Bindings to the Feather 'API',Apache License 2.0,"Read and write feather files, a lightweight binary columnar
+data store designed for maximum speed.",https://github.com/wesm/feather
 NumericalMathematics,features,Feature Extraction for Discretely-Sampled Functional Data,GPL (>= 2),"Discretely-sampled function is first smoothed.  Features
 of the smoothed function are then extracted.  Some of the key
 features include mean value, first and second derivatives,
@@ -6666,6 +6764,8 @@ critical points (i.e. local maxima and minima), curvature of
 cunction at critical points, wiggliness of the function, noise
 in data, and outliers in data.","
 http://www.jhsph.edu/agingandhealth/People/Faculty_personal_pages/Varadhan.html"
+NumericalMathematics,findpython,Python Tools to Find an Acceptable Python Binary,MIT + file LICENSE,Package designed to find an acceptable python binary.,https://github.com/trevorld/findpython
+NumericalMathematics,fourierin,Computes Numeric Fourier Integrals,MIT + file LICENSE,Computes Fourier integrals of functions of one and two variables using the Fast Fourier transform. The Fourier transforms must be evaluated on a regular grid.,http://github.com/gbasulto/fourierin
 NumericalMathematics,gaussquad,Collection of functions for Gaussian quadrature,GPL (>= 2),A collection of functions to perform Gaussian quadrature<U+000a>with different weight functions corresponding to the orthogonal<U+000a>polynomials in package orthopolynom.  Examples verify the<U+000a>orthogonality and inner products of the polynomials.,NA
 NumericalMathematics,geigen,"Calculate Generalized Eigenvalues, the Generalized Schur
 Decomposition and the Generalized Singular Value Decomposition
@@ -6683,6 +6783,26 @@ generators of the Gnu Scientific Library
 overall package organization, and Misc.Rd for some functions that are
 widely used in the package, and some tips on installation.",NA
 NumericalMathematics,hypergeo,The Gauss Hypergeometric Function,GPL-2,The Gaussian hypergeometric function for complex numbers.,NA
+NumericalMathematics,interp,Interpolation Methods,GPL (>= 2),"Bivariate data interpolation on regular and irregular
+grids, either linear or using splines are the main part of this
+package.  It is intended to provide FOSS replacement functions for
+the ACM licensed akima::interp and tripack::tri.mesh functions.
+Currently the piecewise linear interpolation part of akima::interp
+(and also akima::interpp) is implemented in interp::interp, this
+corresponds to the call akima::interp(..., linear=TRUE) which is the
+default setting and covers most of akima::interp use cases in
+depending packages.  A re-implementation of Akimas spline
+interpolation (akima::interp(..., linear=FALSE)) is currently under
+development and will complete this package in a later
+version. Estimators for partial derivatives are already available,
+these are a prerequisite for the spline interpolation.  The basic
+part is currently a GPLed triangulation algorithm (sweep hull
+algorithm by David Sinclair) providing the starting point for the
+piecewise linear interpolator. As side effect this algorithm is also
+used to provide replacements for the basic functions of the tripack
+package which also suffer from the ACM restrictions.  All functions
+are designed to be backward compatible with their akima / tripack
+counterparts.",NA
 NumericalMathematics,irlba,"Fast Truncated SVD, PCA and Symmetric Eigendecomposition for
 Large Dense and Sparse Matrices",GPL-3,"Fast and memory efficient methods for truncated singular and
 eigenvalue decompositions and principal component analysis of large sparse or
@@ -6696,6 +6816,8 @@ defined and a unique solution exists. The function, the fixed values
 and initial values for the remaining unknowns are fed to a nonlinear backsolver.
 The original version of ""TK!Solver"" was the inspiration for this function.",NA
 NumericalMathematics,lamW,Lambert-W Function,BSD_2_clause + file LICENSE,"Implements both real-valued branches of the Lambert-W function, also known as the product logarithm, without the need for installing the entire GSL.",https://bitbucket.org/aadler/lamw
+NumericalMathematics,logOfGamma,Natural Logarithms of the Gamma Function for Large Values,GPL-3,"Uses approximations to compute the natural logarithm of the Gamma
+function for large values.",NA
 NumericalMathematics,madness,Automatic Differentiation of Multivariate Operations,LGPL-3,"An object that supports automatic differentiation
 of matrix- and multidimensional-valued functions with
 respect to multidimensional independent variables.
@@ -6765,6 +6887,7 @@ Provides a large number of functions from numerical analysis and
 linear algebra, numerical optimization, differential equations,
 time series, plus some well-known special mathematical functions.
 Uses 'MATLAB' function names where appropriate to simplify porting.",NA
+NumericalMathematics,PythonInR,Use Python from Within R,GPL-3,Interact with Python from within R.,https://bitbucket.org/Floooo/pythoninr/
 NumericalMathematics,QZ,Generalized Eigenvalues and QZ Decomposition,Mozilla Public License 2.0,"Generalized eigenvalues and QZ decomposition
 (generalized Schur form) for an N-by-N non-symmetric
 matrix A or paired matrices (A,B) with eigenvalues reordering
@@ -6825,6 +6948,10 @@ port of Matlab/Octave scripts to R. The package enables to call any Octave
 functions from R and as well as browsing their documentation, passing
 variables between R and Octave, using R core RNGs in Octave, which ensures
 that stochastic computations are also reproducible.",http://renozao.github.io/RcppOctave
+NumericalMathematics,reticulate,R Interface to Python,Apache License 2.0,"R interface to Python modules, classes, and functions. When calling
+into Python R data types are automatically converted to their equivalent Python
+types. When values are returned from Python to R they are converted back to R
+types. Compatible with all versions of Python >= 2.7.",https://github.com/rstudio/reticulate
 NumericalMathematics,Rmpfr,R MPFR - Multiple Precision Floating-Point Reliable,GPL (>= 2),"Arithmetic (via S4 classes and methods) for
 arbitrary precision floating point numbers, including transcendental
 (""special"") functions.  To this end, Rmpfr interfaces to
@@ -6869,6 +6996,8 @@ NumericalMathematics,SimplicialCubature,Integration of Functions Over Simplices,
 in n-dimensional Euclidean space.  There are exact methods for polynomials and
 adaptive methods for integrating an arbitrary function.  Dirichlet probabilities
 are calculated in certain cases.",NA
+NumericalMathematics,SnakeCharmR,R and Python Integration,GPL-2,"Run 'Python' code, make function calls, assign and retrieve variables, etc. from R.
+A fork from 'rPython' which uses 'jsonlite', 'Rcpp' and has several fixes and improvements.",https://github.com/asieira/SnakeCharmR
 NumericalMathematics,SparseGrid,Sparse grid integration in R,GPL,"SparseGrid is a package to create sparse grids for numerical integration, based on code from www.sparse-grids.de",NA
 NumericalMathematics,SparseM,Sparse Linear Algebra,GPL (>= 2),"Some basic linear algebra functionality for sparse matrices is
 provided:  including Cholesky decomposition and backsolving as well as
@@ -6882,6 +7011,17 @@ NumericalMathematics,statmod,Statistical Modeling,GPL-2 | GPL-3,"A collection of
 NumericalMathematics,stinepack,"Stineman, a consistently well behaved method of interpolation",GPL-2,"A consistently well behaved method of interpolation based
 on piecewise rational functions using Stineman's algorithm",NA
 NumericalMathematics,svd,Interfaces to Various State-of-Art SVD and Eigensolvers,BSD_3_clause + file LICENSE,"R bindings to SVD and eigensolvers (PROPACK, nuTRLan).",http://github.com/asl/svd
+NumericalMathematics,tripack,Triangulation of Irregularly Spaced Data,ACM | file LICENSE,"A constrained two-dimensional Delaunay triangulation package
+providing both triangulation and generation of voronoi mosaics of
+irregular spaced data.",NA
+NumericalMathematics,XR,A Structure for Interfaces from R,GPL (>= 2),"Support for interfaces from R to other languages,
+built around a class for evaluators and a combination of functions, classes and
+methods for communication. Will be used through a specific language interface
+package. Described in the book ""Extending R"".",NA
+NumericalMathematics,XRJulia,Structured Interface to Julia,GPL (>= 2),"A Julia interface structured according to the general
+form described in package XR and in the book ""Extending R"".",NA
+NumericalMathematics,XRPython,Structured Interface to Python,GPL (>= 2),"A Python interface structured according to the general
+form described in package XR and in the book ""Extending R"".",NA
 OfficialStatistics,Amelia,A Program for Missing Data,GPL (>= 2),"A tool that ""multiply imputes"" missing data in a single cross-section
 (such as a survey), from a time series (like variables collected for
 each year in a country), or from a time-series-cross-sectional data
@@ -7276,6 +7416,8 @@ Optimization,clue,Cluster Ensembles,GPL-2,CLUster Ensembles.,NA
 Optimization,cmaes,Covariance Matrix Adapting Evolutionary Strategy,GPL-2,Single objective optimization using a CMA-ES.,NA
 Optimization,cmaesr,Covariance Matrix Adaptation Evolution Strategy,BSD_2_clause + file LICENSE,"Pure R implementation of the Covariance Matrix Adaptation -
 Evolution Strategy (CMA-ES) with optional restarts (IPOP-CMA-ES).",https://github.com/jakobbossek/cmaesr
+Optimization,coneproj,"Primal or Dual Cone Projections with Routines for Constrained
+Regression",GPL (>= 2),"Routines doing cone projection and quadratic programming, as well as doing estimation and inference for constrained parametric regression and shape-restricted regression problems.",NA
 Optimization,copulaedas,Estimation of Distribution Algorithms Based on Copulas,GPL (>= 2),"Provides a platform where EDAs (estimation of
 distribution algorithms) based on copulas can be implemented and
 studied. The package offers complete implementations of various
@@ -7382,6 +7524,8 @@ Optimization,lpSolveAPI,R Interface to 'lp_solve' Version 5.5.2.0,LGPL-2,"The lp
 a Mixed Integer Linear Programming (MILP) solver with support for pure
 linear, (mixed) integer/binary, semi-continuous and special ordered sets
 (SOS) models.",NA
+Optimization,ManifoldOptim,"An R Interface to the 'ROPTLIB' Library for Riemannian Manifold
+Optimization",GPL (>= 2),"An R interface to the 'ROPTLIB' optimization library (see <http://www.math.fsu.edu/~whuang2> for more information). Optimize real-valued functions over manifolds such as Stiefel, Grassmann, and Symmetric Positive Definite matrices.",NA
 Optimization,matchingMarkets,Analysis of Stable Matchings,GPL (>= 2) | file LICENSE,"Implements structural estimators to correct for
 the sample selection bias from observed outcomes in matching
 markets. This includes one-sided matching of agents into
@@ -7424,6 +7568,11 @@ algorithms and related test problems",http://git.p-value.net/p/mco.git
 Optimization,minpack.lm,"R Interface to the Levenberg-Marquardt Nonlinear Least-Squares
 Algorithm Found in MINPACK, Plus Support for Bounds",GPL-3,"The nls.lm function provides an R interface to lmder and lmdif from the MINPACK library, for solving nonlinear least-squares problems by a modification of the Levenberg-Marquardt algorithm, with support for lower and upper parameter bounds.  The implementation can be used via nls-like calls using the nlsLM function.",NA
 Optimization,minqa,Derivative-free optimization algorithms by quadratic<U+000a>approximation,GPL-2,Derivative-free optimization by quadratic approximation<U+000a>based on an interface to Fortran implementations by M. J. D.<U+000a>Powell.,http://optimizer.r-forge.r-project.org
+Optimization,mize,Unconstrained Numerical Optimization Algorithms,BSD 2-clause License + file LICENSE,"Optimization algorithms implemented in R, including
+conjugate gradient (CG), Broyden-Fletcher-Goldfarb-Shanno (BFGS) and the
+limited memory BFGS (L-BFGS) methods. Most internal parameters can be set
+through the call interface. The solvers hold up quite well for
+higher-dimensional problems.",http://github.com/jlmelville/mize
 Optimization,neldermead,R port of the Scilab neldermead module,CeCILL-2,"Provides several direct search optimization algorithms based on the
 simplex method. The provided algorithms are direct search algorithms, i.e.
 algorithms which do not use the derivative of the cost function. They are
@@ -8035,6 +8184,7 @@ multiple noisy measurements of multiple stochastic processes, time varying
 input / event covariates, and time invariant covariates used to predict the
 parameters.",https://github.com/cdriveraus/ctsem
 Psychometrics,CTT,Classical Test Theory Functions,GPL (>= 2),Contains common CTT functions,NA
+Psychometrics,CTTShiny,Classical Test Theory via Shiny,GPL-3,Interactive shiny application for running classical test theory (item analysis).,NA
 Psychometrics,DAKS,Data Analysis and Knowledge Spaces,GPL (>= 2),"Functions and an example dataset for the psychometric theory of
 knowledge spaces.  This package implements data analysis methods and
 procedures for simulating data and quasi orders and transforming different
@@ -8071,6 +8221,8 @@ Psychometrics,edstan,Stan Models for Item Response Theory,BSD_3_clause + file LI
 related to item response theory. Its purpose is to make fitting
 common item response theory models using Stan easy.",NA
 Psychometrics,eegkit,Toolkit for Electroencephalography Data,GPL (>= 2),"Analysis and visualization tools for electroencephalography (EEG) data. Includes functions for plotting (a) EEG caps, (b) single- and multi-channel EEG time courses, and (c) EEG spatial maps. Also includes smoothing and Independent Component Analysis functions for EEG data analysis, and a function for simulating event-related potential EEG data.",NA
+Psychometrics,EFAutilities,Utility Functions for Exploratory Factor Analysis,GPL-2,"A number of utility function for exploratory
+factor analysis are included in this package. In particular, it computes standard errors for parameter estimates and factor correlations under a variety of conditions.",NA
 Psychometrics,elasticnet,Elastic-Net for Sparse Estimation and Sparse PCA,GPL (>= 2),This package provides functions for fitting the entire<U+000a>solution path of the Elastic-Net and also provides functions<U+000a>for estimating sparse Principal Components. The Lasso solution<U+000a>paths can be computed by the same function. First version:<U+000a>2005-10.,http://www.stat.umn.edu/~hzou
 Psychometrics,emIRT,EM Algorithms for Estimating Item Response Theory Models,GPL (>= 3),"Various Expectation-Maximization (EM) algorithms are implemented for item response theory
 (IRT) models. The current implementation includes IRT models for binary and ordinal
@@ -8402,6 +8554,14 @@ Psychometrics,piecewiseSEM,Piecewise Structural Equation Modeling,GPL-3,Implemen
 Psychometrics,pks,Probabilistic Knowledge Structures,GPL (>= 2),"Fitting and testing probabilistic knowledge structures,
 especially the basic local independence model (BLIM, Doignon & Flamagne,
 1999), using the minimum discrepancy maximum likelihood (MDML) method.",http://homepages.uni-tuebingen.de/florian.wickelmaier
+Psychometrics,PLmixed,"Estimate (Generalized) Linear Mixed Models with Factor
+Structures",GPL (>= 2),"Utilizes the 'lme4' package and the optim() function from 'stats'
+to estimate (generalized) linear mixed models (GLMM) with factor
+structures using a profile likelihood approach, as outlined in
+Jeon and Rabe-Hesketh (2012) <doi:10.3102/1076998611417628>.
+Factor analysis and item response models can be extended to allow
+for an arbitrary number of nested and crossed random effects,
+making it useful for multilevel and cross-classified models.",NA
 Psychometrics,plotSEMM,"Graphing Nonlinear Relations Among Latent Variables from
 Structural Equation Mixture Models",GPL (>= 2),"Contains a graphical user interface to generate the diagnostic
 plots proposed by Bauer (2005) and Pek & Chalmers (2015) to investigate
@@ -11620,6 +11780,13 @@ Meyer et al. (2012) <doi:10.1111/j.1541-0420.2011.01684.x>.
 A recent overview of the implemented space-time modeling frameworks
 for epidemic phenomena is given by Meyer et al. (2015)
 <http://arxiv.org/abs/1411.0416>.",http://surveillance.r-forge.r-project.org/
+TimeSeries,sweep,Tidy Tools for Forecasting,GPL (>= 3),"
+Tidies up the forecasting modeling and prediction work flow,
+extends the 'broom' package
+with 'sw_tidy', 'sw_glance', 'sw_augment', and 'sw_tidy_decomp' functions
+for various forecasting models,
+and enables converting 'forecast' objects to
+""tidy"" data frames with 'sw_sweep'.",https://github.com/business-science/sweep
 TimeSeries,Tcomp,Data from the 2010 Tourism Forecasting Competition,GPL-3,The 1311 time series from the tourism forecasting competition conducted in 2010 and described in Athanasopoulos et al. (2011) <DOI:10.1016/j.ijforecast.2010.04.009>.,NA
 TimeSeries,TED,Turbulence Time Series Event Detection and Classification,GPL (>= 2),TED performs Turbulence time series Event Detection and classification.,NA
 TimeSeries,tempdisagg,"Methods for Temporal Disaggregation and Interpolation of Time
@@ -11660,6 +11827,11 @@ TimeSeries,timesboot,Bootstrap computations for time series objects,GPL-2,Comput
 TimeSeries,timeSeries,Rmetrics - Financial Time Series Objects,GPL (>= 2),"Environment for teaching
 ""Financial Engineering and Computational Finance"".
 Managing financial time series objects.",http://www.rmetrics.org
+TimeSeries,timetk,A Tool Kit for Working with Time Series in R,GPL (>= 3),"
+Get the time series index, signature, and summary from time series objects and
+time-based tibbles. Create future time series based on properties of
+existing time series index.
+Coerce between time-based tibbles ('tbl') and 'xts', 'zoo', and 'ts'.",https://github.com/business-science/timetk
 TimeSeries,timsac,Time Series Analysis and Control Package,GPL (>= 2),"Functions for statistical analysis, prediction and control of time series.",NA
 TimeSeries,tis,Time Indexes and Time Indexed Series,Unlimited,"Functions and S3 classes for time indexes and time indexed
 series, which are compatible with FAME frequencies.",NA
