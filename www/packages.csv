@@ -3606,6 +3606,9 @@ ExtremeValue,lmomRFA,Regional frequency analysis using L-moments,Common Public L
 of J. R. M. Hosking and J. R. Wallis (1997), ""Regional frequency analysis:
 an approach based on L-moments"".",NA
 ExtremeValue,mev,Multivariate Extreme Value Distributions,GPL-3,Exact simulation from max-stable processes and multivariate extreme value distributions for various parametric models. Threshold selection methods.,https://github.com/lbelzile/mev/
+ExtremeValue,POT,Generalized Pareto Distribution and Peaks Over Threshold,GPL (>= 2),"Some functions useful to perform a Peak Over Threshold
+analysis in univariate and bivariate cases. A user's guide is
+available.",http://pot.r-forge.r-project.org/
 ExtremeValue,QRM,"Provides R-Language Code to Examine Quantitative Risk Management
 Concepts",GPL (>= 2),"Accompanying package to the book
 Quantitative Risk Management: Concepts, Techniques and Tools by
@@ -4172,6 +4175,9 @@ FunctionalData,flars,Functional LARS,GPL (>= 2),Variable selection algorithm for
 FunctionalData,fpca,Restricted MLE for Functional Principal Components Analysis,GPL (>= 2),"A geometric approach to MLE for functional principal
 components",anson.ucdavis.edu/~jie/software.html
 FunctionalData,freqdom,Frequency Domain Analysis for Multivariate Time Series,GPL-3,Methods for the analysis of multivariate time series using frequency domain techniques. Implementations of dynamic principle components analysis (DPCA) and estimators of operators in lagged regression. Examples of usage in functional data analysis setup.,NA
+FunctionalData,freqdom.fda,Functional Time Series: Dynamic Functional Principal Components,GPL-3,"Implementations of functional dynamic principle components analysis. Related graphic tools and frequency domain methods.
+These methods directly use multivariate dynamic principal components implementation,
+following the guidelines from Hormann, Kidzinski and Hallin (2016), Dynamic Functional Principal Component <doi:10.1111/rssb.12076>.",NA
 FunctionalData,ftsa,Functional Time Series Analysis,GPL (>= 2),"Functions for visualizing, modeling, forecasting and hypothesis testing of functional time series.",NA
 FunctionalData,Funclustering,A package for functional data clustering.,GPL (>= 2),"This packages proposes a model-based clustering algorithm for
 multivariate functional data. The parametric mixture model, based on the
@@ -4689,6 +4695,9 @@ cross-validation. Development snapshots with the latest bugfixes are
 available from <http://www.bnlearn.com>.",http://www.bnlearn.com/
 HighPerformanceComputing,caret,Classification and Regression Training,GPL (>= 2),"Misc functions for training and plotting classification and
 regression models.",https://github.com/topepo/caret/
+HighPerformanceComputing,clustermq,"Evaluate Function Calls on HPC Schedulers (LSF, SGE, SLURM)",Apache License (== 2.0) | file LICENSE,"Provides the Q() function to send arbitrary function calls to
+workers on HPC schedulers without relying on network-mounted storage.
+Allows using remote schedulers via SSH.",https://github.com/mschubert/clustermq
 HighPerformanceComputing,cudaBayesreg,"CUDA Parallel Implementation of a Bayesian Multilevel Model for
 fMRI Data Analysis",GPL (>= 2),"Compute Unified Device Architecture (CUDA) is a software
 platform for massively parallel high-performance computing on
@@ -10041,8 +10050,18 @@ conducting multi-model inference, and stepwise model selection. Further, contain
 for spatially corrected model accuracy measures.",https://github.com/levisc8/spind
 Spatial,splancs,Spatial and Space-Time Point Pattern Analysis,GPL (>= 2),"The Splancs package was written as an enhancement to S-Plus for display and analysis of spatial point pattern data; it has been ported to R and is in ""maintenance mode"".",http://www.maths.lancs.ac.uk/~rowlings/Splancs/
 Spatial,splm,Econometric Models for Spatial Panel Data,GPL-2,ML and GM estimation and diagnostic testing of econometric models for spatial panel data.,NA
+Spatial,spm,Spatial Predictive Modeling,GPL (>= 2),"Introduction to some novel accurate hybrid methods of geostatistical and machine learning methods for spatial predictive modelling. It contains two commonly used geostatistical methods, two machine learning methods, four hybrid methods and two averaging methods. For each method, two functions are provided. One function is for assessing the predictive errors and accuracy of the method based on cross-validation. The other one is for generating spatial predictions using the method. For details please see: Li, J., Potter, A., Huang, Z., Daniell, J. J. and Heap, A. (2010) <https:www.ga.gov.au/metadata-gateway/metadata/record/gcat_71407>
+Li, J., Heap, A. D., Potter, A., Huang, Z. and Daniell, J. (2011) <doi:10.1016/j.csr.2011.05.015>
+Li, J., Heap, A. D., Potter, A. and Daniell, J. (2011) <doi:10.1016/j.envsoft.2011.07.004>
+Li, J., Potter, A., Huang, Z. and Heap, A. (2012) <https:www.ga.gov.au/metadata-gateway/metadata/record/74030>.",NA
 Spatial,spmoran,Moran's Eigenvector-Based Spatial Regression Models,GPL (>= 2),"Functions for estimating fixed and random effects
 eigenvector spatial filtering models.",NA
+Spatial,spsann,"Optimization of Sample Configurations using Spatial Simulated
+Annealing",GPL (>= 2),"Methods to optimize sample configurations using spatial simulated annealing. Multiple objective
+functions are implemented for various purposes, such as variogram estimation, spatial trend estimation
+and spatial interpolation. A general purpose spatial simulated annealing function enables the user to
+define his/her own objective function. Solutions for augmenting existing sample configurations and solving
+multi-objective optimization problems are available as well.",NA
 Spatial,spselect,Selecting Spatial Scale of Covariates in Regression Models,GPL (>= 2),"Fits spatial scale (SS) forward stepwise regression, SS incremental forward stagewise regression, SS least angle regression (LARS), and SS lasso models.  All area-level covariates are considered at all available scales to enter a model, but the SS algorithms are constrained to select each area-level covariate at a single spatial scale.",NA
 Spatial,spsurvey,Spatial Survey Design and Analysis,GPL (>= 2),"This group of functions implements algorithms for design and
 analysis of probability surveys.  The functions are tailored for Generalized
@@ -11426,6 +11445,10 @@ based on in-sample errors, or CV weights. Cross validation for time series data
 and user-supplied models and forecasting functions is also supported to evaluate model accuracy.",https://github.com/ellisp/forecastHybrid
 TimeSeries,forecTheta,Forecasting Time Series by Theta Models,GPL (>= 2),Routines for forecasting univariate time series using Theta Models. Contains several cross-validation routines.,http://arxiv.org/abs/1503.03529
 TimeSeries,fpp,"Data for ""Forecasting: principles and practice""",GPL (>= 2),"All data sets required for the examples and exercises in<U+000a>the book ""Forecasting: principles and practice"" by Rob J<U+000a>Hyndman and George Athanasopoulos. All packages required to run<U+000a>the examples are also loaded.",http://otexts.com/fpp/
+TimeSeries,fpp2,"Data for ""Forecasting: Principles and Practice"" (2nd Edition)",GPL (>= 3),"All data sets required for the examples and exercises
+in the book ""Forecasting: principles and practice""
+by Rob J Hyndman and George Athanasopoulos <http://OTexts.org/fpp2/>.
+All packages required to run the examples are also loaded.",http://OTexts.org/fpp2/
 TimeSeries,fracdiff,"Fractionally differenced ARIMA aka ARFIMA(p,d,q) models",GPL (>= 2),"Maximum likelihood estimation of the parameters of a<U+000a>fractionally differenced ARIMA(p,d,q) model (Haslett and<U+000a>Raftery, Appl.Statistics, 1989).",NA
 TimeSeries,fractal,Fractal Time Series Modeling and Analysis,GPL-2,"Stochastic fractal and deterministic chaotic time series
 analysis.",NA
@@ -11439,7 +11462,17 @@ repeatable patterns can be produced by using the same seed and
 generators.  By using a set of generators, non-repeatable time
 series can be produced.  This technique is the basis of the
 fractal time series process in this package.",NA
+TimeSeries,freqdom,Frequency Domain Based Analysis: Dynamic PCA,GPL-3,"Implementation of dynamic principal component
+analysis (DPCA), simulation of VAR and VMA processes and frequency domain tools.
+These frequency domain methods for dimensionality reduction of multivariate time series
+were introduced by David Brillinger in his book Time Series (1974). We follow implementation
+guidelines as described in Hormann, Kidzinski and Hallin (2016),
+Dynamic Functional Principal Component <doi:10.1111/rssb.12076>.",NA
+TimeSeries,freqdom.fda,Functional Time Series: Dynamic Functional Principal Components,GPL-3,"Implementations of functional dynamic principle components analysis. Related graphic tools and frequency domain methods.
+These methods directly use multivariate dynamic principal components implementation,
+following the guidelines from Hormann, Kidzinski and Hallin (2016), Dynamic Functional Principal Component <doi:10.1111/rssb.12076>.",NA
 TimeSeries,fts,R interface to tslib (a time series library in c++),GPL-3,fast operations for time series objects,NA
+TimeSeries,ftsa,Functional Time Series Analysis,GPL (>= 2),"Functions for visualizing, modeling, forecasting and hypothesis testing of functional time series.",NA
 TimeSeries,funtimes,Functions for Time Series Analysis,GPL (>= 2),"Includes non-parametric estimators and tests for time series analysis. The functions are to test for presence of possibly non-monotonic trends and for synchronism of trends in multiple time series, using modern bootstrap techniques and robust non-parametric difference-based estimators.",NA
 TimeSeries,GAS,Generalized Autoregressive Score Models,GPL-3,"Simulate, estimate and forecast using univariate and multivariate GAS models.",https://github.com/LeopoldoCatania/GAS
 TimeSeries,gdpc,Generalized Dynamic Principal Components,GPL (>= 2),"Functions to compute the Generalized Dynamic Principal Components
@@ -11465,6 +11498,7 @@ TimeSeries,hwwntest,Tests of White Noise using Wavelets,GPL-2,"Provides methods 
 with white noise.",NA
 TimeSeries,imputeTS,Time Series Missing Value Imputation,GPL-3,"Imputation (replacement) of missing values in univariate time
 series.",http://github.com/SteffenMoritz/imputeTS
+TimeSeries,influxdbr,R Interface to InfluxDB,GPL-3,"An R interface to the InfluxDB time series database <https://www.influxdata.com>. This package allows you to fetch and write time series data from/to an InfluxDB server. Additionally, handy wrappers for the Influx Query Language (IQL) to manage and explore a remote database are provided.",https://github.com/dleutnant/influxdbr
 TimeSeries,InspectChangepoint,High-Dimensional Changepoint Estimation via Sparse Projection,GPL-3,Provides a data-driven projection-based method for estimating changepoints in high-dimensional time series. Multiple changepoints are estimated using a (wild) binary segmentation scheme.,NA
 TimeSeries,jmotif,"Time Series Analysis Toolkit Based on Symbolic Aggregate
 Dicretization, i.e. SAX",GPL-2,"Implements time series z-normalization, SAX, HOT-SAX, VSM, SAX-VSM, RePair, and RRA
@@ -11573,6 +11607,13 @@ was based on the  book ""Nonlinear time series analysis"" by
 Holger Kantz and Thomas Schreiber (ISBN: 9780521529020).",NA
 TimeSeries,npst,Generalization of Hewitt's Seasonality Test,GPL-2,"Package 'npst' generalizes Hewitt's (1971) test for seasonality and
 Rogerson's (1996) extension based on Monte-Carlo simulation.",NA
+TimeSeries,odpc,One-Sided Dynamic Principal Components,GPL (>= 2),"Functions to compute the one-sided dynamic
+principal components ('odpc') introduced in Smucler, Peña and Yohai (2017)
+<arXiv:1708.04705>. 'odpc' is a novel dimension
+reduction technique for multivariate time series, that is useful
+for forecasting. These dynamic principal components are defined as
+the linear combinations of the present and past values of the series
+that minimize the reconstruction mean squared error.",NA
 TimeSeries,opera,Online Prediction by Expert Aggregation,LGPL,"Misc methods to form online predictions, for regression-oriented time-series, by combining a finite set of forecasts provided by the user.",http://pierre.gaillard.me/opera.html
 TimeSeries,orderedLasso,Ordered Lasso and Time-lag Sparse Regression,GPL-2,"Ordered lasso and time-lag sparse regression. Ordered Lasso fits a
 linear model and imposes an order constraint on the coefficients. It writes
@@ -12107,6 +12148,9 @@ also provides function to build nodes and another create a temporal graph.",http
 WebTechnologies,gsheet,Download Google Sheets Using Just the URL,GPL-3,"Simple package to download Google Sheets using just the sharing
 link. Spreadsheets can be downloaded as a data frame, or as plain text to parse
 manually. Google Sheets is the new name for Google Docs Spreadsheets.",https://github.com/maxconway/gsheet
+WebTechnologies,gtrendsR,Perform and Display Google Trends Queries,GPL (>= 2),"An interface for retrieving and displaying the information returned
+online by Google Trends is provided. Trends (number of hits) over the time as
+well as geographic representation of the results can be displayed.",https://github.com/PMassicotte/gtrendsR
 WebTechnologies,htmltab,Assemble Data Frames from HTML Tables,MIT + file LICENSE,"HTML tables are a valuable data source but extracting and recasting
 these data into a useful format can be tedious. This package allows to collect
 structured information from HTML tables. It is similar to readHTMLTable()
