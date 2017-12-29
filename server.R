@@ -8,6 +8,15 @@ packages <- dplyr::distinct(
 )
 packages$license <- sub("( [+|] )?file LICEN[SC]E", "", packages$license, ignore.case = FALSE)
 
+decorate_url <- function(url)
+    paste0("<a href=\"", url, "\">", url, "</a>")
+
+make_url <- function(url) {
+  regex_url <- "(https?://)?[-[:alnum:]]+\\.[^\\s,]+"
+  url <- stringr::str_replace_all(url, ",\\s", "\n")
+  stringr::str_replace_all(url, regex_url, decorate_url)
+}
+
 shinyServer(function(input, output) {
   
   dt <- reactiveVal()
@@ -32,6 +41,7 @@ shinyServer(function(input, output) {
       } else {
         temporary <- packages[packages$view == input$view, ]
       }
+      temporary$url <- make_url(temporary$url)
       if (is.null(drop_columns)) {
         dt(temporary)
       } else {
@@ -46,6 +56,7 @@ shinyServer(function(input, output) {
         dplyr::summarize(view = paste0(view, collapse = ", "),
                          views = n()) %>%
         dplyr::ungroup() %>%
+        dplyr::mutate(url = make_url(url)) %>% 
         dplyr::select(view, views, package, title, license, description, url) %>%
         dplyr::arrange(package)
       if (is.null(drop_columns)) {
@@ -64,7 +75,8 @@ shinyServer(function(input, output) {
         pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100)
       ),
       filter = list(position = "top", clear = FALSE),
-      rownames = FALSE
+      rownames = FALSE,
+      escape = FALSE
     )
   })
 
