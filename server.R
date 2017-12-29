@@ -36,7 +36,7 @@ shinyServer(function(input, output) {
                              views = n()) %>%
             dplyr::ungroup() %>%
             dplyr::select(view, views, package, title, license, description, url)
-          drop_columns <- drop_columns + 1
+          if (!is.null(drop_columns)) drop_columns <- drop_columns + 1
         }
       } else {
         temporary <- packages[packages$view == input$view, ]
