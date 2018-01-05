@@ -54,9 +54,11 @@ shinyUI(fluidPage(
                        options = list(plugins = list("remove_button")), width = "100%")
       ),
       width = 6),
-    column(checkboxInput("description", "Show description"), width = 2),
-    column(checkboxInput("url", "Show URL"), width = 2),
-    column(checkboxInput("authors", "Show authors"), width = 2)
+    column(checkboxGroupInput(
+      "fields", "Show additional fields:",
+      choices = c("Description", "URL", "Authors"),
+      inline = TRUE
+    ), width = 4)
   ),
   DT::dataTableOutput("packages"),
   br(),

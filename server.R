@@ -10,7 +10,7 @@ packages <- dplyr::distinct(
 packages$license <- sub("( [+|] )?file LICEN[SC]E", "", packages$license, ignore.case = FALSE)
 
 decorate_url <- function(url) {
-  return(paste0("<a href=\"", url, "\">", url, "</a>"))
+  return(paste0("<a href=\"", url, "\">", sub("^(https?://)?(www.)?(.*)", "\\3", url), "</a>"))
 }
 
 make_url <- function(url) {
@@ -26,17 +26,19 @@ shinyServer(function(input, output) {
     if (input$task) {
       drop_columns <- NULL
       if (length(input$view) == 1) drop_columns <- 1
-      if (!input$description) drop_columns <- c(drop_columns, 6)
-      if (!input$url) drop_columns <- c(drop_columns, 7)
-      if (!input$authors) drop_columns <- c(drop_columns, 4)
+      if (!"Description" %in% input$fields) drop_columns <- c(drop_columns, 6)
+      if (!"URL" %in% input$fields) drop_columns <- c(drop_columns, 7)
+      if (!"Authors" %in% input$fields) drop_columns <- c(drop_columns, 4)
       if (length(input$view) > 1) {
         temporary <- packages[packages$view %in% input$view, ]
         if (any(duplicated(temporary$package))) {
           # Some packages appear under multiple views, let's consolidate:
           temporary <- temporary %>%
             dplyr::group_by(package, title, license, description, url, authors) %>%
-            dplyr::summarize(view = paste0(view, collapse = ", "),
-                             views = n()) %>%
+            dplyr::summarize(
+              view = paste0(view, collapse = ", "),
+              views = n()
+            ) %>%
             dplyr::ungroup() %>%
             dplyr::select(view, views, package, title, authors, license, description, url)
           if (!is.null(drop_columns)) {
@@ -54,17 +56,19 @@ shinyServer(function(input, output) {
       }
     } else {
       drop_columns <- NULL
-      
-      if (!input$description) drop_columns <- c(drop_columns, 7)
-      if (!input$url) drop_columns <- c(drop_columns, 8)
+      if (!"Description" %in% input$fields) drop_columns <- c(drop_columns, 7)
+      if (!"URL" %in% input$fields) drop_columns <- c(drop_columns, 8)
+      if (!"Authors" %in% input$fields) drop_columns <- c(drop_columns, 5)
       temporary <- packages %>%
         dplyr::group_by(package, title, license, description, url, authors) %>%
-        dplyr::summarize(view = paste0(view, collapse = ", "),
-                         views = n()) %>%
+        dplyr::summarize(
+          view = paste0(view, collapse = ", "),
+          views = n()
+        ) %>%
         dplyr::ungroup() %>%
-        dplyr::mutate(url = make_url(url)) %>% 
         dplyr::select(view, views, package, title, authors, license, description, url) %>%
         dplyr::arrange(package)
+      temporary$url <- make_url(temporary$url)
       if (is.null(drop_columns)) {
         dt(temporary)
       } else {
@@ -76,13 +80,14 @@ shinyServer(function(input, output) {
   output$packages <- DT::renderDataTable({
     DT::datatable(
       dt(),
+      filter = list(position = "top", clear = FALSE),
+      rownames = FALSE, escape = FALSE,
       options = list(
         search = list(regex = TRUE, caseInsensitive = TRUE),
-        pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100)
-      ),
-      filter = list(position = "top", clear = FALSE),
-      rownames = FALSE,
-      escape = FALSE
+        language = list(search = "Filter:"),
+        pageLength = 5, lengthMenu = c(5, 10, 25, 50, 100),
+        order = list(list(2, "desc"))
+      )
     )
   })
   

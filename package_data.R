@@ -48,9 +48,14 @@ if (file.exists("www/packages.csv")) {
     message("Acquiring licensing and other data...")
     details <- bind_rows(lapply(pkgs, function(pkg) {
       deets <- crandb::package(pkg)
-      return(data.frame(title = deets$Title, license = foo(deets$License),
-                        description = deets$Description, url = foo(deets$URL), 
-                        authors = deets$Author, stringsAsFactors = FALSE))
+      return(data.frame(
+          title = deets$Title,
+          license = foo(deets$License),
+          description = deets$Description,
+          url = foo(deets$URL), 
+          authors = deets$Author,
+          stringsAsFactors = FALSE
+      ))
     }), .id = "package")
     details$package <- pkgs
     packages <- missing_pkgs %>%
@@ -68,9 +73,14 @@ if (file.exists("www/packages.csv")) {
   details <- bind_rows(lapply(pkgs, function(pkg) {
     pb$tick()
     deets <- crandb::package(pkg)
-    return(data.frame(title = deets$Title, license = foo(deets$License),
-                      description = deets$Description, url = foo(deets$URL), 
-                      authors = deets$Author, stringsAsFactors = FALSE))
+    return(data.frame(
+      title = deets$Title,
+      license = foo(deets$License),
+      description = deets$Description,
+      url = foo(deets$URL), 
+      authors = deets$Author,
+      stringsAsFactors = FALSE
+    ))
   }), .id = "package")
   details$package <- pkgs
   packages <- left_join(views, details)
