@@ -32,11 +32,11 @@ shinyServer(function(input, output) {
         if (any(duplicated(temporary$package))) {
           # Some packages appear under multiple views, let's consolidate:
           temporary <- temporary %>%
-            dplyr::group_by(package, title, license, description, url) %>%
+            dplyr::group_by(package, title, license, description, url, authors) %>%
             dplyr::summarize(view = paste0(view, collapse = ", "),
                              views = n()) %>%
             dplyr::ungroup() %>%
-            dplyr::select(view, views, package, title, license, description, url)
+            dplyr::select(view, views, package, title, authors, license, description, url)
           if (!is.null(drop_columns)) {
             drop_columns <- drop_columns + 1
           }
@@ -55,12 +55,12 @@ shinyServer(function(input, output) {
       if (!input$description) drop_columns <- c(drop_columns, 6)
       if (!input$url) drop_columns <- c(drop_columns, 7)
       temporary <- packages %>%
-        dplyr::group_by(package, title, license, description, url) %>%
+        dplyr::group_by(package, title, license, description, url, authors) %>%
         dplyr::summarize(view = paste0(view, collapse = ", "),
                          views = n()) %>%
         dplyr::ungroup() %>%
         dplyr::mutate(url = make_url(url)) %>% 
-        dplyr::select(view, views, package, title, license, description, url) %>%
+        dplyr::select(view, views, package, title, authors, license, description, url) %>%
         dplyr::arrange(package)
       if (is.null(drop_columns)) {
         dt(temporary)
