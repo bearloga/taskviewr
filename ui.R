@@ -55,7 +55,8 @@ shinyUI(fluidPage(
       ),
       width = 6),
     column(checkboxInput("description", "Show description"), width = 2),
-    column(checkboxInput("url", "Show URL"), width = 2)
+    column(checkboxInput("url", "Show URL"), width = 2),
+    column(checkboxInput("authors", "Show authors"), width = 2)
   ),
   DT::dataTableOutput("packages"),
   br(),
