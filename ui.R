@@ -33,6 +33,7 @@ shinyUI(fluidPage(
                          "Medical Image Analysis" = "MedicalImaging",
                          "Meta-Analysis" = "MetaAnalysis",
                          "Multivariate Statistics" = "Multivariate",
+                         "Model Deployment with R" = "ModelDeployment",
                          "Natural Language Processing" = "NaturalLanguageProcessing",
                          "Numerical Mathematics" = "NumericalMathematics",
                          "Official Statistics & Survey Methodology" = "OfficialStatistics",

@@ -7,7 +7,7 @@
 library(tidyverse)
 
 message("Downloading CRAN Task Views...")
-available_views <- ctv::available.views(repos = "https://cran.rstudio.com/")
+available_views <- ctv::available.views(repos = "https://cran.r-project.org/")
 
 # Rename the list's elements:
 names(available_views) <- available_views %>%
@@ -67,7 +67,7 @@ if (file.exists("www/packages.csv")) {
     message("No further actions need to be taken.")
   }
 } else {
-  pkgs <- unique(views$package)
+  pkgs <- unique(sort(views$package))
   message("Acquiring licensing and other details for ", length(pkgs), " package(s)...")
   pb <- progress::progress_bar$new(total = length(pkgs))
   details <- bind_rows(lapply(pkgs, function(pkg) {

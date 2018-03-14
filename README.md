@@ -1,5 +1,5 @@
 This [Shiny](https://shiny.rstudio.com/) application was created by [Mikhail Popov](https://github.com/bearloga) to quickly browse packages and their licenses using a snapshot of task views retrieved on
-2018-01-02.
+2018-03-13.
 *Not all packages available on CRAN are shown here, just the ones in CRAN's [Task Views](https://cran.r-project.org/web/views/).*
 Case insensitive regular expressions are enabled for filtering, so "r (client|wrapper)" is a valid filter on the **title** column.
 Thanks to [Maëlle Salmon](https://github.com/maelle) for enabling the authors field.
