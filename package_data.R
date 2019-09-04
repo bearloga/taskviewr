@@ -2,9 +2,10 @@
 ## Its filename starts with a dot so it's not uploaded to shinyapps.io
 
 ## Dependencies:
-# install.packages(c("ctv", "tidyverse", "devtools"))
-# devtools::install_github("metacran/crandb")
+# install.packages(c("ctv", "tidyverse", "remotes"))
+# remotes::install_github("metacran/crandb")
 library(tidyverse)
+library(ratelimitr)
 
 message("Downloading CRAN Task Views...")
 available_views <- ctv::available.views(repos = "https://cran.r-project.org/")
@@ -35,6 +36,8 @@ foo <- function(x) {
     return(x)
   }
 }
+get_package_info <- limit_rate(crandb::package, rate(n = 5, period = 0.1))
+
 if (file.exists("www/packages.csv")) {
   message("Found existing data for packages...")
   existing_data <- read.csv("www/packages.csv", stringsAsFactors = FALSE)
@@ -46,17 +49,16 @@ if (file.exists("www/packages.csv")) {
     # Let's get those missing packages' details!
     pkgs <- unique(missing_pkgs$package)
     message("Acquiring licensing and other data...")
-    details <- bind_rows(lapply(pkgs, function(pkg) {
+    details <- map_dfr(pkgs, function(pkg) {
       deets <- crandb::package(pkg)
-      return(data.frame(
+      return(tibble(
           title = deets$Title,
           license = foo(deets$License),
           description = deets$Description,
           url = foo(deets$URL), 
-          authors = deets$Author,
-          stringsAsFactors = FALSE
+          authors = deets$Author
       ))
-    }), .id = "package")
+    }, .id = "package")
     details$package <- pkgs
     packages <- missing_pkgs %>%
       left_join(details, by = "package") %>%
@@ -70,20 +72,19 @@ if (file.exists("www/packages.csv")) {
   pkgs <- unique(sort(views$package))
   message("Acquiring licensing and other details for ", length(pkgs), " package(s)...")
   pb <- progress::progress_bar$new(total = length(pkgs))
-  details <- bind_rows(lapply(pkgs, function(pkg) {
+  details <- map_dfr(pkgs, function(pkg) {
     pb$tick()
     deets <- crandb::package(pkg)
-    return(data.frame(
+    return(tibble(
       title = deets$Title,
       license = foo(deets$License),
       description = deets$Description,
       url = foo(deets$URL), 
-      authors = deets$Author,
-      stringsAsFactors = FALSE
+      authors = deets$Author
     ))
-  }), .id = "package")
+  }, .id = "package")
   details$package <- pkgs
-  packages <- left_join(views, details)
+  packages <- left_join(views, details, by = "package")
   need_to_write <- TRUE
 }
 
