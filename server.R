@@ -28,40 +28,43 @@ shinyServer(function(input, output) {
           # Some packages appear under multiple views, let's consolidate:
           temporary <- temporary %>%
             dplyr::group_by(package, title, description, url, authors, license) %>%
-            dplyr::summarize(
-              view = paste0(view, collapse = ", "),
-              views = dplyr::n()
-            ) %>%
+            dplyr::summarize(view = paste0(view, collapse = ", "), views = dplyr::n()) %>%
             dplyr::ungroup() %>%
             dplyr::select(view, views, package, title, license, authors, description, url)
         }
-      } else {
+      } else if (length(input$view) == 1) {
         temporary <- packages %>%
           dplyr::filter(view == input$view) %>%
           dplyr::select(-view)
+      } else {
+        temporary <- NULL
       }
     } else {
       temporary <- packages %>%
         dplyr::group_by(package, title, license, authors, description, url) %>%
-        dplyr::summarize(
-          view = paste0(view, collapse = ", "),
-          views = dplyr::n()
-        ) %>%
+        dplyr::summarize(view = paste0(view, collapse = ", "), views = dplyr::n()) %>%
         dplyr::ungroup() %>%
         dplyr::select(view, views, package, title, license, authors, description, url) %>%
         dplyr::arrange(package)
     }
-    if (!"Authors" %in% input$fields) temporary %<>% dplyr::select(-authors)
-    if (!"Description" %in% input$fields) temporary %<>% dplyr::select(-description)
-    if (!"URL" %in% input$fields) {
-      temporary %<>% dplyr::select(-url)
-    } else {
-      temporary$url <- make_url(temporary$url)
+    if (!is.null(temporary)) {
+      if (!"Authors" %in% input$fields) {
+        temporary %<>% dplyr::select(-authors)
+      }
+      if (!"Description" %in% input$fields) {
+        temporary %<>% dplyr::select(-description)
+      }
+      if ("URL" %in% input$fields) {
+        temporary$url <- make_url(temporary$url)
+      } else {
+        temporary %<>% dplyr::select(-url)
+      }
     }
     dt(temporary)
   })
   
   output$packages <- DT::renderDataTable({
+    req(dt())
     DT::datatable(
       dt(),
       filter = list(position = "top", clear = FALSE),
